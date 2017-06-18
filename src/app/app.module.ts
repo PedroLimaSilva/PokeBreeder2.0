@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/database';
@@ -10,16 +11,64 @@ import { environment } from '../environments/environment';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { HomeComponent } from './home/home.component';
+import { PokedexComponent } from './pokemon/pokedex/pokedex.component';
+import { PokemonCenterComponent } from './pokemon/pokemon-center/pokemon-center.component';
+import { LoginComponent } from './login/login.component';
+
+export const appRoutes: Routes = [
+  {
+    path: '',
+    pathMatch: 'full',
+    component: HomeComponent,
+    data: {
+      title: 'Home',
+      display: 'left'
+    }
+  },
+  {
+    path: 'pokedex',
+    pathMatch: 'full',
+    component: PokedexComponent,
+    data: {
+      title: 'Pokedex',
+      display: 'left'
+    }
+  },
+  {
+    path: 'pokemon-center',
+    pathMatch: 'full',
+    component: PokemonCenterComponent,
+    data: {
+      title: 'PokeCenter',
+      display: 'left'
+    }
+  },
+  {
+    path: 'log-in',
+    pathMatch: 'full',
+    component: LoginComponent,
+    data: {
+      title: 'Log In',
+      display: 'right'
+    }
+  }
+];
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    HomeComponent,
+    PokedexComponent,
+    PokemonCenterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
+    RouterModule.forRoot(appRoutes),
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     AngularFireAuthModule,

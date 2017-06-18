@@ -3,3 +3,20 @@
 @import "variables";
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_mixins.scss";
 @import "bootswatch";
+
+html{
+  overflow-x: hidden;
+}
+
+body{
+  margin-top:50px;
+  background-image: url("../assets/img/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  min-height: 100vh;
+}
+
+*{
+  image-rendering: pixelated;
+}
