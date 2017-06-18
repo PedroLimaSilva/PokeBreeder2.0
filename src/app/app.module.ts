@@ -15,6 +15,7 @@ import { HomeComponent } from './home/home.component';
 import { PokedexComponent } from './pokemon/pokedex/pokedex.component';
 import { PokemonCenterComponent } from './pokemon/pokemon-center/pokemon-center.component';
 import { LoginComponent } from './login/login.component';
+import { PokemonItemComponent } from './pokemon/pokemon-center/pokemon-item/pokemon-item.component';
 
 export const appRoutes: Routes = [
   {
@@ -27,20 +28,20 @@ export const appRoutes: Routes = [
     }
   },
   {
-    path: 'pokedex',
-    pathMatch: 'full',
-    component: PokedexComponent,
-    data: {
-      title: 'Pokedex',
-      display: 'left'
-    }
-  },
-  {
     path: 'pokemon-center',
     pathMatch: 'full',
     component: PokemonCenterComponent,
     data: {
       title: 'PokeCenter',
+      display: 'left'
+    }
+  },
+  {
+    path: 'pokedex',
+    pathMatch: 'full',
+    component: PokedexComponent,
+    data: {
+      title: 'Pokedex',
       display: 'left'
     }
   },
@@ -62,7 +63,8 @@ export const appRoutes: Routes = [
     HomeComponent,
     PokedexComponent,
     PokemonCenterComponent,
-    LoginComponent
+    LoginComponent,
+    PokemonItemComponent
   ],
   imports: [
     BrowserModule,

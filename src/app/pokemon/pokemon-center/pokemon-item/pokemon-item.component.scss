@@ -1,0 +1,23 @@
+.pokemon-container{
+    box-sizing: border-box;
+    width: 150px;
+    text-align: center;
+    background-color: rgba(255,255,255,0.5);
+    padding: 20px;
+    padding-bottom: 5px;
+    text-transform: capitalize;
+}
+
+.image-container{
+    height: 70px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.egg{
+    height: 100px;
+    width: 100px;
+    margin-top: -30px;
+}

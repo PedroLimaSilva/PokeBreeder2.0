@@ -1,0 +1,97 @@
+{
+  "eggDex": [
+    {
+      "dex": "001",
+      "nClicks": 100,
+      "sprite": 0
+    },
+    {
+      "dex": "004",
+      "nClicks": 100,
+      "sprite": 0
+    },
+    {
+      "dex": "007",
+      "nClicks": 100,
+      "sprite": 0
+    },
+    {
+      "dex": "010",
+      "nClicks": 25,
+      "sprite": 0
+    },
+    {
+      "dex": "013",
+      "nClicks": 25,
+      "sprite": 0
+    },
+    {
+      "dex": "016",
+      "nClicks": 25,
+      "sprite": 0
+    },
+    {
+      "dex": "019",
+      "nClicks": 25,
+      "sprite": 0
+    },
+    {
+      "dex": "021",
+      "nClicks": 50,
+      "sprite": 0
+    },
+    {
+      "dex": "023",
+      "nClicks": 50,
+      "sprite": 0
+    },
+    {
+      "dex": "025",
+      "nClicks": 100,
+      "sprite": 0
+    },
+    {
+      "dex": "027",
+      "nClicks": 50,
+      "sprite": 0
+    }
+  ],
+  "pokemon":[
+    {
+      "dex": "004",
+      "nickname": "",
+      "TrainerID": "",
+      "OwnerID": "",
+      "exp": 0,
+      "IVs": [0,0,0,0,0,0],
+      "EVs": [0,0,0,0,0,0]
+    },
+    {
+      "dex": "007",
+      "nickname": "",
+      "TrainerID": "",
+      "OwnerID": "",
+      "exp": 0,
+      "IVs": [0,0,0,0,0,0],
+      "EVs": [0,0,0,0,0,0]
+    },
+    {
+      "dex": "025",
+      "nickname": "",
+      "TrainerID": "",
+      "OwnerID": "",
+      "exp": 0,
+      "IVs": [0,0,0,0,0,0],
+      "EVs": [0,0,0,0,0,0]
+    },
+    {
+      "dex": "004",
+      "nickname": "",
+      "TrainerID": "",
+      "OwnerID": "",
+      "exp": -100,
+      "IVs": [0,0,0,0,0,0],
+      "EVs": [0,0,0,0,0,0]
+    }
+  ]
+}

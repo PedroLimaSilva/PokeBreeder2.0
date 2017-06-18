@@ -8,7 +8,7 @@ import { appRoutes } from '../app.module';
 })
 export class NavbarComponent implements OnInit {
 
-  routes=appRoutes;
+  routes = appRoutes;
 
   constructor() { }
 

@@ -1,0 +1,40 @@
+{
+  "pokemon":[
+    {
+      "dex": "004",
+      "nickname": "",
+      "TrainerID": "",
+      "OwnerID": "",
+      "exp": 0,
+      "IVs": [0,0,0,0,0,0],
+      "EVs": [0,0,0,0,0,0]
+    },
+    {
+      "dex": "007",
+      "nickname": "",
+      "TrainerID": "",
+      "OwnerID": "",
+      "exp": 0,
+      "IVs": [0,0,0,0,0,0],
+      "EVs": [0,0,0,0,0,0]
+    },
+    {
+      "dex": "025",
+      "nickname": "",
+      "TrainerID": "",
+      "OwnerID": "",
+      "exp": 0,
+      "IVs": [0,0,0,0,0,0],
+      "EVs": [0,0,0,0,0,0]
+    },
+    {
+      "dex": "004",
+      "nickname": "",
+      "TrainerID": "",
+      "OwnerID": "",
+      "exp": -100,
+      "IVs": [0,0,0,0,0,0],
+      "EVs": [0,0,0,0,0,0]
+    }
+  ]
+}
