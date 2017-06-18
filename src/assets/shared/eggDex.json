@@ -1,0 +1,59 @@
+{
+  "eggDex":[
+    {
+      "dex": "001",
+      "sprite": 0,
+      "nClicks": 100
+    },
+    {
+      "dex": "004",
+      "sprite": 0,
+      "nClicks": 100
+    },
+    {
+      "dex": "007",
+      "sprite": 0,
+      "nClicks": 100
+    },
+    {
+      "dex": "010",
+      "sprite": 0,
+      "nClicks": 25
+    },
+    {
+      "dex": "013",
+      "sprite": 0,
+      "nClicks": 25
+    },
+    {
+      "dex": "016",
+      "sprite": 0,
+      "nClicks": 25
+    },
+    {
+      "dex": "019",
+      "sprite": 0,
+      "nClicks": 25
+    },
+    {
+      "dex": "021",
+      "sprite": 0,
+      "nClicks": 50
+    },
+    {
+      "dex": "023",
+      "sprite": 0,
+      "nClicks": 50
+    },
+    {
+      "dex": "025",
+      "sprite": 0,
+      "nClicks": 100
+    },
+    {
+      "dex": "027",
+      "sprite": 0,
+      "nClicks": 50
+    }
+  ]
+}
