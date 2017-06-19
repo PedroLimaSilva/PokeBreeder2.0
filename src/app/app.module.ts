@@ -17,6 +17,8 @@ import { PokemonCenterComponent } from './pokemon/pokemon-center/pokemon-center.
 import { LoginComponent } from './login/login.component';
 import { PokemonItemComponent } from './pokemon/pokemon-center/pokemon-item/pokemon-item.component';
 
+import { PokeAPIService } from './services/poke-api.service';
+
 export const appRoutes: Routes = [
   {
     path: '',
@@ -76,7 +78,8 @@ export const appRoutes: Routes = [
     AngularFireAuthModule,
   ],
   providers: [
-    AngularFireDatabase
+    AngularFireDatabase,
+    PokeAPIService
   ],
   bootstrap: [AppComponent]
 })
