@@ -16,7 +16,7 @@ export class PokemonItemComponent implements OnInit {
     this.getPokemonName();
   }
 
-  getPokemonSprite(pokemon){
+  getPokemonSprite(pokemon) {
     if (pokemon.exp >= 0) {
       return 'assets/img/sprites/pokemon/' + pokemon.dex + '/' + pokemon.dex + '.gif';
     } else {

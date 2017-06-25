@@ -20,6 +20,7 @@
       "prefix": "",
       "styles": [
         "../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss",
+        "../node_modules/mdi/css/materialdesignicons.min.css",
         "styles/styles.scss"
       ],
       "scripts": [

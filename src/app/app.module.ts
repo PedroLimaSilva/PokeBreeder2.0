@@ -18,6 +18,8 @@ import { LoginComponent } from './login/login.component';
 import { PokemonItemComponent } from './pokemon/pokemon-center/pokemon-item/pokemon-item.component';
 
 import { PokeAPIService } from './services/poke-api.service';
+import { PcDetailComponent } from './pokemon/pokemon-center/pc-detail/pc-detail.component';
+import { TypeComponent } from './pokemon/_components/type/type.component';
 
 export const appRoutes: Routes = [
   {
@@ -66,7 +68,9 @@ export const appRoutes: Routes = [
     PokedexComponent,
     PokemonCenterComponent,
     LoginComponent,
-    PokemonItemComponent
+    PokemonItemComponent,
+    PcDetailComponent,
+    TypeComponent
   ],
   imports: [
     BrowserModule,

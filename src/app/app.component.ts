@@ -13,7 +13,7 @@ export class AppComponent implements OnInit {
   ) {
   }
 
-  ngOnInit(){
+  ngOnInit() {
     this._pokeAPI.getPokedex(151);
   }
 }

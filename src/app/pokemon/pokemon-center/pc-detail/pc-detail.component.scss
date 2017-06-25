@@ -1,0 +1,24 @@
+.detail-container{
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 50px;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.6);
+  padding: 0 15px;
+  h1{
+    text-transform: capitalize;
+  }
+  p{
+    display: flex;
+    justify-content: space-between;
+  }
+  .sprite{
+    text-align: center;
+    img{
+      width: 30%;
+    }
+  }
+}

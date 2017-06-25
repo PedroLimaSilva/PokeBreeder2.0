@@ -1,3 +1,7 @@
 <div class="pc-container">
-  <pokemon-item *ngFor="let pokemon of pokemon_list | async" [pokemon]="pokemon"></pokemon-item>
+  <pokemon-item *ngFor="let pokemon of pokemon_list | async"
+                [pokemon]="pokemon"
+                (click)="selected = pokemon">
+  </pokemon-item>
 </div>
+<pc-detail *ngIf="selected" [pokemon]="selected"></pc-detail>

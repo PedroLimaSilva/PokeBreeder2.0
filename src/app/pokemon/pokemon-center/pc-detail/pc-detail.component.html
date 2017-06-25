@@ -1,0 +1,20 @@
+<aside class="detail-container">
+  <h1>{{pokemon.nickname? pokemon.nickname : pokemon.name}}</h1>
+  <p>
+    <span class="lvl">Lvl.{{getLevel()}}</span>
+    <span class="gender">
+      <i *ngIf="pokemon.gender==='male'" class="mdi mdi-gender-male"></i>
+      <i *ngIf="pokemon.gender==='female'" class="mdi mdi-gender-female"></i>
+    </span>
+  </p>
+  <div class="sprite">
+    <img src="{{pokemon.sprite}}" alt="">
+  </div>
+  <div class="type" *ngFor="let type of pokemon.types">
+    <type [type]="type.type.name"></type>
+  </div>
+  <p>
+    {{pokemonString()}}
+  </p>
+</aside>
+

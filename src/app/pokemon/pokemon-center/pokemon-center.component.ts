@@ -9,6 +9,7 @@ import {AngularFireDatabase, FirebaseListObservable} from 'angularfire2/database
 export class PokemonCenterComponent implements OnInit {
 
   pokemon_list: FirebaseListObservable<any>;
+  selected;
 
   constructor(
     private _af: AngularFireDatabase

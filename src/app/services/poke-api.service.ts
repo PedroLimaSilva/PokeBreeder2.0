@@ -41,12 +41,14 @@ export class PokeAPIService {
   private getDexEntries(cachedDex) {
     for (let i = 0; i < cachedDex.length; i++) {
       if (!cachedDex[i].dex) {
+        console.log('CALLING POKEAPI!!!!');
         this.get_Pokemon(cachedDex[i].name)
             .subscribe(
               data => {
-                cachedDex[i].id = data.id;
+                cachedDex[i].dex = data.id;
                 cachedDex[i]['sprites'] = {};
                 cachedDex[i]['sprites']['front_default'] = data.sprites.front_default;
+                cachedDex[i]['types'] = data.types;
                 localStorage.setItem('POKEDEX', JSON.stringify(cachedDex));
               },
               error => console.log(error),
@@ -59,10 +61,12 @@ export class PokeAPIService {
   getPokedex(limit: number) {
     let cachedDex = JSON.parse(localStorage.getItem('POKEDEX'));
     if (cachedDex) {
+      console.log(cachedDex);
       this.getDexEntries(cachedDex);
     }
     else {
       let url = this.apiUrl + 'pokemon/?limit=' + limit + '&offset=0';
+      console.log('CALLING POKEAPI!!!!');
       return this.http.get(url)
                       .map(this.extractData)
                       .catch(this.handleError)
