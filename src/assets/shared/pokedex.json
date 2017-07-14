@@ -1,3313 +1,3464 @@
 [
-    {
-        "name": "bulbasaur",
-        "dex": "001",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "poison"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "grass"
-                }
-            }
-        ],
-        "exp_group": "Medium Slow",
-        "egg_groups": [
-            "Monster",
-            "Grass"
-        ]
-    },
-    {
-        "name": "ivysaur",
-        "dex": "002",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "poison"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "grass"
-                }
-            }
-        ],
-        "exp_group": "Medium Slow",
-        "egg_groups": [
-            "Monster",
-            "Grass"
-        ]
-    },
-    {
-        "name": "venusaur",
-        "dex": "003",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "poison"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "grass"
-                }
-            }
-        ],
-        "exp_group": "Medium Slow",
-        "egg_groups": [
-            "Monster",
-            "Grass"
-        ]
-    },
-    {
-        "name": "charmander",
-        "dex": "004",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "fire"
-                }
-            }
-        ],
-        "exp_group": "Medium Slow",
-        "egg_groups": [
-            "Monster",
-            "Dragon"
-        ]
-    },
-    {
-        "name": "charmeleon",
-        "dex": "005",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "fire"
-                }
-            }
-        ],
-        "exp_group": "Medium Slow",
-        "egg_groups": [
-            "Monster",
-            "Dragon"
-        ]
-    },
-    {
-        "name": "charizard",
-        "dex": "006",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "flying"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "fire"
-                }
-            }
-        ],
-        "exp_group": "Medium Slow",
-        "egg_groups": [
-            "Monster",
-            "Dragon"
-        ]
-    },
-    {
-        "name": "squirtle",
-        "dex": "007",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "water"
-                }
-            }
-        ],
-        "exp_group": "Medium Slow",
-        "egg_groups": [
-            "Monster",
-            "Water 1"
-        ]
-    },
-    {
-        "name": "wartortle",
-        "dex": "008",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "water"
-                }
-            }
-        ],
-        "exp_group": "Medium Slow",
-        "egg_groups": [
-            "Monster",
-            "Water 1"
-        ]
-    },
-    {
-        "name": "blastoise",
-        "dex": "009",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "water"
-                }
-            }
-        ],
-        "exp_group": "Medium Slow",
-        "egg_groups": [
-            "Monster",
-            "Water 1"
-        ]
-    },
-    {
-        "name": "caterpie",
-        "dex": "010",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "bug"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Bug"
-        ]
-    },
-    {
-        "name": "metapod",
-        "dex": "011",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "bug"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Bug"
-        ]
-    },
-    {
-        "name": "butterfree",
-        "dex": "012",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "flying"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "bug"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Bug"
-        ]
-    },
-    {
-        "name": "weedle",
-        "dex": "013",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "poison"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "bug"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Bug"
-        ]
-    },
-    {
-        "name": "kakuna",
-        "dex": "014",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "poison"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "bug"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Bug"
-        ]
-    },
-    {
-        "name": "beedrill",
-        "dex": "015",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "poison"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "bug"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Bug"
-        ]
-    },
-    {
-        "name": "pidgey",
-        "dex": "016",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "flying"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "normal"
-                }
-            }
-        ],
-        "exp_group": "Medium Slow",
-        "egg_groups": [
-            "Flying"
-        ]
-    },
-    {
-        "name": "pidgeotto",
-        "dex": "017",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "flying"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "normal"
-                }
-            }
-        ],
-        "exp_group": "Medium Slow",
-        "egg_groups": [
-            "Flying"
-        ]
-    },
-    {
-        "name": "pidgeot",
-        "dex": "018",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "flying"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "normal"
-                }
-            }
-        ],
-        "exp_group": "Medium Slow",
-        "egg_groups": [
-            "Flying"
-        ]
-    },
-    {
-        "name": "rattata",
-        "dex": "019",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "normal"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Field"
-        ]
-    },
-    {
-        "name": "raticate",
-        "dex": "020",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "normal"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Field"
-        ]
-    },
-    {
-        "name": "spearow",
-        "dex": "021",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/21.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "flying"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "normal"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Flying"
-        ]
-    },
-    {
-        "name": "fearow",
-        "dex": "022",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/22.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "flying"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "normal"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Flying"
-        ]
-    },
-    {
-        "name": "ekans",
-        "dex": "023",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "poison"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Field",
-            "Dragon"
-        ]
-    },
-    {
-        "name": "arbok",
-        "dex": "024",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "poison"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Field",
-            "Dragon"
-        ]
-    },
-    {
-        "name": "pikachu",
-        "dex": "025",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "electric"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Field",
-            "Fairy"
-        ]
-    },
-    {
-        "name": "raichu",
-        "dex": "026",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "electric"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Field",
-            "Fairy"
-        ]
-    },
-    {
-        "name": "sandshrew",
-        "dex": "027",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "ground"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Field"
-        ]
-    },
-    {
-        "name": "sandslash",
-        "dex": "028",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "ground"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Field"
-        ]
-    },
-    {
-        "name": "nidoran-f",
-        "dex": "029",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/29.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "poison"
-                }
-            }
-        ],
-        "exp_group": "Medium Slow",
-        "egg_groups": [
-            "Monster",
-            "Field"
-        ]
-    },
-    {
-        "name": "nidorina",
-        "dex": "030",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/30.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "poison"
-                }
-            }
-        ],
-        "exp_group": "Medium Slow",
-        "egg_groups": [
-            "Undiscovered"
-        ]
-    },
-    {
-        "name": "nidoqueen",
-        "dex": "031",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/31.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "ground"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "poison"
-                }
-            }
-        ],
-        "exp_group": "Medium Slow",
-        "egg_groups": [
-            "Undiscovered"
-        ]
-    },
-    {
-        "name": "nidoran-m",
-        "dex": "032",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/32.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "poison"
-                }
-            }
-        ],
-        "exp_group": "Medium Slow",
-        "egg_groups": [
-            "Monster",
-            "Field"
-        ]
-    },
-    {
-        "name": "nidorino",
-        "dex": "033",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/33.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "poison"
-                }
-            }
-        ],
-        "exp_group": "Medium Slow",
-        "egg_groups": [
-            "Monster",
-            "Field"
-        ]
-    },
-    {
-        "name": "nidoking",
-        "dex": "034",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/34.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "ground"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "poison"
-                }
-            }
-        ],
-        "exp_group": "Medium Slow",
-        "egg_groups": [
-            "Monster",
-            "Field"
-        ]
-    },
-    {
-        "name": "clefairy",
-        "dex": "035",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/35.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "fairy"
-                }
-            }
-        ],
-        "exp_group": "Fast",
-        "egg_groups": [
-            "Fairy"
-        ]
-    },
-    {
-        "name": "clefable",
-        "dex": "036",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/36.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "fairy"
-                }
-            }
-        ],
-        "exp_group": "Fast",
-        "egg_groups": [
-            "Fairy"
-        ]
-    },
-    {
-        "name": "vulpix",
-        "dex": "037",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "fire"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Field"
-        ]
-    },
-    {
-        "name": "ninetales",
-        "dex": "038",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "fire"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Field"
-        ]
-    },
-    {
-        "name": "jigglypuff",
-        "dex": "039",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "fairy"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "normal"
-                }
-            }
-        ],
-        "exp_group": "Fast",
-        "egg_groups": [
-            "Fairy"
-        ]
-    },
-    {
-        "name": "wigglytuff",
-        "dex": "040",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/40.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "fairy"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "normal"
-                }
-            }
-        ],
-        "exp_group": "Fast",
-        "egg_groups": [
-            "Fairy"
-        ]
-    },
-    {
-        "name": "zubat",
-        "dex": "041",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/41.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "flying"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "poison"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Flying"
-        ]
-    },
-    {
-        "name": "golbat",
-        "dex": "042",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/42.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "flying"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "poison"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Flying"
-        ]
-    },
-    {
-        "name": "oddish",
-        "dex": "043",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/43.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "poison"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "grass"
-                }
-            }
-        ],
-        "exp_group": "Medium Slow",
-        "egg_groups": [
-            "Grass"
-        ]
-    },
-    {
-        "name": "gloom",
-        "dex": "044",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/44.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "poison"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "grass"
-                }
-            }
-        ],
-        "exp_group": "Medium Slow",
-        "egg_groups": [
-            "Grass"
-        ]
-    },
-    {
-        "name": "vileplume",
-        "dex": "045",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/45.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "poison"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "grass"
-                }
-            }
-        ],
-        "exp_group": "Medium Slow",
-        "egg_groups": [
-            "Grass"
-        ]
-    },
-    {
-        "name": "paras",
-        "dex": "046",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/46.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "grass"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "bug"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Bug",
-            "Grass"
-        ]
-    },
-    {
-        "name": "parasect",
-        "dex": "047",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/47.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "grass"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "bug"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Bug",
-            "Grass"
-        ]
-    },
-    {
-        "name": "venonat",
-        "dex": "048",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/48.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "poison"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "bug"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Bug"
-        ]
-    },
-    {
-        "name": "venomoth",
-        "dex": "049",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/49.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "poison"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "bug"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Bug"
-        ]
-    },
-    {
-        "name": "diglett",
-        "dex": "050",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/50.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "ground"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Field"
-        ]
-    },
-    {
-        "name": "dugtrio",
-        "dex": "051",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/51.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "ground"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Field"
-        ]
-    },
-    {
-        "name": "meowth",
-        "dex": "052",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/52.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "normal"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Field"
-        ]
-    },
-    {
-        "name": "persian",
-        "dex": "053",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/53.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "normal"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Field"
-        ]
-    },
-    {
-        "name": "psyduck",
-        "dex": "054",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "water"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Water 1",
-            "Field"
-        ]
-    },
-    {
-        "name": "golduck",
-        "dex": "055",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/55.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "water"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Water 1",
-            "Field"
-        ]
-    },
-    {
-        "name": "mankey",
-        "dex": "056",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/56.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "fighting"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Field"
-        ]
-    },
-    {
-        "name": "primeape",
-        "dex": "057",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/57.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "fighting"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Field"
-        ]
-    },
-    {
-        "name": "growlithe",
-        "dex": "058",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "fire"
-                }
-            }
-        ],
-        "exp_group": "Slow",
-        "egg_groups": [
-            "Field"
-        ]
-    },
-    {
-        "name": "arcanine",
-        "dex": "059",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "fire"
-                }
-            }
-        ],
-        "exp_group": "Slow",
-        "egg_groups": [
-            "Field"
-        ]
-    },
-    {
-        "name": "poliwag",
-        "dex": "060",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "water"
-                }
-            }
-        ],
-        "exp_group": "Medium Slow",
-        "egg_groups": [
-            "Water 1"
-        ]
-    },
-    {
-        "name": "poliwhirl",
-        "dex": "061",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/61.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "water"
-                }
-            }
-        ],
-        "exp_group": "Medium Slow",
-        "egg_groups": [
-            "Water 1"
-        ]
-    },
-    {
-        "name": "poliwrath",
-        "dex": "062",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/62.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "fighting"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "water"
-                }
-            }
-        ],
-        "exp_group": "Medium Slow",
-        "egg_groups": [
-            "Water 1"
-        ]
-    },
-    {
-        "name": "abra",
-        "dex": "063",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/63.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "psychic"
-                }
-            }
-        ],
-        "exp_group": "Medium Slow",
-        "egg_groups": [
-            "Human-Like"
-        ]
-    },
-    {
-        "name": "kadabra",
-        "dex": "064",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/64.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "psychic"
-                }
-            }
-        ],
-        "exp_group": "Medium Slow",
-        "egg_groups": [
-            "Human-Like"
-        ]
-    },
-    {
-        "name": "alakazam",
-        "dex": "065",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/65.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "psychic"
-                }
-            }
-        ],
-        "exp_group": "Medium Slow",
-        "egg_groups": [
-            "Human-Like"
-        ]
-    },
-    {
-        "name": "machop",
-        "dex": "066",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/66.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "fighting"
-                }
-            }
-        ],
-        "exp_group": "Medium Slow",
-        "egg_groups": [
-            "Human-Like"
-        ]
-    },
-    {
-        "name": "machoke",
-        "dex": "067",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/67.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "fighting"
-                }
-            }
-        ],
-        "exp_group": "Medium Slow",
-        "egg_groups": [
-            "Human-Like"
-        ]
-    },
-    {
-        "name": "machamp",
-        "dex": "068",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/68.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "fighting"
-                }
-            }
-        ],
-        "exp_group": "Medium Slow",
-        "egg_groups": [
-            "Human-Like"
-        ]
-    },
-    {
-        "name": "bellsprout",
-        "dex": "069",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/69.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "poison"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "grass"
-                }
-            }
-        ],
-        "exp_group": "Medium Slow",
-        "egg_groups": [
-            "Grass"
-        ]
-    },
-    {
-        "name": "weepinbell",
-        "dex": "070",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/70.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "poison"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "grass"
-                }
-            }
-        ],
-        "exp_group": "Medium Slow",
-        "egg_groups": [
-            "Grass"
-        ]
-    },
-    {
-        "name": "victreebel",
-        "dex": "071",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/71.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "poison"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "grass"
-                }
-            }
-        ],
-        "exp_group": "Medium Slow",
-        "egg_groups": [
-            "Grass"
-        ]
-    },
-    {
-        "name": "tentacool",
-        "dex": "072",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/72.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "poison"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "water"
-                }
-            }
-        ],
-        "exp_group": "Slow",
-        "egg_groups": [
-            "Water 3"
-        ]
-    },
-    {
-        "name": "tentacruel",
-        "dex": "073",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/73.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "poison"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "water"
-                }
-            }
-        ],
-        "exp_group": "Slow",
-        "egg_groups": [
-            "Water 3"
-        ]
-    },
-    {
-        "name": "geodude",
-        "dex": "074",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/74.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "ground"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "rock"
-                }
-            }
-        ],
-        "exp_group": "Medium Slow",
-        "egg_groups": [
-            "Mineral"
-        ]
-    },
-    {
-        "name": "graveler",
-        "dex": "075",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/75.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "ground"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "rock"
-                }
-            }
-        ],
-        "exp_group": "Medium Slow",
-        "egg_groups": [
-            "Mineral"
-        ]
-    },
-    {
-        "name": "golem",
-        "dex": "076",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/76.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "ground"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "rock"
-                }
-            }
-        ],
-        "exp_group": "Medium Slow",
-        "egg_groups": [
-            "Mineral"
-        ]
-    },
-    {
-        "name": "ponyta",
-        "dex": "077",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/77.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "fire"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Field"
-        ]
-    },
-    {
-        "name": "rapidash",
-        "dex": "078",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/78.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "fire"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Field"
-        ]
-    },
-    {
-        "name": "slowpoke",
-        "dex": "079",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "psychic"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "water"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Monster",
-            "Water 1"
-        ]
-    },
-    {
-        "name": "slowbro",
-        "dex": "080",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/80.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "psychic"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "water"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Monster",
-            "Water 1"
-        ]
-    },
-    {
-        "name": "magnemite",
-        "dex": "081",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/81.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "steel"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "electric"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Mineral"
-        ]
-    },
-    {
-        "name": "magneton",
-        "dex": "082",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/82.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "steel"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "electric"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Mineral"
-        ]
-    },
-    {
-        "name": "farfetchd",
-        "dex": "083",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/83.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "flying"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "normal"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Flying",
-            "Field"
-        ]
-    },
-    {
-        "name": "doduo",
-        "dex": "084",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/84.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "flying"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "normal"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Flying"
-        ]
-    },
-    {
-        "name": "dodrio",
-        "dex": "085",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/85.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "flying"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "normal"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Flying"
-        ]
-    },
-    {
-        "name": "seel",
-        "dex": "086",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/86.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "water"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Water 1",
-            "Field"
-        ]
-    },
-    {
-        "name": "dewgong",
-        "dex": "087",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "ice"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "water"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Water 1",
-            "Field"
-        ]
-    },
-    {
-        "name": "grimer",
-        "dex": "088",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/88.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "poison"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Amorphous"
-        ]
-    },
-    {
-        "name": "muk",
-        "dex": "089",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/89.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "poison"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Amorphous"
-        ]
-    },
-    {
-        "name": "shellder",
-        "dex": "090",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/90.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "water"
-                }
-            }
-        ],
-        "exp_group": "Slow",
-        "egg_groups": [
-            "Water 3"
-        ]
-    },
-    {
-        "name": "cloyster",
-        "dex": "091",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "ice"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "water"
-                }
-            }
-        ],
-        "exp_group": "Slow",
-        "egg_groups": [
-            "Water 3"
-        ]
-    },
-    {
-        "name": "gastly",
-        "dex": "092",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/92.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "poison"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "ghost"
-                }
-            }
-        ],
-        "exp_group": "Medium Slow",
-        "egg_groups": [
-            "Amorphous"
-        ]
-    },
-    {
-        "name": "haunter",
-        "dex": "093",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "poison"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "ghost"
-                }
-            }
-        ],
-        "exp_group": "Medium Slow",
-        "egg_groups": [
-            "Amorphous"
-        ]
-    },
-    {
-        "name": "gengar",
-        "dex": "094",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "poison"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "ghost"
-                }
-            }
-        ],
-        "exp_group": "Medium Slow",
-        "egg_groups": [
-            "Amorphous"
-        ]
-    },
-    {
-        "name": "onix",
-        "dex": "095",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/95.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "ground"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "rock"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Mineral"
-        ]
-    },
-    {
-        "name": "drowzee",
-        "dex": "096",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/96.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "psychic"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Human-Like"
-        ]
-    },
-    {
-        "name": "hypno",
-        "dex": "097",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/97.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "psychic"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Human-Like"
-        ]
-    },
-    {
-        "name": "krabby",
-        "dex": "098",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/98.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "water"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Water 3"
-        ]
-    },
-    {
-        "name": "kingler",
-        "dex": "099",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/99.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "water"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Water 3"
-        ]
-    },
-    {
-        "name": "voltorb",
-        "dex": "100",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/100.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "electric"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Mineral"
-        ]
-    },
-    {
-        "name": "electrode",
-        "dex": "101",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/101.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "electric"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Mineral"
-        ]
-    },
-    {
-        "name": "exeggcute",
-        "dex": "102",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/102.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "psychic"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "grass"
-                }
-            }
-        ],
-        "exp_group": "Slow",
-        "egg_groups": [
-            "Grass"
-        ]
-    },
-    {
-        "name": "exeggutor",
-        "dex": "103",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/103.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "psychic"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "grass"
-                }
-            }
-        ],
-        "exp_group": "Slow",
-        "egg_groups": [
-            "Grass"
-        ]
-    },
-    {
-        "name": "cubone",
-        "dex": "104",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/104.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "ground"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Monster"
-        ]
-    },
-    {
-        "name": "marowak",
-        "dex": "105",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/105.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "ground"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Monster"
-        ]
-    },
-    {
-        "name": "hitmonlee",
-        "dex": "106",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/106.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "fighting"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Human-Like"
-        ]
-    },
-    {
-        "name": "hitmonchan",
-        "dex": "107",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/107.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "fighting"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Human-Like"
-        ]
-    },
-    {
-        "name": "lickitung",
-        "dex": "108",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/108.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "normal"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Monster"
-        ]
-    },
-    {
-        "name": "koffing",
-        "dex": "109",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/109.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "poison"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Amorphous"
-        ]
-    },
-    {
-        "name": "weezing",
-        "dex": "110",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/110.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "poison"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Amorphous"
-        ]
-    },
-    {
-        "name": "rhyhorn",
-        "dex": "111",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/111.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "rock"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "ground"
-                }
-            }
-        ],
-        "exp_group": "Slow",
-        "egg_groups": [
-            "Monster",
-            "Field"
-        ]
-    },
-    {
-        "name": "rhydon",
-        "dex": "112",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/112.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "rock"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "ground"
-                }
-            }
-        ],
-        "exp_group": "Slow",
-        "egg_groups": [
-            "Monster",
-            "Field"
-        ]
-    },
-    {
-        "name": "chansey",
-        "dex": "113",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/113.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "normal"
-                }
-            }
-        ],
-        "exp_group": "Fast",
-        "egg_groups": [
-            "Fairy"
-        ]
-    },
-    {
-        "name": "tangela",
-        "dex": "114",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/114.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "grass"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Grass"
-        ]
-    },
-    {
-        "name": "kangaskhan",
-        "dex": "115",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/115.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "normal"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Monster"
-        ]
-    },
-    {
-        "name": "horsea",
-        "dex": "116",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/116.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "water"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Water 1",
-            "Dragon"
-        ]
-    },
-    {
-        "name": "seadra",
-        "dex": "117",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/117.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "water"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Water 1",
-            "Dragon"
-        ]
-    },
-    {
-        "name": "goldeen",
-        "dex": "118",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/118.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "water"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Water 2"
-        ]
-    },
-    {
-        "name": "seaking",
-        "dex": "119",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/119.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "water"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Water 2"
-        ]
-    },
-    {
-        "name": "staryu",
-        "dex": "120",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/120.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "water"
-                }
-            }
-        ],
-        "exp_group": "Slow",
-        "egg_groups": [
-            "Water 3"
-        ]
-    },
-    {
-        "name": "starmie",
-        "dex": "121",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/121.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "psychic"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "water"
-                }
-            }
-        ],
-        "exp_group": "Slow",
-        "egg_groups": [
-            "Water 3"
-        ]
-    },
-    {
-        "name": "mr-mime",
-        "dex": "122",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/122.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "fairy"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "psychic"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Human-Like"
-        ]
-    },
-    {
-        "name": "scyther",
-        "dex": "123",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/123.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "flying"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "bug"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Bug"
-        ]
-    },
-    {
-        "name": "jynx",
-        "dex": "124",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "psychic"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "ice"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Human-Like"
-        ]
-    },
-    {
-        "name": "electabuzz",
-        "dex": "125",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/125.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "electric"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Human-Like"
-        ]
-    },
-    {
-        "name": "magmar",
-        "dex": "126",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/126.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "fire"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Human-Like"
-        ]
-    },
-    {
-        "name": "pinsir",
-        "dex": "127",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/127.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "bug"
-                }
-            }
-        ],
-        "exp_group": "Slow",
-        "egg_groups": [
-            "Bug"
-        ]
-    },
-    {
-        "name": "tauros",
-        "dex": "128",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/128.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "normal"
-                }
-            }
-        ],
-        "exp_group": "Slow",
-        "egg_groups": [
-            "Field"
-        ]
-    },
-    {
-        "name": "magikarp",
-        "dex": "129",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "water"
-                }
-            }
-        ],
-        "exp_group": "Slow",
-        "egg_groups": [
-            "Water 2",
-            "Dragon"
-        ]
-    },
-    {
-        "name": "gyarados",
-        "dex": "130",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "flying"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "water"
-                }
-            }
-        ],
-        "exp_group": "Slow",
-        "egg_groups": [
-            "Water 2",
-            "Dragon"
-        ]
-    },
-    {
-        "name": "lapras",
-        "dex": "131",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "ice"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "water"
-                }
-            }
-        ],
-        "exp_group": "Slow",
-        "egg_groups": [
-            "Monster",
-            "Water 1"
-        ]
-    },
-    {
-        "name": "ditto",
-        "dex": "132",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "normal"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Ditto"
-        ]
-    },
-    {
-        "name": "eevee",
-        "dex": "133",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "normal"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Field"
-        ]
-    },
-    {
-        "name": "vaporeon",
-        "dex": "134",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/134.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "water"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Field"
-        ]
-    },
-    {
-        "name": "jolteon",
-        "dex": "135",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/135.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "electric"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Field"
-        ]
-    },
-    {
-        "name": "flareon",
-        "dex": "136",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/136.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "fire"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Field"
-        ]
-    },
-    {
-        "name": "porygon",
-        "dex": "137",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/137.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "normal"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Mineral"
-        ]
-    },
-    {
-        "name": "omanyte",
-        "dex": "138",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/138.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "water"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "rock"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Water 1",
-            "Water 3"
-        ]
-    },
-    {
-        "name": "omastar",
-        "dex": "139",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/139.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "water"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "rock"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Water 1",
-            "Water 3"
-        ]
-    },
-    {
-        "name": "kabuto",
-        "dex": "140",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/140.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "water"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "rock"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Water 1",
-            "Water 3"
-        ]
-    },
-    {
-        "name": "kabutops",
-        "dex": "141",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/141.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "water"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "rock"
-                }
-            }
-        ],
-        "exp_group": "Medium Fast",
-        "egg_groups": [
-            "Water 1",
-            "Water 3"
-        ]
-    },
-    {
-        "name": "aerodactyl",
-        "dex": "142",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/142.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "flying"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "rock"
-                }
-            }
-        ],
-        "exp_group": "Slow",
-        "egg_groups": [
-            "Flying"
-        ]
-    },
-    {
-        "name": "snorlax",
-        "dex": "143",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/143.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "normal"
-                }
-            }
-        ],
-        "exp_group": "Slow",
-        "egg_groups": [
-            "Monster"
-        ]
-    },
-    {
-        "name": "articuno",
-        "dex": "144",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "flying"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "ice"
-                }
-            }
-        ],
-        "exp_group": "Slow",
-        "egg_groups": [
-            "Undiscovered"
-        ]
-    },
-    {
-        "name": "zapdos",
-        "dex": "145",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/145.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "flying"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "electric"
-                }
-            }
-        ],
-        "exp_group": "Slow",
-        "egg_groups": [
-            "Undiscovered"
-        ]
-    },
-    {
-        "name": "moltres",
-        "dex": "146",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/146.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "flying"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "fire"
-                }
-            }
-        ],
-        "exp_group": "Slow",
-        "egg_groups": [
-            "Undiscovered"
-        ]
-    },
-    {
-        "name": "dratini",
-        "dex": "147",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/147.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "dragon"
-                }
-            }
-        ],
-        "exp_group": "Slow",
-        "egg_groups": [
-            "Water 1",
-            "Dragon"
-        ]
-    },
-    {
-        "name": "dragonair",
-        "dex": "148",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/148.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "dragon"
-                }
-            }
-        ],
-        "exp_group": "Slow",
-        "egg_groups": [
-            "Water 1",
-            "Dragon"
-        ]
-    },
-    {
-        "name": "dragonite",
-        "dex": "149",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png"
-        },
-        "types": [
-            {
-                "slot": 2,
-                "type": {
-                    "name": "flying"
-                }
-            },
-            {
-                "slot": 1,
-                "type": {
-                    "name": "dragon"
-                }
-            }
-        ],
-        "exp_group": "Slow",
-        "egg_groups": [
-            "Water 1",
-            "Dragon"
-        ]
-    },
-    {
-        "name": "mewtwo",
-        "dex": "150",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "psychic"
-                }
-            }
-        ],
-        "exp_group": "Slow",
-        "egg_groups": [
-            "Undiscovered"
-        ]
-    },
-    {
-        "name": "mew",
-        "dex": "151",
-        "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png"
-        },
-        "types": [
-            {
-                "slot": 1,
-                "type": {
-                    "name": "psychic"
-                }
-            }
-        ],
-        "exp_group": "Medium Slow",
-        "egg_groups": [
-            "Undiscovered"
-        ]
-    }
+  {
+    "name": "bulbasaur",
+    "dex": "001",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "poison"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "grass"
+        }
+      }
+    ],
+    "exp_group": "Medium Slow",
+    "egg_groups": [
+      "Monster",
+      "Grass"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "ivysaur",
+    "dex": "002",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "poison"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "grass"
+        }
+      }
+    ],
+    "exp_group": "Medium Slow",
+    "egg_groups": [
+      "Monster",
+      "Grass"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "venusaur",
+    "dex": "003",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "poison"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "grass"
+        }
+      }
+    ],
+    "exp_group": "Medium Slow",
+    "egg_groups": [
+      "Monster",
+      "Grass"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "charmander",
+    "dex": "004",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "fire"
+        }
+      }
+    ],
+    "exp_group": "Medium Slow",
+    "egg_groups": [
+      "Monster",
+      "Dragon"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "charmeleon",
+    "dex": "005",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "fire"
+        }
+      }
+    ],
+    "exp_group": "Medium Slow",
+    "egg_groups": [
+      "Monster",
+      "Dragon"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "charizard",
+    "dex": "006",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "flying"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "fire"
+        }
+      }
+    ],
+    "exp_group": "Medium Slow",
+    "egg_groups": [
+      "Monster",
+      "Dragon"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "squirtle",
+    "dex": "007",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "water"
+        }
+      }
+    ],
+    "exp_group": "Medium Slow",
+    "egg_groups": [
+      "Monster",
+      "Water 1"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "wartortle",
+    "dex": "008",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "water"
+        }
+      }
+    ],
+    "exp_group": "Medium Slow",
+    "egg_groups": [
+      "Monster",
+      "Water 1"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "blastoise",
+    "dex": "009",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "water"
+        }
+      }
+    ],
+    "exp_group": "Medium Slow",
+    "egg_groups": [
+      "Monster",
+      "Water 1"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "caterpie",
+    "dex": "010",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "bug"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Bug"
+    ],
+    "egg_steps": 3840
+  },
+  {
+    "name": "metapod",
+    "dex": "011",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "bug"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Bug"
+    ],
+    "egg_steps": 3840
+  },
+  {
+    "name": "butterfree",
+    "dex": "012",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "flying"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "bug"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Bug"
+    ],
+    "egg_steps": 3840
+  },
+  {
+    "name": "weedle",
+    "dex": "013",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "poison"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "bug"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Bug"
+    ],
+    "egg_steps": 3840
+  },
+  {
+    "name": "kakuna",
+    "dex": "014",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "poison"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "bug"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Bug"
+    ],
+    "egg_steps": 3840
+  },
+  {
+    "name": "beedrill",
+    "dex": "015",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "poison"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "bug"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Bug"
+    ],
+    "egg_steps": 3840
+  },
+  {
+    "name": "pidgey",
+    "dex": "016",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "flying"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "normal"
+        }
+      }
+    ],
+    "exp_group": "Medium Slow",
+    "egg_groups": [
+      "Flying"
+    ],
+    "egg_steps": 3840
+  },
+  {
+    "name": "pidgeotto",
+    "dex": "017",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "flying"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "normal"
+        }
+      }
+    ],
+    "exp_group": "Medium Slow",
+    "egg_groups": [
+      "Flying"
+    ],
+    "egg_steps": 3840
+  },
+  {
+    "name": "pidgeot",
+    "dex": "018",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "flying"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "normal"
+        }
+      }
+    ],
+    "exp_group": "Medium Slow",
+    "egg_groups": [
+      "Flying"
+    ],
+    "egg_steps": 3840
+  },
+  {
+    "name": "rattata",
+    "dex": "019",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "normal"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Field"
+    ],
+    "egg_steps": 3840
+  },
+  {
+    "name": "raticate",
+    "dex": "020",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "normal"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Field"
+    ],
+    "egg_steps": 3840
+  },
+  {
+    "name": "spearow",
+    "dex": "021",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/21.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "flying"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "normal"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Flying"
+    ],
+    "egg_steps": 3840
+  },
+  {
+    "name": "fearow",
+    "dex": "022",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/22.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "flying"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "normal"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Flying"
+    ],
+    "egg_steps": 3840
+  },
+  {
+    "name": "ekans",
+    "dex": "023",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "poison"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Field",
+      "Dragon"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "arbok",
+    "dex": "024",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "poison"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Field",
+      "Dragon"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "pikachu",
+    "dex": "025",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "electric"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Field",
+      "Fairy"
+    ],
+    "egg_steps": 2560
+  },
+  {
+    "name": "raichu",
+    "dex": "026",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "electric"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Field",
+      "Fairy"
+    ],
+    "egg_steps": 2560
+  },
+  {
+    "name": "sandshrew",
+    "dex": "027",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "ground"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Field"
+    ],
+    "egg_steps": 2560
+  },
+  {
+    "name": "sandslash",
+    "dex": "028",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "ground"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Field"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "nidoran-f",
+    "dex": "029",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/29.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "poison"
+        }
+      }
+    ],
+    "exp_group": "Medium Slow",
+    "egg_groups": [
+      "Monster",
+      "Field"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "nidorina",
+    "dex": "030",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/30.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "poison"
+        }
+      }
+    ],
+    "exp_group": "Medium Slow",
+    "egg_groups": [
+      "Undiscovered"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "nidoqueen",
+    "dex": "031",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/31.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "ground"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "poison"
+        }
+      }
+    ],
+    "exp_group": "Medium Slow",
+    "egg_groups": [
+      "Undiscovered"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "nidoran-m",
+    "dex": "032",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/32.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "poison"
+        }
+      }
+    ],
+    "exp_group": "Medium Slow",
+    "egg_groups": [
+      "Monster",
+      "Field"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "nidorino",
+    "dex": "033",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/33.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "poison"
+        }
+      }
+    ],
+    "exp_group": "Medium Slow",
+    "egg_groups": [
+      "Monster",
+      "Field"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "nidoking",
+    "dex": "034",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/34.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "ground"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "poison"
+        }
+      }
+    ],
+    "exp_group": "Medium Slow",
+    "egg_groups": [
+      "Monster",
+      "Field"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "clefairy",
+    "dex": "035",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/35.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "fairy"
+        }
+      }
+    ],
+    "exp_group": "Fast",
+    "egg_groups": [
+      "Fairy"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "clefable",
+    "dex": "036",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/36.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "fairy"
+        }
+      }
+    ],
+    "exp_group": "Fast",
+    "egg_groups": [
+      "Fairy"
+    ],
+    "egg_steps": 2560
+  },
+  {
+    "name": "vulpix",
+    "dex": "037",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "fire"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Field"
+    ],
+    "egg_steps": 2560
+  },
+  {
+    "name": "ninetales",
+    "dex": "038",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "fire"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Field"
+    ],
+    "egg_steps": 2560
+  },
+  {
+    "name": "jigglypuff",
+    "dex": "039",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "fairy"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "normal"
+        }
+      }
+    ],
+    "exp_group": "Fast",
+    "egg_groups": [
+      "Fairy"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "wigglytuff",
+    "dex": "040",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/40.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "fairy"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "normal"
+        }
+      }
+    ],
+    "exp_group": "Fast",
+    "egg_groups": [
+      "Fairy"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "zubat",
+    "dex": "041",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/41.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "flying"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "poison"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Flying"
+    ],
+    "egg_steps": 2560
+  },
+  {
+    "name": "golbat",
+    "dex": "042",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/42.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "flying"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "poison"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Flying"
+    ],
+    "egg_steps": 2560
+  },
+  {
+    "name": "oddish",
+    "dex": "043",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/43.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "poison"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "grass"
+        }
+      }
+    ],
+    "exp_group": "Medium Slow",
+    "egg_groups": [
+      "Grass"
+    ],
+    "egg_steps": 2560
+  },
+  {
+    "name": "gloom",
+    "dex": "044",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/44.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "poison"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "grass"
+        }
+      }
+    ],
+    "exp_group": "Medium Slow",
+    "egg_groups": [
+      "Grass"
+    ],
+    "egg_steps": 3840
+  },
+  {
+    "name": "vileplume",
+    "dex": "045",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/45.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "poison"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "grass"
+        }
+      }
+    ],
+    "exp_group": "Medium Slow",
+    "egg_groups": [
+      "Grass"
+    ],
+    "egg_steps": 3840
+  },
+  {
+    "name": "paras",
+    "dex": "046",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/46.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "grass"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "bug"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Bug",
+      "Grass"
+    ],
+    "egg_steps": 3840
+  },
+  {
+    "name": "parasect",
+    "dex": "047",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/47.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "grass"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "bug"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Bug",
+      "Grass"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "venonat",
+    "dex": "048",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/48.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "poison"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "bug"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Bug"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "venomoth",
+    "dex": "049",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/49.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "poison"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "bug"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Bug"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "diglett",
+    "dex": "050",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/50.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "ground"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Field"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "dugtrio",
+    "dex": "051",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/51.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "ground"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Field"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "meowth",
+    "dex": "052",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/52.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "normal"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Field"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "persian",
+    "dex": "053",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/53.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "normal"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Field"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "psyduck",
+    "dex": "054",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "water"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Water 1",
+      "Field"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "golduck",
+    "dex": "055",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/55.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "water"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Water 1",
+      "Field"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "mankey",
+    "dex": "056",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/56.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "fighting"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Field"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "primeape",
+    "dex": "057",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/57.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "fighting"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Field"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "growlithe",
+    "dex": "058",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "fire"
+        }
+      }
+    ],
+    "exp_group": "Slow",
+    "egg_groups": [
+      "Field"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "arcanine",
+    "dex": "059",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "fire"
+        }
+      }
+    ],
+    "exp_group": "Slow",
+    "egg_groups": [
+      "Field"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "poliwag",
+    "dex": "060",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "water"
+        }
+      }
+    ],
+    "exp_group": "Medium Slow",
+    "egg_groups": [
+      "Water 1"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "poliwhirl",
+    "dex": "061",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/61.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "water"
+        }
+      }
+    ],
+    "exp_group": "Medium Slow",
+    "egg_groups": [
+      "Water 1"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "poliwrath",
+    "dex": "062",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/62.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "fighting"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "water"
+        }
+      }
+    ],
+    "exp_group": "Medium Slow",
+    "egg_groups": [
+      "Water 1"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "abra",
+    "dex": "063",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/63.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "psychic"
+        }
+      }
+    ],
+    "exp_group": "Medium Slow",
+    "egg_groups": [
+      "Human-Like"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "kadabra",
+    "dex": "064",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/64.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "psychic"
+        }
+      }
+    ],
+    "exp_group": "Medium Slow",
+    "egg_groups": [
+      "Human-Like"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "alakazam",
+    "dex": "065",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/65.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "psychic"
+        }
+      }
+    ],
+    "exp_group": "Medium Slow",
+    "egg_groups": [
+      "Human-Like"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "machop",
+    "dex": "066",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/66.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "fighting"
+        }
+      }
+    ],
+    "exp_group": "Medium Slow",
+    "egg_groups": [
+      "Human-Like"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "machoke",
+    "dex": "067",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/67.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "fighting"
+        }
+      }
+    ],
+    "exp_group": "Medium Slow",
+    "egg_groups": [
+      "Human-Like"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "machamp",
+    "dex": "068",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/68.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "fighting"
+        }
+      }
+    ],
+    "exp_group": "Medium Slow",
+    "egg_groups": [
+      "Human-Like"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "bellsprout",
+    "dex": "069",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/69.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "poison"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "grass"
+        }
+      }
+    ],
+    "exp_group": "Medium Slow",
+    "egg_groups": [
+      "Grass"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "weepinbell",
+    "dex": "070",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/70.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "poison"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "grass"
+        }
+      }
+    ],
+    "exp_group": "Medium Slow",
+    "egg_groups": [
+      "Grass"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "victreebel",
+    "dex": "071",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/71.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "poison"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "grass"
+        }
+      }
+    ],
+    "exp_group": "Medium Slow",
+    "egg_groups": [
+      "Grass"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "tentacool",
+    "dex": "072",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/72.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "poison"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "water"
+        }
+      }
+    ],
+    "exp_group": "Slow",
+    "egg_groups": [
+      "Water 3"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "tentacruel",
+    "dex": "073",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/73.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "poison"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "water"
+        }
+      }
+    ],
+    "exp_group": "Slow",
+    "egg_groups": [
+      "Water 3"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "geodude",
+    "dex": "074",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/74.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "ground"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "rock"
+        }
+      }
+    ],
+    "exp_group": "Medium Slow",
+    "egg_groups": [
+      "Mineral"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "graveler",
+    "dex": "075",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/75.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "ground"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "rock"
+        }
+      }
+    ],
+    "exp_group": "Medium Slow",
+    "egg_groups": [
+      "Mineral"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "golem",
+    "dex": "076",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/76.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "ground"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "rock"
+        }
+      }
+    ],
+    "exp_group": "Medium Slow",
+    "egg_groups": [
+      "Mineral"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "ponyta",
+    "dex": "077",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/77.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "fire"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Field"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "rapidash",
+    "dex": "078",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/78.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "fire"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Field"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "slowpoke",
+    "dex": "079",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "psychic"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "water"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Monster",
+      "Water 1"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "slowbro",
+    "dex": "080",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/80.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "psychic"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "water"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Monster",
+      "Water 1"
+    ],
+    "egg_steps": 3840
+  },
+  {
+    "name": "magnemite",
+    "dex": "081",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/81.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "steel"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "electric"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Mineral"
+    ],
+    "egg_steps": 3840
+  },
+  {
+    "name": "magneton",
+    "dex": "082",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/82.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "steel"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "electric"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Mineral"
+    ],
+    "egg_steps": 3840
+  },
+  {
+    "name": "farfetchd",
+    "dex": "083",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/83.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "flying"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "normal"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Flying",
+      "Field"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "doduo",
+    "dex": "084",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/84.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "flying"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "normal"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Flying"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "dodrio",
+    "dex": "085",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/85.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "flying"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "normal"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Flying"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "seel",
+    "dex": "086",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/86.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "water"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Water 1",
+      "Field"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "dewgong",
+    "dex": "087",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "ice"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "water"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Water 1",
+      "Field"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "grimer",
+    "dex": "088",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/88.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "poison"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Amorphous"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "muk",
+    "dex": "089",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/89.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "poison"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Amorphous"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "shellder",
+    "dex": "090",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/90.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "water"
+        }
+      }
+    ],
+    "exp_group": "Slow",
+    "egg_groups": [
+      "Water 3"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "cloyster",
+    "dex": "091",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "ice"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "water"
+        }
+      }
+    ],
+    "exp_group": "Slow",
+    "egg_groups": [
+      "Water 3"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "gastly",
+    "dex": "092",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/92.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "poison"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "ghost"
+        }
+      }
+    ],
+    "exp_group": "Medium Slow",
+    "egg_groups": [
+      "Amorphous"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "haunter",
+    "dex": "093",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "poison"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "ghost"
+        }
+      }
+    ],
+    "exp_group": "Medium Slow",
+    "egg_groups": [
+      "Amorphous"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "gengar",
+    "dex": "094",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "poison"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "ghost"
+        }
+      }
+    ],
+    "exp_group": "Medium Slow",
+    "egg_groups": [
+      "Amorphous"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "onix",
+    "dex": "095",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/95.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "ground"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "rock"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Mineral"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "drowzee",
+    "dex": "096",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/96.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "psychic"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Human-Like"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "hypno",
+    "dex": "097",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/97.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "psychic"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Human-Like"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "krabby",
+    "dex": "098",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/98.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "water"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Water 3"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "kingler",
+    "dex": "099",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/99.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "water"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Water 3"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "voltorb",
+    "dex": "100",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/100.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "electric"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Mineral"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "electrode",
+    "dex": "101",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/101.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "electric"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Mineral"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "exeggcute",
+    "dex": "102",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/102.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "psychic"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "grass"
+        }
+      }
+    ],
+    "exp_group": "Slow",
+    "egg_groups": [
+      "Grass"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "exeggutor",
+    "dex": "103",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/103.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "psychic"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "grass"
+        }
+      }
+    ],
+    "exp_group": "Slow",
+    "egg_groups": [
+      "Grass"
+    ],
+    "egg_steps": 6400
+  },
+  {
+    "name": "cubone",
+    "dex": "104",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/104.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "ground"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Monster"
+    ],
+    "egg_steps": 6400
+  },
+  {
+    "name": "marowak",
+    "dex": "105",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/105.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "ground"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Monster"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "hitmonlee",
+    "dex": "106",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/106.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "fighting"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Human-Like"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "hitmonchan",
+    "dex": "107",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/107.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "fighting"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Human-Like"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "lickitung",
+    "dex": "108",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/108.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "normal"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Monster"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "koffing",
+    "dex": "109",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/109.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "poison"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Amorphous"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "weezing",
+    "dex": "110",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/110.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "poison"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Amorphous"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "rhyhorn",
+    "dex": "111",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/111.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "rock"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "ground"
+        }
+      }
+    ],
+    "exp_group": "Slow",
+    "egg_groups": [
+      "Monster",
+      "Field"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "rhydon",
+    "dex": "112",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/112.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "rock"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "ground"
+        }
+      }
+    ],
+    "exp_group": "Slow",
+    "egg_groups": [
+      "Monster",
+      "Field"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "chansey",
+    "dex": "113",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/113.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "normal"
+        }
+      }
+    ],
+    "exp_group": "Fast",
+    "egg_groups": [
+      "Fairy"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "tangela",
+    "dex": "114",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/114.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "grass"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Grass"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "kangaskhan",
+    "dex": "115",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/115.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "normal"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Monster"
+    ],
+    "egg_steps": 6400
+  },
+  {
+    "name": "horsea",
+    "dex": "116",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/116.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "water"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Water 1",
+      "Dragon"
+    ],
+    "egg_steps": 6400
+  },
+  {
+    "name": "seadra",
+    "dex": "117",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/117.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "water"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Water 1",
+      "Dragon"
+    ],
+    "egg_steps": 6400
+  },
+  {
+    "name": "goldeen",
+    "dex": "118",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/118.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "water"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Water 2"
+    ],
+    "egg_steps": 6400
+  },
+  {
+    "name": "seaking",
+    "dex": "119",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/119.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "water"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Water 2"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "staryu",
+    "dex": "120",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/120.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "water"
+        }
+      }
+    ],
+    "exp_group": "Slow",
+    "egg_groups": [
+      "Water 3"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "starmie",
+    "dex": "121",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/121.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "psychic"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "water"
+        }
+      }
+    ],
+    "exp_group": "Slow",
+    "egg_groups": [
+      "Water 3"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "mr-mime",
+    "dex": "122",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/122.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "fairy"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "psychic"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Human-Like"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "scyther",
+    "dex": "123",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/123.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "flying"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "bug"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Bug"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "jynx",
+    "dex": "124",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "psychic"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "ice"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Human-Like"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "electabuzz",
+    "dex": "125",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/125.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "electric"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Human-Like"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "magmar",
+    "dex": "126",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/126.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "fire"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Human-Like"
+    ],
+    "egg_steps": 10240
+  },
+  {
+    "name": "pinsir",
+    "dex": "127",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/127.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "bug"
+        }
+      }
+    ],
+    "exp_group": "Slow",
+    "egg_groups": [
+      "Bug"
+    ],
+    "egg_steps": 10240
+  },
+  {
+    "name": "tauros",
+    "dex": "128",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/128.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "normal"
+        }
+      }
+    ],
+    "exp_group": "Slow",
+    "egg_groups": [
+      "Field"
+    ],
+    "egg_steps": 10240
+  },
+  {
+    "name": "magikarp",
+    "dex": "129",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "water"
+        }
+      }
+    ],
+    "exp_group": "Slow",
+    "egg_groups": [
+      "Water 2",
+      "Dragon"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "gyarados",
+    "dex": "130",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "flying"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "water"
+        }
+      }
+    ],
+    "exp_group": "Slow",
+    "egg_groups": [
+      "Water 2",
+      "Dragon"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "lapras",
+    "dex": "131",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "ice"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "water"
+        }
+      }
+    ],
+    "exp_group": "Slow",
+    "egg_groups": [
+      "Monster",
+      "Water 1"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "ditto",
+    "dex": "132",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "normal"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Ditto"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "eevee",
+    "dex": "133",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "normal"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Field"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "vaporeon",
+    "dex": "134",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/134.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "water"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Field"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "jolteon",
+    "dex": "135",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/135.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "electric"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Field"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "flareon",
+    "dex": "136",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/136.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "fire"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Field"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "porygon",
+    "dex": "137",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/137.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "normal"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Mineral"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "omanyte",
+    "dex": "138",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/138.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "water"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "rock"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Water 1",
+      "Water 3"
+    ],
+    "egg_steps": 5120
+  },
+  {
+    "name": "omastar",
+    "dex": "139",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/139.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "water"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "rock"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Water 1",
+      "Water 3"
+    ],
+    "egg_steps": 6400
+  },
+  {
+    "name": "kabuto",
+    "dex": "140",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/140.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "water"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "rock"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Water 1",
+      "Water 3"
+    ],
+    "egg_steps": 6400
+  },
+  {
+    "name": "kabutops",
+    "dex": "141",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/141.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "water"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "rock"
+        }
+      }
+    ],
+    "exp_group": "Medium Fast",
+    "egg_groups": [
+      "Water 1",
+      "Water 3"
+    ],
+    "egg_steps": 6400
+  },
+  {
+    "name": "aerodactyl",
+    "dex": "142",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/142.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "flying"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "rock"
+        }
+      }
+    ],
+    "exp_group": "Slow",
+    "egg_groups": [
+      "Flying"
+    ],
+    "egg_steps": 6400
+  },
+  {
+    "name": "snorlax",
+    "dex": "143",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/143.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "normal"
+        }
+      }
+    ],
+    "exp_group": "Slow",
+    "egg_groups": [
+      "Monster"
+    ],
+    "egg_steps": 6400
+  },
+  {
+    "name": "articuno",
+    "dex": "144",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "flying"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "ice"
+        }
+      }
+    ],
+    "exp_group": "Slow",
+    "egg_groups": [
+      "Undiscovered"
+    ],
+    "egg_steps": 6400
+  },
+  {
+    "name": "zapdos",
+    "dex": "145",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/145.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "flying"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "electric"
+        }
+      }
+    ],
+    "exp_group": "Slow",
+    "egg_groups": [
+      "Undiscovered"
+    ],
+    "egg_steps": 6400
+  },
+  {
+    "name": "moltres",
+    "dex": "146",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/146.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "flying"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "fire"
+        }
+      }
+    ],
+    "exp_group": "Slow",
+    "egg_groups": [
+      "Undiscovered"
+    ],
+    "egg_steps": 6400
+  },
+  {
+    "name": "dratini",
+    "dex": "147",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/147.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "dragon"
+        }
+      }
+    ],
+    "exp_group": "Slow",
+    "egg_groups": [
+      "Water 1",
+      "Dragon"
+    ],
+    "egg_steps": 6400
+  },
+  {
+    "name": "dragonair",
+    "dex": "148",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/148.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "dragon"
+        }
+      }
+    ],
+    "exp_group": "Slow",
+    "egg_groups": [
+      "Water 1",
+      "Dragon"
+    ],
+    "egg_steps": 6400
+  },
+  {
+    "name": "dragonite",
+    "dex": "149",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png"
+    },
+    "types": [
+      {
+        "slot": 2,
+        "type": {
+          "name": "flying"
+        }
+      },
+      {
+        "slot": 1,
+        "type": {
+          "name": "dragon"
+        }
+      }
+    ],
+    "exp_group": "Slow",
+    "egg_groups": [
+      "Water 1",
+      "Dragon"
+    ],
+    "egg_steps": 6400
+  },
+  {
+    "name": "mewtwo",
+    "dex": "150",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "psychic"
+        }
+      }
+    ],
+    "exp_group": "Slow",
+    "egg_groups": [
+      "Undiscovered"
+    ],
+    "egg_steps": 6400
+  },
+  {
+    "name": "mew",
+    "dex": "151",
+    "sprites": {
+      "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png"
+    },
+    "types": [
+      {
+        "slot": 1,
+        "type": {
+          "name": "psychic"
+        }
+      }
+    ],
+    "exp_group": "Medium Slow",
+    "egg_groups": [
+      "Undiscovered"
+    ],
+    "egg_steps": 6400
+  }
 ]
