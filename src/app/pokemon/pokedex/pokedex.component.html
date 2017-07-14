@@ -1,3 +1,7 @@
-<p>
-  pokedex works!
-</p>
+<p style="text-align:center">Caught: {{trainerCaught.length}}/{{fullList.length}} ({{(trainerCaught.length / fullList.length * 100) | number: '1.0-2'}}%)</p>
+<div class="pc-container">
+  <pokedex-entry *ngFor="let pokemon of fullList"
+                [pokemon]="pokemon"
+                [caught]="isCaught(pokemon)">
+  </pokedex-entry>
+</div>

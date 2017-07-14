@@ -1,0 +1,9 @@
+<div class="pokemon-container">
+  <div class="image-container">
+    <img src="{{caught? pokemon.sprite : pokemon.sprites.front_default}}"
+        alt="{{caught? pokemon.name : '????'}}"
+        title="{{caught? pokemon.name : '????'}}"
+        [ngClass]="{'caught': caught}" >
+  </div>
+  <div>{{caught? pokemon.name : '????'}}</div>
+</div>

@@ -1,40 +1,51 @@
-{
-  "pokemon":[
+[
     {
       "dex": "004",
       "nickname": "",
-      "TrainerID": "",
-      "OwnerID": "",
+      "TrainerID": "VB1atPy8wCSHGH8LHwL62llKNFU2",
+      "OwnerID": "VB1atPy8wCSHGH8LHwL62llKNFU2",
       "exp": 0,
+      "lvl": 1,
+      "egg_group": "Medium Slow",
+      "next_lvl": 9,
       "IVs": [0,0,0,0,0,0],
       "EVs": [0,0,0,0,0,0]
     },
     {
       "dex": "007",
       "nickname": "",
-      "TrainerID": "",
-      "OwnerID": "",
+      "TrainerID": "VB1atPy8wCSHGH8LHwL62llKNFU2",
+      "OwnerID": "VB1atPy8wCSHGH8LHwL62llKNFU2",
       "exp": 0,
+      "lvl": 1,
+      "egg_group": "Medium Slow",
+      "next_lvl": 9,
       "IVs": [0,0,0,0,0,0],
       "EVs": [0,0,0,0,0,0]
     },
     {
       "dex": "025",
       "nickname": "",
-      "TrainerID": "",
-      "OwnerID": "",
+      "TrainerID": "VB1atPy8wCSHGH8LHwL62llKNFU2",
+      "OwnerID": "VB1atPy8wCSHGH8LHwL62llKNFU2",
       "exp": 0,
+      "lvl": 1,
+      "egg_group": "Medium Fast",
+      "next_lvl": 8,
       "IVs": [0,0,0,0,0,0],
       "EVs": [0,0,0,0,0,0]
     },
     {
       "dex": "004",
       "nickname": "",
-      "TrainerID": "",
-      "OwnerID": "",
+      "TrainerID": "VB1atPy8wCSHGH8LHwL62llKNFU2",
+      "OwnerID": "VB1atPy8wCSHGH8LHwL62llKNFU2",
       "exp": -100,
+      "lvl": 0,
+      "egg_group": "Medium Slow",
+      "next_lvl": 9,
       "IVs": [0,0,0,0,0,0],
       "EVs": [0,0,0,0,0,0]
     }
   ]
-}
+

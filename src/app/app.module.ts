@@ -18,8 +18,10 @@ import { LoginComponent } from './login/login.component';
 import { PokemonItemComponent } from './pokemon/pokemon-center/pokemon-item/pokemon-item.component';
 
 import { PokeAPIService } from './services/poke-api.service';
+import { PokedexService } from './pokemon/pokedex/pokedex.service';
 import { PcDetailComponent } from './pokemon/pokemon-center/pc-detail/pc-detail.component';
 import { TypeComponent } from './pokemon/_components/type/type.component';
+import { PokedexEntryComponent } from './pokemon/pokedex/pokedex-entry/pokedex-entry.component';
 
 export const appRoutes: Routes = [
   {
@@ -70,7 +72,8 @@ export const appRoutes: Routes = [
     LoginComponent,
     PokemonItemComponent,
     PcDetailComponent,
-    TypeComponent
+    TypeComponent,
+    PokedexEntryComponent
   ],
   imports: [
     BrowserModule,
@@ -83,7 +86,8 @@ export const appRoutes: Routes = [
   ],
   providers: [
     AngularFireDatabase,
-    PokeAPIService
+    PokeAPIService,
+    PokedexService
   ],
   bootstrap: [AppComponent]
 })

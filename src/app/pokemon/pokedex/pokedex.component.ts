@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { LOCAL_DEX, PokedexService } from './pokedex.service';
+
 @Component({
   selector: 'pokedex',
   templateUrl: './pokedex.component.html',
@@ -7,9 +9,42 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PokedexComponent implements OnInit {
 
-  constructor() { }
+  public fullList = [];
+  private trainerID = 'VB1atPy8wCSHGH8LHwL62llKNFU2';
+  public trainerCaught = [];
+
+  constructor(
+    private _pokedexService: PokedexService
+  ) { }
 
   ngOnInit() {
+    this.getFullDex();
+    this.getTrainerDex();
   }
 
+  private getFullDex() {
+    this._pokedexService.getFullList(true)
+                        .subscribe(
+                          data => this.fullList = data,
+                          error => console.log(error),
+                          () => {
+                            console.log(this.fullList);
+                          }
+                        );
+  }
+
+  private getTrainerDex() {
+    this._pokedexService.getTrainerDex(this.trainerID,true)
+                        .subscribe(
+                          data => this.trainerCaught = data,
+                          error => console.log(error),
+                          () => {
+                            console.log(this.trainerCaught);
+                          }
+                        );
+  }
+
+  isCaught(pokemon: any) {
+    return this.trainerCaught.includes(pokemon.dex);
+  }
 }
