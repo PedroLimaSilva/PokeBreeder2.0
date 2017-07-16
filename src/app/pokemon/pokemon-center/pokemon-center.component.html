@@ -5,3 +5,4 @@
   </pokemon-item>
 </div>
 <pc-detail *ngIf="selected" [pokemon]="selected"></pc-detail>
+<div class="overlay dismiss" (click)="selected = null"></div>

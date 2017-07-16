@@ -19,16 +19,18 @@ export class PcDetailComponent implements OnInit, OnChanges {
   ngOnInit() {
     this.expChanged
         .debounceTime(2000) // wait 2000ms after the last event before emitting last event
-        .subscribe(exp => this.saveEXP());
+        .subscribe(pokemon => this.saveEXP(pokemon));
   }
 
   ngOnChanges(changes) {
     console.log(changes);
-    /*
     if (changes['pokemon'] && !changes['pokemon'].firstChange) {
-      //this.getPokemonDetails();
+      this.expChanged.next(changes['pokemon']['previousValue']);
     }
-    */
+  }
+
+  hide(){
+
   }
 
   pokemonString() {
@@ -37,10 +39,15 @@ export class PcDetailComponent implements OnInit, OnChanges {
 
   raisePokemon(){
     this.pokemon.exp += 1;
-    this.expChanged.next();
+    this.expChanged.next(this.pokemon);
   }
-  saveEXP(){
-    this.pc.raisePokemon(this.pokemon)
+  saveEXP(pokemon?: any){
+    let changedPokemon;
+    if(!pokemon)
+      changedPokemon = this.pokemon;
+    else
+      changedPokemon = pokemon;
+    this.pc.raisePokemon(changedPokemon)
            .subscribe(
              data => console.log('saved', data['exp']),
              error => console.log(error)
