@@ -12,13 +12,17 @@ export class PcDetailComponent implements OnInit, OnChanges {
   constructor() { }
 
   ngOnInit() {
-    this.getPokemonDetails();
+    this.getLevel()
   }
+
   ngOnChanges(changes) {
     console.log(changes);
+    /*
     if (changes['pokemon'] && !changes['pokemon'].firstChange) {
-      this.getPokemonDetails();
+      //this.getPokemonDetails();
     }
+    */
+    this.getLevel();
   }
 
   getLevel() {
@@ -29,12 +33,4 @@ export class PcDetailComponent implements OnInit, OnChanges {
     return JSON.stringify(this.pokemon);
   }
 
-  getPokemonDetails() {
-    let cachedDex = JSON.parse(localStorage.getItem('POKEDEX'));
-    let cachedMon = cachedDex[Number(this.pokemon.dex) - 1];
-    if (this.pokemon.exp >= 0) {
-      this.pokemon.name = cachedMon.name;
-      this.pokemon.types = cachedMon.types;
-    }
-  }
 }

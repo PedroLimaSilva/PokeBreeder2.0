@@ -8,17 +8,26 @@
   right: 0;
   background-color: rgba(0,0,0,0.6);
   padding: 0 15px;
+  color: white;
+  -webkit-backdrop-filter: blur(10px);
   h1{
     text-transform: capitalize;
   }
   p{
-    display: flex;
-    justify-content: space-between;
+    word-wrap: break-word;
+    &.subtitle{
+      display: flex;
+      justify-content: space-between;
+    }
   }
   .sprite{
     text-align: center;
     img{
       width: 30%;
     }
+  }
+  .types{
+    display: flex;
+    justify-content: center;
   }
 }

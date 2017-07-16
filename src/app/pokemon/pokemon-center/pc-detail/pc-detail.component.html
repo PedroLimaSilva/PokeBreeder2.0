@@ -1,18 +1,20 @@
 <aside class="detail-container">
-  <h1>{{pokemon.nickname? pokemon.nickname : pokemon.name}}</h1>
-  <p>
-    <span class="lvl">Lvl.{{getLevel()}}</span>
-    <span class="gender">
+  <h1>{{pokemon.exp < 0 ? '????' : pokemon.nickname? pokemon.nickname : pokemon.dex_entry.name ? pokemon.dex_entry.name : '????'}}</h1>
+  <p class="subtitle">
+    <span class="lvl">Lvl.{{pokemon.lvl}}</span>
+    <span class="gender" *ngIf="pokemon.exp >= 0">
       <i *ngIf="pokemon.gender==='male'" class="mdi mdi-gender-male"></i>
       <i *ngIf="pokemon.gender==='female'" class="mdi mdi-gender-female"></i>
     </span>
   </p>
   <div class="sprite">
-    <img src="{{pokemon.sprite}}" alt="">
+    <img src="{{pokemon.sprite}}" alt="{{pokemon.name ? pokemon.name : '????'}}">
   </div>
-  <div class="type" *ngFor="let type of pokemon.types">
-    <type [type]="type.type.name"></type>
-  </div>
+  <section class="types" *ngIf="pokemon.exp >= 0">
+    <div class="type" *ngFor="let type of pokemon.dex_entry.types">
+      <type [type]="type"></type>
+    </div>
+  </section>
   <p>
     {{pokemonString()}}
   </p>

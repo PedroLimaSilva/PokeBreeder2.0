@@ -1,51 +1,47 @@
 [
-    {
-      "dex": "004",
-      "nickname": "",
-      "TrainerID": "VB1atPy8wCSHGH8LHwL62llKNFU2",
-      "OwnerID": "VB1atPy8wCSHGH8LHwL62llKNFU2",
-      "exp": 0,
-      "lvl": 1,
-      "egg_group": "Medium Slow",
-      "next_lvl": 9,
-      "IVs": [0,0,0,0,0,0],
-      "EVs": [0,0,0,0,0,0]
-    },
-    {
-      "dex": "007",
-      "nickname": "",
-      "TrainerID": "VB1atPy8wCSHGH8LHwL62llKNFU2",
-      "OwnerID": "VB1atPy8wCSHGH8LHwL62llKNFU2",
-      "exp": 0,
-      "lvl": 1,
-      "egg_group": "Medium Slow",
-      "next_lvl": 9,
-      "IVs": [0,0,0,0,0,0],
-      "EVs": [0,0,0,0,0,0]
-    },
-    {
-      "dex": "025",
-      "nickname": "",
-      "TrainerID": "VB1atPy8wCSHGH8LHwL62llKNFU2",
-      "OwnerID": "VB1atPy8wCSHGH8LHwL62llKNFU2",
-      "exp": 0,
-      "lvl": 1,
-      "egg_group": "Medium Fast",
-      "next_lvl": 8,
-      "IVs": [0,0,0,0,0,0],
-      "EVs": [0,0,0,0,0,0]
-    },
-    {
-      "dex": "004",
-      "nickname": "",
-      "TrainerID": "VB1atPy8wCSHGH8LHwL62llKNFU2",
-      "OwnerID": "VB1atPy8wCSHGH8LHwL62llKNFU2",
-      "exp": -100,
-      "lvl": 0,
-      "egg_group": "Medium Slow",
-      "next_lvl": 9,
-      "IVs": [0,0,0,0,0,0],
-      "EVs": [0,0,0,0,0,0]
-    }
-  ]
-
+  {
+    "dex": "007",
+    "dex_entry": "596acef4c8c70bea450f0aea",
+    "trainerID": "VB1atPy8wCSHGH8LHwL62llKNFU2",
+    "next_lvl": 9,
+    "lvl": 1,
+    "exp": 0,
+    "nickname": ""
+  },
+  {
+    "dex": "025",
+    "dex_entry": "596acef4c8c70bea450f0afc",
+    "trainerID": "VB1atPy8wCSHGH8LHwL62llKNFU2",
+    "next_lvl": 8,
+    "lvl": 1,
+    "exp": 0,
+    "nickname": ""
+  },
+  {
+    "dex": "004",
+    "dex_entry": "596acef4c8c70bea450f0ae7",
+    "trainerID": "VB1atPy8wCSHGH8LHwL62llKNFU2",
+    "next_lvl": 9,
+    "lvl": 0,
+    "exp": -100,
+    "nickname": ""
+  },
+  {
+    "dex": "004",
+    "dex_entry": "596acef4c8c70bea450f0ae7",
+    "trainerID": "VB1atPy8wCSHGH8LHwL62llKNFU2",
+    "next_lvl": 9,
+    "lvl": 1,
+    "exp": 0,
+    "nickname": ""
+  },
+  {
+    "dex": "001",
+    "dex_entry": "596acef4c8c70bea450f0ae4",
+    "trainerID": "VB1atPy8wCSHGH8LHwL62llKNFU2",
+    "next_lvl": 9,
+    "lvl": 1,
+    "exp": 0,
+    "nickname": ""
+  }
+]

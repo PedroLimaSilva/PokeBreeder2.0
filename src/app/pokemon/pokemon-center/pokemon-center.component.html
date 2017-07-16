@@ -1,5 +1,5 @@
 <div class="pc-container">
-  <pokemon-item *ngFor="let pokemon of pokemon_list | async"
+  <pokemon-item *ngFor="let pokemon of pokemon_list"
                 [pokemon]="pokemon"
                 (click)="selected = pokemon">
   </pokemon-item>

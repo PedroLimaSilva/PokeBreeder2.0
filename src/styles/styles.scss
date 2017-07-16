@@ -10,13 +10,18 @@ html{
 
 body{
   margin-top:50px;
+  /*
   background-image: url("../assets/img/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
-  min-height: 100vh;
+  */
+  background-image: url("../assets/img/pattern.png");
+  background-color: #eee;
+  background-repeat: repeat;
+  color: #555;
 }
 
-*{
+img{
   image-rendering: pixelated;
 }

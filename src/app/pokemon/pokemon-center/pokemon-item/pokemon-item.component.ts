@@ -13,7 +13,6 @@ export class PokemonItemComponent implements OnInit {
 
   ngOnInit() {
     this.pokemon['sprite'] = this.getPokemonSprite(this.pokemon);
-    this.getPokemonName();
   }
 
   getPokemonSprite(pokemon) {

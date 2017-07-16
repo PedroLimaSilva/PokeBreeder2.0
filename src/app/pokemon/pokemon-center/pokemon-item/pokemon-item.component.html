@@ -1,6 +1,9 @@
 <div class="pokemon-container">
   <div class="image-container">
-    <img [src]=pokemon.sprite alt="{{pokemon.name||'????'}}" title="{{pokemon.name||'????'}}" [ngClass]="{'egg':pokemon.exp<0}">
+    <img [src]=pokemon.sprite
+          alt="{{pokemon.exp < 0 ? '????' : pokemon.nickname? pokemon.nickname : pokemon.dex_entry.name ? pokemon.dex_entry.name : '????'}}"
+          title="{{pokemon.exp < 0 ? '????' : pokemon.nickname? pokemon.nickname : pokemon.dex_entry.name ? pokemon.dex_entry.name : '????'}}"
+         [ngClass]="{'egg':pokemon.exp<0}">
   </div>
-  <div>{{pokemon.name || "????"}}</div>
+  <div>{{pokemon.exp < 0 ? '????' : pokemon.nickname? pokemon.nickname : pokemon.dex_entry.name ? pokemon.dex_entry.name : '????'}}</div>
 </div>
