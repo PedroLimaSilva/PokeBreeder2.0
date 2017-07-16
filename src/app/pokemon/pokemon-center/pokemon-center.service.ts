@@ -19,6 +19,12 @@ export class PokemonCenterService {
                     .catch(this.handleError);
   }
 
+  raisePokemon(pokemon:any){
+    return this.http.patch(this.apiUrl+pokemon._id, {exp: pokemon.exp})
+                    .map(this.extractData)
+                    .catch(this.handleError);
+  }
+
   private extractData(res: Response) {
     let body = res.json();
     return body || [ ] ;

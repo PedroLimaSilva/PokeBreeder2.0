@@ -7,7 +7,7 @@
       <i *ngIf="pokemon.gender==='female'" class="mdi mdi-gender-female"></i>
     </span>
   </p>
-  <div class="sprite">
+  <div class="sprite" (click)="raisePokemon()">
     <img src="{{pokemon.sprite}}" alt="{{pokemon.name ? pokemon.name : '????'}}">
   </div>
   <section class="types" *ngIf="pokemon.exp >= 0">
