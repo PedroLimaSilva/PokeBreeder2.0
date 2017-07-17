@@ -1,7 +1,5 @@
 .detail-container{
   width: 330px;
-  display: flex;
-  flex-direction: column;
   position: fixed;
   top: 50px;
   bottom: 0;
@@ -11,15 +9,32 @@
   color: white;
   -webkit-backdrop-filter: blur(10px);
   z-index: 1000;
+  overflow-y: auto;
+  overflow-x: hidden;
   h1{
     text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    >span{
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: baseline;
+    }
+  }
+  .subtitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .types{
+    display: flex;
+    >*{
+      margin-left: 5px;
+    }
   }
   p{
     word-wrap: break-word;
-    &.subtitle{
-      display: flex;
-      justify-content: space-between;
-    }
   }
   .sprite{
     text-align: center;
@@ -27,8 +42,7 @@
       width: 30%;
     }
   }
-  .types{
-    display: flex;
-    justify-content: center;
+  .gender{
+    font-size: .7em;
   }
 }

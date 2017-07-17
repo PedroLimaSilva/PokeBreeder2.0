@@ -28,6 +28,7 @@
     "jquery": "^3.2.1",
     "material-design-icons": "^3.0.1",
     "mdi": "^1.9.33",
+    "ngx-bootstrap": "^1.7.1",
     "promise-polyfill": "^6.0.2",
     "rxjs": "^5.1.0",
     "zone.js": "^0.8.12"

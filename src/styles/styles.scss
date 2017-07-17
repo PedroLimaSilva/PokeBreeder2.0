@@ -25,3 +25,14 @@ body{
 img{
   image-rendering: pixelated;
 }
+
+.male{
+  color: $color-male;
+}
+.female{
+  color: $color-female;
+}
+
+.clickable{
+  cursor: pointer;
+}

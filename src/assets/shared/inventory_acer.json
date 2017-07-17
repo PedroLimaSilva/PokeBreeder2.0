@@ -1,0 +1,47 @@
+[
+  {
+    "dex": "007",
+    "dex_entry": "596c963e229c1e3cdc06e59a",
+    "trainerID": "VB1atPy8wCSHGH8LHwL62llKNFU2",
+    "next_lvl": 9,
+    "lvl": 1,
+    "exp": 0,
+    "nickname": ""
+  },
+  {
+    "dex": "025",
+    "dex_entry": "596c963e229c1e3cdc06e5ac",
+    "trainerID": "VB1atPy8wCSHGH8LHwL62llKNFU2",
+    "next_lvl": 8,
+    "lvl": 1,
+    "exp": 0,
+    "nickname": ""
+  },
+  {
+    "dex": "004",
+    "dex_entry": "596c963e229c1e3cdc06e597",
+    "trainerID": "VB1atPy8wCSHGH8LHwL62llKNFU2",
+    "next_lvl": 9,
+    "lvl": 0,
+    "exp": -100,
+    "nickname": ""
+  },
+  {
+    "dex": "004",
+    "dex_entry": "596c963e229c1e3cdc06e597",
+    "trainerID": "VB1atPy8wCSHGH8LHwL62llKNFU2",
+    "next_lvl": 9,
+    "lvl": 1,
+    "exp": 0,
+    "nickname": ""
+  },
+  {
+    "dex": "001",
+    "dex_entry": "596c963e229c1e3cdc06e594",
+    "trainerID": "VB1atPy8wCSHGH8LHwL62llKNFU2",
+    "next_lvl": 9,
+    "lvl": 1,
+    "exp": 0,
+    "nickname": ""
+  }
+]

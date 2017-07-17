@@ -1,19 +1,41 @@
 <aside class="detail-container">
-  <h1>{{pokemon.exp < 0 ? '????' : pokemon.nickname? pokemon.nickname : pokemon.dex_entry.name ? pokemon.dex_entry.name : '????'}}</h1>
-  <p class="subtitle">
-    <span class="lvl">Lvl.{{pokemon.lvl}}</span>
-    <span class="gender" *ngIf="pokemon.exp >= 0">
-      <i *ngIf="pokemon.gender==='male'" class="mdi mdi-gender-male"></i>
-      <i *ngIf="pokemon.gender==='female'" class="mdi mdi-gender-female"></i>
+  <h1>
+    <div class="btn-group" dropdown>
+      <i dropdownToggle class="mdi mdi-dots-vertical clickable dropdown-toggle"></i>
+      <ul *dropdownMenu class="dropdown-menu" role="menu">
+        <li role="menuitem"><a class="dropdown-item">Change Name</a></li>
+        <li role="menuitem" class="disabled"><a class="dropdown-item">Send on Adventure</a></li>
+        <li role="menuitem" class="disabled"><a class="dropdown-item">Battle</a></li>
+        <li role="menuitem" class="disabled"><a class="dropdown-item">Give Egg</a></li>
+        <li role="menuitem" class="disabled"><a class="dropdown-item">Breed</a></li>
+      </ul>
+    </div>
+    <span>
+      {{pokemon.exp < 0 ? '????' : pokemon.nickname? pokemon.nickname : pokemon.dex_entry.name ? pokemon.dex_entry.name : '????'}}
+      <span class="gender" *ngIf="pokemon.exp >= 0">
+        <i *ngIf="pokemon.gender==='male'" class="mdi mdi-gender-male male"></i>
+        <i *ngIf="pokemon.gender==='female'" class="mdi mdi-gender-female female"></i>
+      </span>
     </span>
-  </p>
-  <div class="sprite" (click)="raisePokemon()">
+    <i class="mdi mdi-close clickable" (click)="hide()"></i>
+  </h1>
+  <section class="subtitle">
+    <span class="lvl">Lvl.{{pokemon.lvl}}</span>
+    <section class="types" *ngIf="pokemon.exp >= 0">
+      <type *ngFor="let type of pokemon.dex_entry.types" [type]="type"></type>
+    </section>
+  </section>
+  <div class="sprite clickable" (click)="raisePokemon()">
     <img src="{{pokemon.sprite}}" alt="{{pokemon.name ? pokemon.name : '????'}}">
   </div>
-  <section class="types" *ngIf="pokemon.exp >= 0">
-    <div class="type" *ngFor="let type of pokemon.dex_entry.types">
-      <type [type]="type"></type>
-    </div>
+  <section>
+    <p class="text-center" style="margin-bottom: 0;">{{pokemon.next_lvl}}</p>
+    <p class="text-center">EXP to next level</p>
+  </section>
+  <section>
+    <p>Total EXP: {{pokemon.exp}}</p>
+    <p>Original Trainer: {{pokemon.trainerID}}</p>
+    <p>Found on: {{pokemon.created_date | date:'dd/MM/yyyy'}}</p>
   </section>
   <p>
     {{pokemonString()}}

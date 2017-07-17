@@ -1,0 +1,14 @@
+.navbar-toggle{
+  position: relative;
+  background: none;
+  border: 0;
+  &:hover, &:focus{
+    background: none !important;
+  }
+  i{
+    font-size: 2em;
+    position: absolute;
+    right: 0;
+    top: -.16em;
+  }
+}

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, OnChanges } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit, OnChanges } from '@angular/core';
 import { PokemonCenterService } from '../pokemon-center.service';
 
 import { Subject } from 'rxjs/Subject';
@@ -12,6 +12,7 @@ import 'rxjs/add/operator/debounceTime';
 export class PcDetailComponent implements OnInit, OnChanges {
 
   @Input() pokemon;
+  @Output() onHide = new EventEmitter();
   expChanged: Subject<any> = new Subject<any>();
 
   constructor( private pc: PokemonCenterService ) { }
@@ -29,8 +30,8 @@ export class PcDetailComponent implements OnInit, OnChanges {
     }
   }
 
-  hide(){
-
+  hide() {
+    this.onHide.emit();
   }
 
   pokemonString() {
