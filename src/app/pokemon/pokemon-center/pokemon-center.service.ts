@@ -4,23 +4,30 @@ import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/map';
 
-const POKE_REST_URL = 'http://localhost:3000/pokemon/';
+const POKE_REST_URL = 'http://localhost:3000/';
 
 @Injectable()
 export class PokemonCenterService {
 
-  private apiUrl = POKE_REST_URL;
+  private pokemonUrl = POKE_REST_URL + 'pokemon/';
+  private lvlInfoUrl = POKE_REST_URL + 'level/';
 
   constructor(private http: Http) { }
 
-  getPokemon(){
-    return this.http.get(this.apiUrl)
+  getPokemon() {
+    return this.http.get(this.pokemonUrl)
                     .map(this.extractData)
                     .catch(this.handleError);
   }
 
-  raisePokemon(pokemon:any){
-    return this.http.patch(this.apiUrl+pokemon._id, {exp: pokemon.exp})
+  getLvlInfo(lvl: Number) {
+    return this.http.get(this.lvlInfoUrl + lvl)
+                    .map(this.extractData)
+                    .catch(this.handleError);
+  }
+
+  raisePokemon(pokemon: any) {
+    return this.http.patch(this.pokemonUrl + pokemon._id, {exp: pokemon.exp, next_lvl: pokemon.next_lvl})
                     .map(this.extractData)
                     .catch(this.handleError);
   }

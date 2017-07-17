@@ -9,7 +9,7 @@
             "poison",
             "grass"
         ],
-        "exp_group": "Medium Slow",
+        "exp_group": "medium_slow",
         "egg_groups": [
             "Monster",
             "Grass"
@@ -26,7 +26,7 @@
             "poison",
             "grass"
         ],
-        "exp_group": "Medium Slow",
+        "exp_group": "medium_slow",
         "egg_groups": [
             "Monster",
             "Grass"
@@ -43,7 +43,7 @@
             "poison",
             "grass"
         ],
-        "exp_group": "Medium Slow",
+        "exp_group": "medium_slow",
         "egg_groups": [
             "Monster",
             "Grass"
@@ -59,7 +59,7 @@
         "types": [
             "fire"
         ],
-        "exp_group": "Medium Slow",
+        "exp_group": "medium_slow",
         "egg_groups": [
             "Monster",
             "Dragon"
@@ -75,7 +75,7 @@
         "types": [
             "fire"
         ],
-        "exp_group": "Medium Slow",
+        "exp_group": "medium_slow",
         "egg_groups": [
             "Monster",
             "Dragon"
@@ -92,7 +92,7 @@
             "flying",
             "fire"
         ],
-        "exp_group": "Medium Slow",
+        "exp_group": "medium_slow",
         "egg_groups": [
             "Monster",
             "Dragon"
@@ -108,7 +108,7 @@
         "types": [
             "water"
         ],
-        "exp_group": "Medium Slow",
+        "exp_group": "medium_slow",
         "egg_groups": [
             "Monster",
             "Water 1"
@@ -124,7 +124,7 @@
         "types": [
             "water"
         ],
-        "exp_group": "Medium Slow",
+        "exp_group": "medium_slow",
         "egg_groups": [
             "Monster",
             "Water 1"
@@ -140,7 +140,7 @@
         "types": [
             "water"
         ],
-        "exp_group": "Medium Slow",
+        "exp_group": "medium_slow",
         "egg_groups": [
             "Monster",
             "Water 1"
@@ -156,7 +156,7 @@
         "types": [
             "bug"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Bug"
         ],
@@ -171,7 +171,7 @@
         "types": [
             "bug"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Bug"
         ],
@@ -187,7 +187,7 @@
             "flying",
             "bug"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Bug"
         ],
@@ -203,7 +203,7 @@
             "poison",
             "bug"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Bug"
         ],
@@ -219,7 +219,7 @@
             "poison",
             "bug"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Bug"
         ],
@@ -235,7 +235,7 @@
             "poison",
             "bug"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Bug"
         ],
@@ -251,7 +251,7 @@
             "flying",
             "normal"
         ],
-        "exp_group": "Medium Slow",
+        "exp_group": "medium_slow",
         "egg_groups": [
             "Flying"
         ],
@@ -267,7 +267,7 @@
             "flying",
             "normal"
         ],
-        "exp_group": "Medium Slow",
+        "exp_group": "medium_slow",
         "egg_groups": [
             "Flying"
         ],
@@ -283,7 +283,7 @@
             "flying",
             "normal"
         ],
-        "exp_group": "Medium Slow",
+        "exp_group": "medium_slow",
         "egg_groups": [
             "Flying"
         ],
@@ -298,7 +298,7 @@
         "types": [
             "normal"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Field"
         ],
@@ -313,7 +313,7 @@
         "types": [
             "normal"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Field"
         ],
@@ -329,7 +329,7 @@
             "flying",
             "normal"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Flying"
         ],
@@ -345,7 +345,7 @@
             "flying",
             "normal"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Flying"
         ],
@@ -360,7 +360,7 @@
         "types": [
             "poison"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Field",
             "Dragon"
@@ -376,7 +376,7 @@
         "types": [
             "poison"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Field",
             "Dragon"
@@ -392,7 +392,7 @@
         "types": [
             "electric"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Field",
             "Fairy"
@@ -408,7 +408,7 @@
         "types": [
             "electric"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Field",
             "Fairy"
@@ -424,7 +424,7 @@
         "types": [
             "ground"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Field"
         ],
@@ -439,7 +439,7 @@
         "types": [
             "ground"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Field"
         ],
@@ -454,7 +454,7 @@
         "types": [
             "poison"
         ],
-        "exp_group": "Medium Slow",
+        "exp_group": "medium_slow",
         "egg_groups": [
             "Monster",
             "Field"
@@ -470,7 +470,7 @@
         "types": [
             "poison"
         ],
-        "exp_group": "Medium Slow",
+        "exp_group": "medium_slow",
         "egg_groups": [
             "Undiscovered"
         ],
@@ -486,7 +486,7 @@
             "ground",
             "poison"
         ],
-        "exp_group": "Medium Slow",
+        "exp_group": "medium_slow",
         "egg_groups": [
             "Undiscovered"
         ],
@@ -501,7 +501,7 @@
         "types": [
             "poison"
         ],
-        "exp_group": "Medium Slow",
+        "exp_group": "medium_slow",
         "egg_groups": [
             "Monster",
             "Field"
@@ -517,7 +517,7 @@
         "types": [
             "poison"
         ],
-        "exp_group": "Medium Slow",
+        "exp_group": "medium_slow",
         "egg_groups": [
             "Monster",
             "Field"
@@ -534,7 +534,7 @@
             "ground",
             "poison"
         ],
-        "exp_group": "Medium Slow",
+        "exp_group": "medium_slow",
         "egg_groups": [
             "Monster",
             "Field"
@@ -550,7 +550,7 @@
         "types": [
             "fairy"
         ],
-        "exp_group": "Fast",
+        "exp_group": "fast",
         "egg_groups": [
             "Fairy"
         ],
@@ -565,7 +565,7 @@
         "types": [
             "fairy"
         ],
-        "exp_group": "Fast",
+        "exp_group": "fast",
         "egg_groups": [
             "Fairy"
         ],
@@ -580,7 +580,7 @@
         "types": [
             "fire"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Field"
         ],
@@ -595,7 +595,7 @@
         "types": [
             "fire"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Field"
         ],
@@ -611,7 +611,7 @@
             "fairy",
             "normal"
         ],
-        "exp_group": "Fast",
+        "exp_group": "fast",
         "egg_groups": [
             "Fairy"
         ],
@@ -627,7 +627,7 @@
             "fairy",
             "normal"
         ],
-        "exp_group": "Fast",
+        "exp_group": "fast",
         "egg_groups": [
             "Fairy"
         ],
@@ -643,7 +643,7 @@
             "flying",
             "poison"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Flying"
         ],
@@ -659,7 +659,7 @@
             "flying",
             "poison"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Flying"
         ],
@@ -675,7 +675,7 @@
             "poison",
             "grass"
         ],
-        "exp_group": "Medium Slow",
+        "exp_group": "medium_slow",
         "egg_groups": [
             "Grass"
         ],
@@ -691,7 +691,7 @@
             "poison",
             "grass"
         ],
-        "exp_group": "Medium Slow",
+        "exp_group": "medium_slow",
         "egg_groups": [
             "Grass"
         ],
@@ -707,7 +707,7 @@
             "poison",
             "grass"
         ],
-        "exp_group": "Medium Slow",
+        "exp_group": "medium_slow",
         "egg_groups": [
             "Grass"
         ],
@@ -723,7 +723,7 @@
             "grass",
             "bug"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Bug",
             "Grass"
@@ -740,7 +740,7 @@
             "grass",
             "bug"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Bug",
             "Grass"
@@ -757,7 +757,7 @@
             "poison",
             "bug"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Bug"
         ],
@@ -773,7 +773,7 @@
             "poison",
             "bug"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Bug"
         ],
@@ -788,7 +788,7 @@
         "types": [
             "ground"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Field"
         ],
@@ -803,7 +803,7 @@
         "types": [
             "ground"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Field"
         ],
@@ -818,7 +818,7 @@
         "types": [
             "normal"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Field"
         ],
@@ -833,7 +833,7 @@
         "types": [
             "normal"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Field"
         ],
@@ -848,7 +848,7 @@
         "types": [
             "water"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Water 1",
             "Field"
@@ -864,7 +864,7 @@
         "types": [
             "water"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Water 1",
             "Field"
@@ -880,7 +880,7 @@
         "types": [
             "fighting"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Field"
         ],
@@ -895,7 +895,7 @@
         "types": [
             "fighting"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Field"
         ],
@@ -910,7 +910,7 @@
         "types": [
             "fire"
         ],
-        "exp_group": "Slow",
+        "exp_group": "slow",
         "egg_groups": [
             "Field"
         ],
@@ -925,7 +925,7 @@
         "types": [
             "fire"
         ],
-        "exp_group": "Slow",
+        "exp_group": "slow",
         "egg_groups": [
             "Field"
         ],
@@ -940,7 +940,7 @@
         "types": [
             "water"
         ],
-        "exp_group": "Medium Slow",
+        "exp_group": "medium_slow",
         "egg_groups": [
             "Water 1"
         ],
@@ -955,7 +955,7 @@
         "types": [
             "water"
         ],
-        "exp_group": "Medium Slow",
+        "exp_group": "medium_slow",
         "egg_groups": [
             "Water 1"
         ],
@@ -971,7 +971,7 @@
             "fighting",
             "water"
         ],
-        "exp_group": "Medium Slow",
+        "exp_group": "medium_slow",
         "egg_groups": [
             "Water 1"
         ],
@@ -986,7 +986,7 @@
         "types": [
             "psychic"
         ],
-        "exp_group": "Medium Slow",
+        "exp_group": "medium_slow",
         "egg_groups": [
             "Human-Like"
         ],
@@ -1001,7 +1001,7 @@
         "types": [
             "psychic"
         ],
-        "exp_group": "Medium Slow",
+        "exp_group": "medium_slow",
         "egg_groups": [
             "Human-Like"
         ],
@@ -1016,7 +1016,7 @@
         "types": [
             "psychic"
         ],
-        "exp_group": "Medium Slow",
+        "exp_group": "medium_slow",
         "egg_groups": [
             "Human-Like"
         ],
@@ -1031,7 +1031,7 @@
         "types": [
             "fighting"
         ],
-        "exp_group": "Medium Slow",
+        "exp_group": "medium_slow",
         "egg_groups": [
             "Human-Like"
         ],
@@ -1046,7 +1046,7 @@
         "types": [
             "fighting"
         ],
-        "exp_group": "Medium Slow",
+        "exp_group": "medium_slow",
         "egg_groups": [
             "Human-Like"
         ],
@@ -1061,7 +1061,7 @@
         "types": [
             "fighting"
         ],
-        "exp_group": "Medium Slow",
+        "exp_group": "medium_slow",
         "egg_groups": [
             "Human-Like"
         ],
@@ -1077,7 +1077,7 @@
             "poison",
             "grass"
         ],
-        "exp_group": "Medium Slow",
+        "exp_group": "medium_slow",
         "egg_groups": [
             "Grass"
         ],
@@ -1093,7 +1093,7 @@
             "poison",
             "grass"
         ],
-        "exp_group": "Medium Slow",
+        "exp_group": "medium_slow",
         "egg_groups": [
             "Grass"
         ],
@@ -1109,7 +1109,7 @@
             "poison",
             "grass"
         ],
-        "exp_group": "Medium Slow",
+        "exp_group": "medium_slow",
         "egg_groups": [
             "Grass"
         ],
@@ -1125,7 +1125,7 @@
             "poison",
             "water"
         ],
-        "exp_group": "Slow",
+        "exp_group": "slow",
         "egg_groups": [
             "Water 3"
         ],
@@ -1141,7 +1141,7 @@
             "poison",
             "water"
         ],
-        "exp_group": "Slow",
+        "exp_group": "slow",
         "egg_groups": [
             "Water 3"
         ],
@@ -1157,7 +1157,7 @@
             "ground",
             "rock"
         ],
-        "exp_group": "Medium Slow",
+        "exp_group": "medium_slow",
         "egg_groups": [
             "Mineral"
         ],
@@ -1173,7 +1173,7 @@
             "ground",
             "rock"
         ],
-        "exp_group": "Medium Slow",
+        "exp_group": "medium_slow",
         "egg_groups": [
             "Mineral"
         ],
@@ -1189,7 +1189,7 @@
             "ground",
             "rock"
         ],
-        "exp_group": "Medium Slow",
+        "exp_group": "medium_slow",
         "egg_groups": [
             "Mineral"
         ],
@@ -1204,7 +1204,7 @@
         "types": [
             "fire"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Field"
         ],
@@ -1219,7 +1219,7 @@
         "types": [
             "fire"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Field"
         ],
@@ -1235,7 +1235,7 @@
             "psychic",
             "water"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Monster",
             "Water 1"
@@ -1252,7 +1252,7 @@
             "psychic",
             "water"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Monster",
             "Water 1"
@@ -1269,7 +1269,7 @@
             "steel",
             "electric"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Mineral"
         ],
@@ -1285,7 +1285,7 @@
             "steel",
             "electric"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Mineral"
         ],
@@ -1301,7 +1301,7 @@
             "flying",
             "normal"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Flying",
             "Field"
@@ -1318,7 +1318,7 @@
             "flying",
             "normal"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Flying"
         ],
@@ -1334,7 +1334,7 @@
             "flying",
             "normal"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Flying"
         ],
@@ -1349,7 +1349,7 @@
         "types": [
             "water"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Water 1",
             "Field"
@@ -1366,7 +1366,7 @@
             "ice",
             "water"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Water 1",
             "Field"
@@ -1382,7 +1382,7 @@
         "types": [
             "poison"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Amorphous"
         ],
@@ -1397,7 +1397,7 @@
         "types": [
             "poison"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Amorphous"
         ],
@@ -1412,7 +1412,7 @@
         "types": [
             "water"
         ],
-        "exp_group": "Slow",
+        "exp_group": "slow",
         "egg_groups": [
             "Water 3"
         ],
@@ -1428,7 +1428,7 @@
             "ice",
             "water"
         ],
-        "exp_group": "Slow",
+        "exp_group": "slow",
         "egg_groups": [
             "Water 3"
         ],
@@ -1444,7 +1444,7 @@
             "poison",
             "ghost"
         ],
-        "exp_group": "Medium Slow",
+        "exp_group": "medium_slow",
         "egg_groups": [
             "Amorphous"
         ],
@@ -1460,7 +1460,7 @@
             "poison",
             "ghost"
         ],
-        "exp_group": "Medium Slow",
+        "exp_group": "medium_slow",
         "egg_groups": [
             "Amorphous"
         ],
@@ -1476,7 +1476,7 @@
             "poison",
             "ghost"
         ],
-        "exp_group": "Medium Slow",
+        "exp_group": "medium_slow",
         "egg_groups": [
             "Amorphous"
         ],
@@ -1492,7 +1492,7 @@
             "ground",
             "rock"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Mineral"
         ],
@@ -1507,7 +1507,7 @@
         "types": [
             "psychic"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Human-Like"
         ],
@@ -1522,7 +1522,7 @@
         "types": [
             "psychic"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Human-Like"
         ],
@@ -1537,7 +1537,7 @@
         "types": [
             "water"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Water 3"
         ],
@@ -1552,7 +1552,7 @@
         "types": [
             "water"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Water 3"
         ],
@@ -1567,7 +1567,7 @@
         "types": [
             "electric"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Mineral"
         ],
@@ -1582,7 +1582,7 @@
         "types": [
             "electric"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Mineral"
         ],
@@ -1598,7 +1598,7 @@
             "psychic",
             "grass"
         ],
-        "exp_group": "Slow",
+        "exp_group": "slow",
         "egg_groups": [
             "Grass"
         ],
@@ -1614,7 +1614,7 @@
             "psychic",
             "grass"
         ],
-        "exp_group": "Slow",
+        "exp_group": "slow",
         "egg_groups": [
             "Grass"
         ],
@@ -1629,7 +1629,7 @@
         "types": [
             "ground"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Monster"
         ],
@@ -1644,7 +1644,7 @@
         "types": [
             "ground"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Monster"
         ],
@@ -1659,7 +1659,7 @@
         "types": [
             "fighting"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Human-Like"
         ],
@@ -1674,7 +1674,7 @@
         "types": [
             "fighting"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Human-Like"
         ],
@@ -1689,7 +1689,7 @@
         "types": [
             "normal"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Monster"
         ],
@@ -1704,7 +1704,7 @@
         "types": [
             "poison"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Amorphous"
         ],
@@ -1719,7 +1719,7 @@
         "types": [
             "poison"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Amorphous"
         ],
@@ -1735,7 +1735,7 @@
             "rock",
             "ground"
         ],
-        "exp_group": "Slow",
+        "exp_group": "slow",
         "egg_groups": [
             "Monster",
             "Field"
@@ -1752,7 +1752,7 @@
             "rock",
             "ground"
         ],
-        "exp_group": "Slow",
+        "exp_group": "slow",
         "egg_groups": [
             "Monster",
             "Field"
@@ -1768,7 +1768,7 @@
         "types": [
             "normal"
         ],
-        "exp_group": "Fast",
+        "exp_group": "fast",
         "egg_groups": [
             "Fairy"
         ],
@@ -1783,7 +1783,7 @@
         "types": [
             "grass"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Grass"
         ],
@@ -1798,7 +1798,7 @@
         "types": [
             "normal"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Monster"
         ],
@@ -1813,7 +1813,7 @@
         "types": [
             "water"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Water 1",
             "Dragon"
@@ -1829,7 +1829,7 @@
         "types": [
             "water"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Water 1",
             "Dragon"
@@ -1845,7 +1845,7 @@
         "types": [
             "water"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Water 2"
         ],
@@ -1860,7 +1860,7 @@
         "types": [
             "water"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Water 2"
         ],
@@ -1875,7 +1875,7 @@
         "types": [
             "water"
         ],
-        "exp_group": "Slow",
+        "exp_group": "slow",
         "egg_groups": [
             "Water 3"
         ],
@@ -1891,7 +1891,7 @@
             "psychic",
             "water"
         ],
-        "exp_group": "Slow",
+        "exp_group": "slow",
         "egg_groups": [
             "Water 3"
         ],
@@ -1907,7 +1907,7 @@
             "fairy",
             "psychic"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Human-Like"
         ],
@@ -1923,7 +1923,7 @@
             "flying",
             "bug"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Bug"
         ],
@@ -1939,7 +1939,7 @@
             "psychic",
             "ice"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Human-Like"
         ],
@@ -1954,7 +1954,7 @@
         "types": [
             "electric"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Human-Like"
         ],
@@ -1969,7 +1969,7 @@
         "types": [
             "fire"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Human-Like"
         ],
@@ -1984,7 +1984,7 @@
         "types": [
             "bug"
         ],
-        "exp_group": "Slow",
+        "exp_group": "slow",
         "egg_groups": [
             "Bug"
         ],
@@ -1999,7 +1999,7 @@
         "types": [
             "normal"
         ],
-        "exp_group": "Slow",
+        "exp_group": "slow",
         "egg_groups": [
             "Field"
         ],
@@ -2014,7 +2014,7 @@
         "types": [
             "water"
         ],
-        "exp_group": "Slow",
+        "exp_group": "slow",
         "egg_groups": [
             "Water 2",
             "Dragon"
@@ -2031,7 +2031,7 @@
             "flying",
             "water"
         ],
-        "exp_group": "Slow",
+        "exp_group": "slow",
         "egg_groups": [
             "Water 2",
             "Dragon"
@@ -2048,7 +2048,7 @@
             "ice",
             "water"
         ],
-        "exp_group": "Slow",
+        "exp_group": "slow",
         "egg_groups": [
             "Monster",
             "Water 1"
@@ -2064,7 +2064,7 @@
         "types": [
             "normal"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Ditto"
         ],
@@ -2079,7 +2079,7 @@
         "types": [
             "normal"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Field"
         ],
@@ -2094,7 +2094,7 @@
         "types": [
             "water"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Field"
         ],
@@ -2109,7 +2109,7 @@
         "types": [
             "electric"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Field"
         ],
@@ -2124,7 +2124,7 @@
         "types": [
             "fire"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Field"
         ],
@@ -2139,7 +2139,7 @@
         "types": [
             "normal"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Mineral"
         ],
@@ -2155,7 +2155,7 @@
             "water",
             "rock"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Water 1",
             "Water 3"
@@ -2172,7 +2172,7 @@
             "water",
             "rock"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Water 1",
             "Water 3"
@@ -2189,7 +2189,7 @@
             "water",
             "rock"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Water 1",
             "Water 3"
@@ -2206,7 +2206,7 @@
             "water",
             "rock"
         ],
-        "exp_group": "Medium Fast",
+        "exp_group": "medium_fast",
         "egg_groups": [
             "Water 1",
             "Water 3"
@@ -2223,7 +2223,7 @@
             "flying",
             "rock"
         ],
-        "exp_group": "Slow",
+        "exp_group": "slow",
         "egg_groups": [
             "Flying"
         ],
@@ -2238,7 +2238,7 @@
         "types": [
             "normal"
         ],
-        "exp_group": "Slow",
+        "exp_group": "slow",
         "egg_groups": [
             "Monster"
         ],
@@ -2254,7 +2254,7 @@
             "flying",
             "ice"
         ],
-        "exp_group": "Slow",
+        "exp_group": "slow",
         "egg_groups": [
             "Undiscovered"
         ],
@@ -2270,7 +2270,7 @@
             "flying",
             "electric"
         ],
-        "exp_group": "Slow",
+        "exp_group": "slow",
         "egg_groups": [
             "Undiscovered"
         ],
@@ -2286,7 +2286,7 @@
             "flying",
             "fire"
         ],
-        "exp_group": "Slow",
+        "exp_group": "slow",
         "egg_groups": [
             "Undiscovered"
         ],
@@ -2301,7 +2301,7 @@
         "types": [
             "dragon"
         ],
-        "exp_group": "Slow",
+        "exp_group": "slow",
         "egg_groups": [
             "Water 1",
             "Dragon"
@@ -2317,7 +2317,7 @@
         "types": [
             "dragon"
         ],
-        "exp_group": "Slow",
+        "exp_group": "slow",
         "egg_groups": [
             "Water 1",
             "Dragon"
@@ -2334,7 +2334,7 @@
             "flying",
             "dragon"
         ],
-        "exp_group": "Slow",
+        "exp_group": "slow",
         "egg_groups": [
             "Water 1",
             "Dragon"
@@ -2350,7 +2350,7 @@
         "types": [
             "psychic"
         ],
-        "exp_group": "Slow",
+        "exp_group": "slow",
         "egg_groups": [
             "Undiscovered"
         ],
@@ -2365,7 +2365,7 @@
         "types": [
             "psychic"
         ],
-        "exp_group": "Medium Slow",
+        "exp_group": "medium_slow",
         "egg_groups": [
             "Undiscovered"
         ],
