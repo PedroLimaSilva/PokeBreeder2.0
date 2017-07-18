@@ -9,7 +9,10 @@ import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/dat
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { environment } from '../environments/environment';
 
-import { BsDropdownModule } from 'ngx-bootstrap';
+import {
+  BsDropdownModule,
+  ProgressbarModule
+} from 'ngx-bootstrap';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -26,6 +29,7 @@ import { PokemonCenterService} from './pokemon/pokemon-center/pokemon-center.ser
 import { PcDetailComponent } from './pokemon/pokemon-center/pc-detail/pc-detail.component';
 import { TypeComponent } from './pokemon/_components/type/type.component';
 import { PokedexEntryComponent } from './pokemon/pokedex/pokedex-entry/pokedex-entry.component';
+import { ExpBarComponent } from './pokemon/_components/exp-bar/exp-bar.component';
 
 export const appRoutes: Routes = [
   {
@@ -77,7 +81,8 @@ export const appRoutes: Routes = [
     PokemonItemComponent,
     PcDetailComponent,
     TypeComponent,
-    PokedexEntryComponent
+    PokedexEntryComponent,
+    ExpBarComponent
   ],
   imports: [
     BrowserModule,
@@ -87,7 +92,8 @@ export const appRoutes: Routes = [
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     AngularFireAuthModule,
-    BsDropdownModule.forRoot()
+    BsDropdownModule.forRoot(),
+    ProgressbarModule.forRoot()
   ],
   providers: [
     AngularFireDatabase,

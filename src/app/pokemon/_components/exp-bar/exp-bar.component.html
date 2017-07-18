@@ -1,0 +1,4 @@
+<div class="progress-container">
+  <progressbar *ngIf="pokemon.lvl > 0" [max]="max" [value]="pokemon.exp - initial"></progressbar>
+  <progressbar *ngIf="pokemon.lvl === 0" [max]="max" [value]="max+pokemon.exp"></progressbar>
+</div>

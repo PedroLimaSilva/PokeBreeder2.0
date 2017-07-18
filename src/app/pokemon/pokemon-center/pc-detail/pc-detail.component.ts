@@ -22,6 +22,8 @@ export class PcDetailComponent implements OnInit, OnChanges {
   lvlUp: Subject<any> = new Subject<any>();
 
   leveling_up = false;
+  startExp;
+  requiredExp;
 
   constructor(
     private pc: PokemonCenterService,
@@ -42,6 +44,21 @@ export class PcDetailComponent implements OnInit, OnChanges {
             this.levelUp(pokemon);
           }
         );
+    if (this.pokemon.lvl > 0) {
+      this.pc.getLvlInfo(this.pokemon.lvl)
+              .subscribe(
+                data => {
+                  let lvlInfo = data[0];
+                  this.startExp = lvlInfo.total[this.pokemon.dex_entry.exp_group];
+                  this.requiredExp = lvlInfo.next_lvl[this.pokemon.dex_entry.exp_group];
+                }
+              );
+    }
+    else {
+      this.startExp = 0;
+      this.requiredExp = this.pokemon.dex_entry.egg_steps;
+    }
+
   }
 
   ngOnChanges(changes) {
@@ -92,7 +109,9 @@ export class PcDetailComponent implements OnInit, OnChanges {
                 console.log(lvlInfo.next_lvl);
                 console.log(this.pokemon);
                 this.pokemon.next_lvl = lvlInfo.next_lvl[this.pokemon.dex_entry.exp_group];
-                this.pokemon.exp = lvlInfo.total[this.pokemon.dex_entry.exp_group];
+                this.startExp = lvlInfo.total[this.pokemon.dex_entry.exp_group];
+                this.requiredExp = lvlInfo.next_lvl[this.pokemon.dex_entry.exp_group];
+                this.pokemon.exp = this.startExp;
                 this.saveEXP(pokemon);
                 this.leveling_up = false;
               }
