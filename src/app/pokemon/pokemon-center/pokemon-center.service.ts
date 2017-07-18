@@ -27,7 +27,7 @@ export class PokemonCenterService {
   }
 
   raisePokemon(pokemon: any) {
-    return this.http.patch(this.pokemonUrl + pokemon._id, {exp: pokemon.exp, next_lvl: pokemon.next_lvl})
+    return this.http.patch(this.pokemonUrl + pokemon._id, {lvl: pokemon.lvl, exp: pokemon.exp, next_lvl: pokemon.next_lvl})
                     .map(this.extractData)
                     .catch(this.handleError);
   }

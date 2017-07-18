@@ -1,8 +1,8 @@
 <div class="pokemon-container">
   <div class="image-container">
-    <img [src]=pokemon.sprite
-          alt="{{pokemon.exp < 0 ? '????' : pokemon.nickname? pokemon.nickname : pokemon.dex_entry.name ? pokemon.dex_entry.name : '????'}}"
-          title="{{pokemon.exp < 0 ? '????' : pokemon.nickname? pokemon.nickname : pokemon.dex_entry.name ? pokemon.dex_entry.name : '????'}}"
+    <img src="{{pokemon.exp < 0 ? pokemon.egg_sprite : pokemon.sprite}}"
+         alt="{{pokemon.exp < 0 ? '????' : pokemon.nickname? pokemon.nickname : pokemon.dex_entry.name ? pokemon.dex_entry.name : '????'}}"
+         title="{{pokemon.exp < 0 ? '????' : pokemon.nickname? pokemon.nickname : pokemon.dex_entry.name ? pokemon.dex_entry.name : '????'}}"
          [ngClass]="{'egg':pokemon.exp<0}">
   </div>
   <div>{{pokemon.exp < 0 ? '????' : pokemon.nickname? pokemon.nickname : pokemon.dex_entry.name ? pokemon.dex_entry.name : '????'}}</div>

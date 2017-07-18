@@ -12,20 +12,17 @@ export class PokemonItemComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.pokemon['sprite'] = this.getPokemonSprite(this.pokemon);
+    this.getPokemonSprite(this.pokemon);
   }
 
   getPokemonSprite(pokemon) {
-    if (pokemon.exp >= 0) {
-      return 'assets/img/sprites/pokemon/' + pokemon.dex + '/' + pokemon.dex + '.gif';
-    } else {
-      return 'assets/img/sprites/egg.gif';
-    }
+    this.pokemon['sprite'] = 'assets/img/sprites/pokemon/' + pokemon.dex_entry.dex + '/' + pokemon.dex_entry.dex + '.gif';
+    this.pokemon['egg_sprite'] = 'assets/img/sprites/egg.gif';
   }
 
   getPokemonName() {
     let cachedDex = JSON.parse(localStorage.getItem('POKEDEX'));
-    let cachedMon = cachedDex[Number(this.pokemon.dex) - 1];
+    let cachedMon = cachedDex[Number(this.pokemon.dex_entry.dex) - 1];
     if (this.pokemon.exp >= 0){
       this.pokemon.name = cachedMon.name;
     }
