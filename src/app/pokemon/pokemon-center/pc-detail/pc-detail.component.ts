@@ -25,6 +25,8 @@ export class PcDetailComponent implements OnInit, OnChanges {
   startExp;
   requiredExp;
 
+  evolution;
+
   constructor(
     private pc: PokemonCenterService,
     private _click: ClickService
@@ -53,12 +55,18 @@ export class PcDetailComponent implements OnInit, OnChanges {
                   this.requiredExp = lvlInfo.next_lvl[this.pokemon.dex_entry.exp_group];
                 }
               );
+      this.pc.getEvolution(this.pokemon)
+              .subscribe(
+                data => {
+                  this.evolution = data;
+                  console.log(this.evolution);
+                }
+              );
     }
     else {
       this.startExp = 0;
       this.requiredExp = this.pokemon.dex_entry.egg_steps;
     }
-
   }
 
   ngOnChanges(changes) {
@@ -77,7 +85,7 @@ export class PcDetailComponent implements OnInit, OnChanges {
   }
 
   raisePokemon() {
-    if (!this.leveling_up) {
+    if (!this.leveling_up && this.pokemon.lvl < 100) {
       let exp_gain = this._click.getExpPerClick(this.pokemon);
       this.pokemon.exp += exp_gain;
       this.pokemon.next_lvl -= exp_gain;
@@ -114,9 +122,41 @@ export class PcDetailComponent implements OnInit, OnChanges {
                 this.pokemon.exp = this.startExp;
                 this.saveEXP(pokemon);
                 this.leveling_up = false;
+                this.evolve();
               }
             );
-    ;
+  }
+
+  evolve() {
+    if (this.evolution.length) {
+      let evo = this.evolution[0];
+      console.log(evo);
+      if (this.pokemon.lvl >= evo.lvl && evo.condition === '') {
+        this.pokemon.dex = evo.evolves_to;
+        this.pc.evolvePokemon(this.pokemon)
+                .subscribe(
+                  data => { },
+                  error => console.log(error),
+                  () => {
+                    this.pc.getPokemonById(this.pokemon._id)
+                            .subscribe(
+                              data => {
+                                console.log(data);
+                                this.pokemon = data;
+                                this.pc.getPokemonSprite(this.pokemon);
+                              }
+                            );
+                    this.pc.getEvolution(this.pokemon)
+                            .subscribe(
+                              data => {
+                                this.evolution = data;
+                                console.log(this.evolution);
+                              }
+                            );
+                  }
+                );
+      }
+    }
   }
   saveEXP(pokemon?: any) {
     let changedPokemon;

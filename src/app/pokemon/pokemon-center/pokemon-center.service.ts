@@ -11,11 +11,23 @@ export class PokemonCenterService {
 
   private pokemonUrl = POKE_REST_URL + 'pokemon/';
   private lvlInfoUrl = POKE_REST_URL + 'level/';
+  private evolutionUrl = POKE_REST_URL + 'evolution/';
 
   constructor(private http: Http) { }
 
+  getPokemonSprite(pokemon) {
+    pokemon['sprite'] = 'assets/img/sprites/pokemon/' + pokemon.dex_entry.dex + '/' + pokemon.dex_entry.dex + '.gif';
+    pokemon['egg_sprite'] = 'assets/img/sprites/egg.gif';
+  }
+
   getPokemon() {
     return this.http.get(this.pokemonUrl)
+                    .map(this.extractData)
+                    .catch(this.handleError);
+  }
+
+  getPokemonById(id: string) {
+    return this.http.get(this.pokemonUrl + id)
                     .map(this.extractData)
                     .catch(this.handleError);
   }
@@ -26,8 +38,20 @@ export class PokemonCenterService {
                     .catch(this.handleError);
   }
 
+  getEvolution(pokemon: any) {
+    return this.http.get(this.evolutionUrl + pokemon.dex_entry.dex)
+                    .map(this.extractData)
+                    .catch(this.handleError);
+  }
+
   raisePokemon(pokemon: any) {
     return this.http.patch(this.pokemonUrl + pokemon._id, {lvl: pokemon.lvl, exp: pokemon.exp, next_lvl: pokemon.next_lvl})
+                    .map(this.extractData)
+                    .catch(this.handleError);
+  }
+
+  evolvePokemon(pokemon: any) {
+    return this.http.patch(this.pokemonUrl + pokemon._id, {dex: pokemon.dex})
                     .map(this.extractData)
                     .catch(this.handleError);
   }
