@@ -21,6 +21,7 @@ import { PokemonItemComponent } from './pokemon/pokemon-center/pokemon-item/poke
 
 import { PokeAPIService } from './services/poke-api.service';
 import { PokedexService } from './pokemon/pokedex/pokedex.service';
+import { ClickService } from './services/click.service';
 import { PokemonCenterService} from './pokemon/pokemon-center/pokemon-center.service';
 import { PcDetailComponent } from './pokemon/pokemon-center/pc-detail/pc-detail.component';
 import { TypeComponent } from './pokemon/_components/type/type.component';
@@ -92,7 +93,8 @@ export const appRoutes: Routes = [
     AngularFireDatabase,
     PokeAPIService,
     PokedexService,
-    PokemonCenterService
+    PokemonCenterService,
+    ClickService
   ],
   bootstrap: [AppComponent]
 })

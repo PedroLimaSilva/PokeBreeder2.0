@@ -1,5 +1,6 @@
 import { Component, Input, Output, EventEmitter, OnInit, OnChanges } from '@angular/core';
 import { PokemonCenterService } from '../pokemon-center.service';
+import { ClickService } from '../../../services/click.service';
 
 import { Subject } from 'rxjs/Subject';
 import 'rxjs/add/operator/debounceTime';
@@ -22,7 +23,10 @@ export class PcDetailComponent implements OnInit, OnChanges {
 
   leveling_up = false;
 
-  constructor( private pc: PokemonCenterService ) { }
+  constructor(
+    private pc: PokemonCenterService,
+    private _click: ClickService
+  ) { }
 
   ngOnInit() {
     this.expChanged
@@ -57,7 +61,7 @@ export class PcDetailComponent implements OnInit, OnChanges {
 
   raisePokemon() {
     if (!this.leveling_up) {
-      let exp_gain = 1;
+      let exp_gain = this._click.getExpPerClick(this.pokemon);
       this.pokemon.exp += exp_gain;
       this.pokemon.next_lvl -= exp_gain;
       if (this.pokemon.next_lvl <= 0 && !this.leveling_up) {
@@ -88,6 +92,7 @@ export class PcDetailComponent implements OnInit, OnChanges {
                 console.log(lvlInfo.next_lvl);
                 console.log(this.pokemon);
                 this.pokemon.next_lvl = lvlInfo.next_lvl[this.pokemon.dex_entry.exp_group];
+                this.pokemon.exp = lvlInfo.total[this.pokemon.dex_entry.exp_group];
                 this.saveEXP(pokemon);
                 this.leveling_up = false;
               }
@@ -104,7 +109,7 @@ export class PcDetailComponent implements OnInit, OnChanges {
     }
     this.pc.raisePokemon(changedPokemon)
            .subscribe(
-             data => console.log('saved', data['exp'], data['next_lvl']),
+             data => console.log('saved', data['lvl'], data['exp'], data['next_lvl']),
              error => console.log(error)
            );
   }
