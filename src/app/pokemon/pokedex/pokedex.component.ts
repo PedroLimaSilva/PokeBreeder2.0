@@ -10,7 +10,6 @@ import { LOCAL_DEX, PokedexService } from './pokedex.service';
 export class PokedexComponent implements OnInit {
 
   public fullList = [];
-  private trainerID = 'VB1atPy8wCSHGH8LHwL62llKNFU2';
   public trainerCaught = [];
 
   constructor(
@@ -34,7 +33,7 @@ export class PokedexComponent implements OnInit {
   }
 
   private getTrainerDex() {
-    this._pokedexService.getTrainerDex(this.trainerID,true)
+    this._pokedexService.getTrainerDex()
                         .subscribe(
                           data => this.trainerCaught = data,
                           error => console.log(error),

@@ -1,5 +1,6 @@
 import { Component, Input, Output, EventEmitter, OnInit, OnChanges } from '@angular/core';
 import { PokemonCenterService } from '../pokemon-center.service';
+import { PokedexService } from '../../pokedex/pokedex.service';
 import { ClickService } from '../../../services/click.service';
 
 import { Subject } from 'rxjs/Subject';
@@ -14,6 +15,7 @@ export class PcDetailComponent implements OnInit, OnChanges {
 
   @Input() pokemon;
   @Output() onHide = new EventEmitter();
+  @Output() onEvolution = new EventEmitter();
 
   // this subject waits for the user to stop clicking before emitting
   expChanged: Subject<any> = new Subject<any>();
@@ -29,6 +31,7 @@ export class PcDetailComponent implements OnInit, OnChanges {
 
   constructor(
     private pc: PokemonCenterService,
+    private pokedexService: PokedexService,
     private _click: ClickService
   ) { }
 
@@ -73,6 +76,13 @@ export class PcDetailComponent implements OnInit, OnChanges {
     console.log(changes);
     if (changes['pokemon'] && !changes['pokemon'].firstChange) {
       this.expChanged.next(changes['pokemon']['previousValue']);
+      this.pc.getEvolution(this.pokemon)
+              .subscribe(
+                data => {
+                  this.evolution = data;
+                  console.log(this.evolution);
+                }
+              );
     }
   }
 
@@ -109,6 +119,19 @@ export class PcDetailComponent implements OnInit, OnChanges {
     }
     this.pokemon.lvl++;
     let lvlInfo;
+    if (this.pokemon.lvl === 1) {
+      this.pc.getEvolution(this.pokemon)
+              .subscribe(
+                data => {
+                  this.evolution = data;
+                  console.log(this.evolution);
+                }
+              );
+      this.pokedexService.updateDex(this.pokemon.dex)
+                          .subscribe(
+                            data => console.log('saved dex:', data)
+                          );
+    }
     this.pc.getLvlInfo(this.pokemon.lvl)
             .subscribe(
               data => lvlInfo = data[0],
@@ -128,7 +151,7 @@ export class PcDetailComponent implements OnInit, OnChanges {
   }
 
   evolve() {
-    if (this.evolution.length) {
+    if (this.evolution && this.evolution.length) {
       let evo = this.evolution[0];
       console.log(evo);
       if (this.pokemon.lvl >= evo.lvl && evo.condition === '') {
@@ -138,10 +161,11 @@ export class PcDetailComponent implements OnInit, OnChanges {
                   data => { },
                   error => console.log(error),
                   () => {
+                    console.log('emit on evolution');
+                    this.onEvolution.emit();
                     this.pc.getPokemonById(this.pokemon._id)
                             .subscribe(
                               data => {
-                                console.log(data);
                                 this.pokemon = data;
                                 this.pc.getPokemonSprite(this.pokemon);
                               }
@@ -153,6 +177,10 @@ export class PcDetailComponent implements OnInit, OnChanges {
                                 console.log(this.evolution);
                               }
                             );
+                    this.pokedexService.updateDex(this.pokemon.dex)
+                                        .subscribe(
+                                          data => console.log('saved dex:', data)
+                                        );
                   }
                 );
       }

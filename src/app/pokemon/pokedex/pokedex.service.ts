@@ -4,14 +4,16 @@ import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/map';
 
-const POKE_REST_URL = 'http://localhost:3000/pokedex/';
+const POKE_REST_URL = 'http://localhost:3000/';
 export const LOCAL_DEX = '/assets/shared/pokedex.json';
 export const LOCAL_TRAINER = '/assets/shared/trainer.json';
 
 @Injectable()
 export class PokedexService {
 
-  private apiUrl = POKE_REST_URL;
+  private pokedexUrl = POKE_REST_URL + 'pokedex/';
+  private trainerUrl = POKE_REST_URL + 'trainers/';
+  private trainerID = '596f641959531dc86e4adea8';
 
   constructor(private http: Http) { }
 
@@ -21,29 +23,25 @@ export class PokedexService {
       url = LOCAL_DEX;
     }
     else {
-      url = this.apiUrl;
+      url = this.pokedexUrl;
     }
     return this.http.get(url)
                     .map(this.extractData)
                     .catch(this.handleError);
   }
 
-  getTrainerDex(id: string, local?: boolean) {
-    let url;
-    if (local) {
-      url = LOCAL_TRAINER;
-    }
-    else {
-      url = this.apiUrl + id;
-    }
+  getTrainerDex() {
+    let url = this.trainerUrl + this.trainerID + '/dex';
     return this.http.get(url)
-                    .map(this.extractTrainerDex)
+                    .map(this.extractData)
                     .catch(this.handleError);
   }
 
-  private extractTrainerDex(res: Response) {
-    let body = res.json();
-    return body.caught || [ ] ;
+  updateDex(dex: string) {
+    let url = this.trainerUrl + this.trainerID + '/dex';
+    return this.http.post(url, {dex: dex})
+                    .map(this.extractData)
+                    .catch(this.handleError);
   }
 
   private extractData(res: Response) {

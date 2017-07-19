@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
+import {PokemonCenterService} from '../pokemon-center.service';
+
 @Component({
   selector: 'pokemon-item',
   templateUrl: './pokemon-item.component.html',
@@ -9,15 +11,10 @@ export class PokemonItemComponent implements OnInit {
 
   @Input() pokemon;
 
-  constructor() { }
+  constructor(private pc: PokemonCenterService) { }
 
   ngOnInit() {
-    this.getPokemonSprite(this.pokemon);
-  }
-
-  getPokemonSprite(pokemon) {
-    this.pokemon['sprite'] = 'assets/img/sprites/pokemon/' + pokemon.dex_entry.dex + '/' + pokemon.dex_entry.dex + '.gif';
-    this.pokemon['egg_sprite'] = 'assets/img/sprites/egg.gif';
+    this.pc.getPokemonSprite(this.pokemon);
   }
 
   getPokemonName() {
