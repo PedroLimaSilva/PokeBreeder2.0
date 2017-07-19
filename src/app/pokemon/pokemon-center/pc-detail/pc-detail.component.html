@@ -3,11 +3,12 @@
     <div class="btn-group" dropdown>
       <i dropdownToggle class="mdi mdi-dots-vertical clickable dropdown-toggle"></i>
       <ul *dropdownMenu class="dropdown-menu" role="menu">
-        <li role="menuitem" (click)="editName(true)"><a class="dropdown-item">Change Name</a></li>
-        <li role="menuitem" class="disabled"><a class="dropdown-item">Send on Adventure</a></li>
-        <li role="menuitem" class="disabled"><a class="dropdown-item">Battle</a></li>
-        <li role="menuitem" class="disabled"><a class="dropdown-item">Assign Egg</a></li>
-        <li role="menuitem" class="disabled"><a class="dropdown-item">Breed</a></li>
+        <li role="menuitem" *ngIf="pokemon.lvl > 0" (click)="editName(true)"><a class="dropdown-item">Change Name</a></li>
+        <li role="menuitem" *ngIf="pokemon.lvl > 0" class="disabled"><a class="dropdown-item">Send on Adventure</a></li>
+        <li role="menuitem" *ngIf="pokemon.lvl > 0" class="disabled"><a class="dropdown-item">Battle</a></li>
+        <li role="menuitem" *ngIf="pokemon.lvl > 0" class="disabled"><a class="dropdown-item">Assign Egg</a></li>
+        <li role="menuitem" *ngIf="pokemon.lvl > 0" class="disabled"><a class="dropdown-item">Breed</a></li>
+        <li role="menuitem" *ngIf="pokemon.lvl <= 0"><a class="dropdown-item">Assign Pokemon</a></li>
       </ul>
     </div>
     <span>

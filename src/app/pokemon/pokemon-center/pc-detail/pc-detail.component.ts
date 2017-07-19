@@ -97,15 +97,20 @@ export class PcDetailComponent implements OnInit, OnChanges, OnDestroy {
   }
 
   editName(isEditing: boolean) {
-    this.editing_name = isEditing;
-    if (!isEditing) {
-      this.pc.changeNickname(this.pokemon)
-              .takeWhile(() => this.alive)
-              .subscribe(
-                data => console.log('saved nickname', data.nickname),
-                error => console.log(error),
-                () => {}
-              );
+    if (this.pokemon.lvl > 0) {
+      this.editing_name = isEditing;
+      if (!isEditing) {
+        this.pc.changeNickname(this.pokemon)
+                .takeWhile(() => this.alive)
+                .subscribe(
+                  data => console.log('saved nickname', data.nickname),
+                  error => console.log(error),
+                  () => {}
+                );
+      }
+    }
+    else {
+      this.editing_name = false;
     }
   }
 
