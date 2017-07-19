@@ -56,6 +56,12 @@ export class PokemonCenterService {
                     .catch(this.handleError);
   }
 
+  changeNickname(pokemon: any) {
+    return this.http.patch(this.pokemonUrl + pokemon._id, {nickname: pokemon.nickname})
+                    .map(this.extractData)
+                    .catch(this.handleError);
+  }
+
   private extractData(res: Response) {
     let body = res.json();
     return body || [ ] ;

@@ -1,17 +1,20 @@
-import { Component, Input, Output, EventEmitter, OnInit, OnChanges } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit, OnChanges, OnDestroy } from '@angular/core';
 import { PokemonCenterService } from '../pokemon-center.service';
 import { PokedexService } from '../../pokedex/pokedex.service';
 import { ClickService } from '../../../services/click.service';
 
 import { Subject } from 'rxjs/Subject';
 import 'rxjs/add/operator/debounceTime';
+import 'rxjs/add/operator/takeWhile';
 
 @Component({
   selector: 'pc-detail',
   templateUrl: './pc-detail.component.html',
   styleUrls: ['./pc-detail.component.scss']
 })
-export class PcDetailComponent implements OnInit, OnChanges {
+export class PcDetailComponent implements OnInit, OnChanges, OnDestroy {
+
+  private alive = true;
 
   @Input() pokemon;
   @Output() onHide = new EventEmitter();
@@ -29,6 +32,8 @@ export class PcDetailComponent implements OnInit, OnChanges {
 
   evolution;
 
+  editing_name = false;
+
   constructor(
     private pc: PokemonCenterService,
     private pokedexService: PokedexService,
@@ -38,12 +43,14 @@ export class PcDetailComponent implements OnInit, OnChanges {
   ngOnInit() {
     this.expChanged
         .debounceTime(500) // wait 500ms after the last event before emitting last event
+        .takeWhile(() => this.alive)
         .subscribe(
           pokemon => {
             this.saveEXP(pokemon);
           }
         );
     this.lvlUp
+        .takeWhile(() => this.alive)
         .subscribe(
           pokemon => {
             this.levelUp(pokemon);
@@ -51,6 +58,7 @@ export class PcDetailComponent implements OnInit, OnChanges {
         );
     if (this.pokemon.lvl > 0) {
       this.pc.getLvlInfo(this.pokemon.lvl)
+              .takeWhile(() => this.alive)
               .subscribe(
                 data => {
                   let lvlInfo = data[0];
@@ -59,6 +67,7 @@ export class PcDetailComponent implements OnInit, OnChanges {
                 }
               );
       this.pc.getEvolution(this.pokemon)
+              .takeWhile(() => this.alive)
               .subscribe(
                 data => {
                   this.evolution = data;
@@ -77,11 +86,25 @@ export class PcDetailComponent implements OnInit, OnChanges {
     if (changes['pokemon'] && !changes['pokemon'].firstChange) {
       this.expChanged.next(changes['pokemon']['previousValue']);
       this.pc.getEvolution(this.pokemon)
+              .takeWhile(() => this.alive)
               .subscribe(
                 data => {
                   this.evolution = data;
                   console.log(this.evolution);
                 }
+              );
+    }
+  }
+
+  editName(isEditing: boolean) {
+    this.editing_name = isEditing;
+    if (!isEditing) {
+      this.pc.changeNickname(this.pokemon)
+              .takeWhile(() => this.alive)
+              .subscribe(
+                data => console.log('saved nickname', data.nickname),
+                error => console.log(error),
+                () => {}
               );
     }
   }
@@ -121,6 +144,7 @@ export class PcDetailComponent implements OnInit, OnChanges {
     let lvlInfo;
     if (this.pokemon.lvl === 1) {
       this.pc.getEvolution(this.pokemon)
+              .takeWhile(() => this.alive)
               .subscribe(
                 data => {
                   this.evolution = data;
@@ -128,11 +152,13 @@ export class PcDetailComponent implements OnInit, OnChanges {
                 }
               );
       this.pokedexService.updateDex(this.pokemon.dex)
+                          .takeWhile(() => this.alive)
                           .subscribe(
                             data => console.log('saved dex:', data)
                           );
     }
     this.pc.getLvlInfo(this.pokemon.lvl)
+            .takeWhile(() => this.alive)
             .subscribe(
               data => lvlInfo = data[0],
               error => console.log(error),
@@ -157,6 +183,7 @@ export class PcDetailComponent implements OnInit, OnChanges {
       if (this.pokemon.lvl >= evo.lvl && evo.condition === '') {
         this.pokemon.dex = evo.evolves_to;
         this.pc.evolvePokemon(this.pokemon)
+                .takeWhile(() => this.alive)
                 .subscribe(
                   data => { },
                   error => console.log(error),
@@ -164,6 +191,7 @@ export class PcDetailComponent implements OnInit, OnChanges {
                     console.log('emit on evolution');
                     this.onEvolution.emit();
                     this.pc.getPokemonById(this.pokemon._id)
+                            .takeWhile(() => this.alive)
                             .subscribe(
                               data => {
                                 this.pokemon = data;
@@ -171,6 +199,7 @@ export class PcDetailComponent implements OnInit, OnChanges {
                               }
                             );
                     this.pc.getEvolution(this.pokemon)
+                            .takeWhile(() => this.alive)
                             .subscribe(
                               data => {
                                 this.evolution = data;
@@ -178,6 +207,7 @@ export class PcDetailComponent implements OnInit, OnChanges {
                               }
                             );
                     this.pokedexService.updateDex(this.pokemon.dex)
+                                        .takeWhile(() => this.alive)
                                         .subscribe(
                                           data => console.log('saved dex:', data)
                                         );
@@ -195,10 +225,15 @@ export class PcDetailComponent implements OnInit, OnChanges {
       changedPokemon = pokemon;
     }
     this.pc.raisePokemon(changedPokemon)
-           .subscribe(
-             data => console.log('saved', data['lvl'], data['exp'], data['next_lvl']),
-             error => console.log(error)
-           );
+            .takeWhile(() => this.alive)
+            .subscribe(
+              data => console.log('saved', data['lvl'], data['exp'], data['next_lvl']),
+              error => console.log(error)
+            );
+  }
+
+  ngOnDestroy() {
+    this.alive = false;
   }
 
 }

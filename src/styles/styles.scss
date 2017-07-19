@@ -42,3 +42,10 @@ progressbar{
     border-radius: 3px;
   }
 }
+
+input.invisible-form{
+  background: transparent;
+  text-align: center;
+  font-size: inherit;
+  width: 100%;
+}
