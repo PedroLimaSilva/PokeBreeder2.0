@@ -13,7 +13,7 @@ export class PokedexService {
 
   private pokedexUrl = POKE_REST_URL + 'pokedex/';
   private trainerUrl = POKE_REST_URL + 'trainers/';
-  private trainerID = '596f641959531dc86e4adea8';
+  private trainerID = '596f701e59531dc86e4ae1e2';
 
   constructor(private http: Http) { }
 

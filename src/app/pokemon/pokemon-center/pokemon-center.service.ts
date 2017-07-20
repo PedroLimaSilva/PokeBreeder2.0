@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
+import { Subject } from 'rxjs/Subject';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/map';
 
@@ -12,6 +13,13 @@ export class PokemonCenterService {
   private pokemonUrl = POKE_REST_URL + 'pokemon/';
   private lvlInfoUrl = POKE_REST_URL + 'level/';
   private evolutionUrl = POKE_REST_URL + 'evolution/';
+
+
+  // this subject waits for the user to stop clicking before emitting
+  public expChanged: Subject<any> = new Subject<any>();
+
+  // this subject emits a level up event as soon as the pokemon reaches another level
+  public lvlUp: Subject<any> = new Subject<any>();
 
   constructor(private http: Http) { }
 

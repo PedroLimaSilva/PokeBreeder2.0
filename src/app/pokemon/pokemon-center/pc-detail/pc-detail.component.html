@@ -25,7 +25,7 @@
     <section class="types" *ngIf="pokemon.exp >= 0">
       <type *ngFor="let type of pokemon.dex_entry.types" [type]="type"></type>
     </section>
-    <exp-bar [pokemon]=pokemon [initial]="startExp" [max]="requiredExp"></exp-bar>
+    <exp-bar [pokemon]=pokemon></exp-bar>
     <span class="lvl">Lvl.{{pokemon.lvl}}</span>
   </section>
   <div class="sprite clickable" (click)="raisePokemon()">

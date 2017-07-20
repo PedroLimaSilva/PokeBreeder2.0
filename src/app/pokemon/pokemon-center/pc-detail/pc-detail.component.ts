@@ -3,7 +3,7 @@ import { PokemonCenterService } from '../pokemon-center.service';
 import { PokedexService } from '../../pokedex/pokedex.service';
 import { ClickService } from '../../../services/click.service';
 
-import { Subject } from 'rxjs/Subject';
+
 import 'rxjs/add/operator/debounceTime';
 import 'rxjs/add/operator/takeWhile';
 
@@ -20,15 +20,7 @@ export class PcDetailComponent implements OnInit, OnChanges, OnDestroy {
   @Output() onHide = new EventEmitter();
   @Output() onEvolution = new EventEmitter();
 
-  // this subject waits for the user to stop clicking before emitting
-  expChanged: Subject<any> = new Subject<any>();
-
-  // this subject emits a level up event as soon as the pokemon reaches another level
-  lvlUp: Subject<any> = new Subject<any>();
-
   leveling_up = false;
-  startExp;
-  requiredExp;
 
   evolution;
 
@@ -41,7 +33,7 @@ export class PcDetailComponent implements OnInit, OnChanges, OnDestroy {
   ) { }
 
   ngOnInit() {
-    this.expChanged
+    this.pc.expChanged
         .debounceTime(500) // wait 500ms after the last event before emitting last event
         .takeWhile(() => this.alive)
         .subscribe(
@@ -49,42 +41,27 @@ export class PcDetailComponent implements OnInit, OnChanges, OnDestroy {
             this.saveEXP(pokemon);
           }
         );
-    this.lvlUp
+    this.pc.lvlUp
         .takeWhile(() => this.alive)
         .subscribe(
           pokemon => {
             this.levelUp(pokemon);
           }
         );
-    if (this.pokemon.lvl > 0) {
-      this.pc.getLvlInfo(this.pokemon.lvl)
-              .takeWhile(() => this.alive)
-              .subscribe(
-                data => {
-                  let lvlInfo = data[0];
-                  this.startExp = lvlInfo.total[this.pokemon.dex_entry.exp_group];
-                  this.requiredExp = lvlInfo.next_lvl[this.pokemon.dex_entry.exp_group];
-                }
-              );
-      this.pc.getEvolution(this.pokemon)
-              .takeWhile(() => this.alive)
-              .subscribe(
-                data => {
-                  this.evolution = data;
-                  console.log(this.evolution);
-                }
-              );
-    }
-    else {
-      this.startExp = 0;
-      this.requiredExp = this.pokemon.dex_entry.egg_steps;
-    }
+    this.pc.getEvolution(this.pokemon)
+            .takeWhile(() => this.alive)
+            .subscribe(
+              data => {
+                this.evolution = data;
+                console.log(this.evolution);
+              }
+            );
   }
 
   ngOnChanges(changes) {
     console.log(changes);
     if (changes['pokemon'] && !changes['pokemon'].firstChange) {
-      this.expChanged.next(changes['pokemon']['previousValue']);
+      this.pc.expChanged.next(changes['pokemon']['previousValue']);
       this.pc.getEvolution(this.pokemon)
               .takeWhile(() => this.alive)
               .subscribe(
@@ -129,10 +106,10 @@ export class PcDetailComponent implements OnInit, OnChanges, OnDestroy {
       this.pokemon.next_lvl -= exp_gain;
       if (this.pokemon.next_lvl <= 0 && !this.leveling_up) {
         this.leveling_up = true;
-        this.lvlUp.next();
+        this.pc.lvlUp.next(this.pokemon);
       }
       else {
-        this.expChanged.next(this.pokemon);
+        this.pc.expChanged.next(this.pokemon);
       }
     }
   }
@@ -171,9 +148,7 @@ export class PcDetailComponent implements OnInit, OnChanges, OnDestroy {
                 console.log(lvlInfo.next_lvl);
                 console.log(this.pokemon);
                 this.pokemon.next_lvl = lvlInfo.next_lvl[this.pokemon.dex_entry.exp_group];
-                this.startExp = lvlInfo.total[this.pokemon.dex_entry.exp_group];
-                this.requiredExp = lvlInfo.next_lvl[this.pokemon.dex_entry.exp_group];
-                this.pokemon.exp = this.startExp;
+                this.pokemon.exp = lvlInfo.total[this.pokemon.dex_entry.exp_group];
                 this.saveEXP(pokemon);
                 this.leveling_up = false;
                 this.evolve();
