@@ -1,12 +1,18 @@
 {
   "name": "pokebreeder-socket",
   "version": "1.0.0",
-  "description": "",
+  "description": "Socket io server for Pokebreeder",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "nodemon server.js"
   },
   "author": "Pedro Lima e Silva",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3",
+    "mongoose": "^4.11.3",
+    "nodemon": "^1.11.0",
+    "socket.io": "^2.0.3"
+  }
 }
