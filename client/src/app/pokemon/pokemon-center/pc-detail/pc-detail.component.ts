@@ -155,7 +155,6 @@ export class PcDetailComponent implements OnInit, OnChanges, OnDestroy {
                   data => { },
                   error => console.log(error),
                   () => {
-                    console.log('emit on evolution');
                     this.onEvolution.emit();
                     this.pc.getPokemonById(this.pokemon._id)
                             .takeWhile(() => this.alive)

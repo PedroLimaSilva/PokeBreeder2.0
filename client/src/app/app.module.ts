@@ -30,6 +30,7 @@ import { PcDetailComponent } from './pokemon/pokemon-center/pc-detail/pc-detail.
 import { TypeComponent } from './pokemon/_components/type/type.component';
 import { PokedexEntryComponent } from './pokemon/pokedex/pokedex-entry/pokedex-entry.component';
 import { ExpBarComponent } from './pokemon/_components/exp-bar/exp-bar.component';
+import { SocketPcComponent } from './pokemon/socket-pc/socket-pc.component';
 
 export const appRoutes: Routes = [
   {
@@ -60,6 +61,15 @@ export const appRoutes: Routes = [
     }
   },
   {
+    path: 'socket-pc',
+    pathMatch: 'full',
+    component: SocketPcComponent,
+    data: {
+      title: 'Experimental PC',
+      display: 'left'
+    }
+  },
+  {
     path: 'log-in',
     pathMatch: 'full',
     component: LoginComponent,
@@ -82,7 +92,8 @@ export const appRoutes: Routes = [
     PcDetailComponent,
     TypeComponent,
     PokedexEntryComponent,
-    ExpBarComponent
+    ExpBarComponent,
+    SocketPcComponent
   ],
   imports: [
     BrowserModule,
