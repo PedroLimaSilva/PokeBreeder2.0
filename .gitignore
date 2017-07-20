@@ -1,3 +1,5 @@
 client/ngrok.exe
 client/node_modules/
 server/node_modules/
+client/npm-debug.log
+server/npm-debug.log
