@@ -59,7 +59,6 @@ export class PcDetailComponent implements OnInit, OnChanges, OnDestroy {
   }
 
   ngOnChanges(changes) {
-    console.log(changes);
     if (changes['pokemon'] && !changes['pokemon'].firstChange) {
       this.pc.expChanged.next(changes['pokemon']['previousValue']);
       this.pc.getEvolution(this.pokemon)
@@ -67,7 +66,6 @@ export class PcDetailComponent implements OnInit, OnChanges, OnDestroy {
               .subscribe(
                 data => {
                   this.evolution = data;
-                  console.log(this.evolution);
                 }
               );
     }
@@ -125,18 +123,10 @@ export class PcDetailComponent implements OnInit, OnChanges, OnDestroy {
     this.pokemon.lvl++;
     let lvlInfo;
     if (this.pokemon.lvl === 1) {
-      this.pc.getEvolution(this.pokemon)
-              .takeWhile(() => this.alive)
-              .subscribe(
-                data => {
-                  this.evolution = data;
-                  console.log(this.evolution);
-                }
-              );
       this.pokedexService.updateDex(this.pokemon.dex)
                           .takeWhile(() => this.alive)
                           .subscribe(
-                            data => console.log('saved dex:', data)
+                            data => console.log('saved dex:', this.pokemon.dex)
                           );
     }
     this.pc.getLvlInfo(this.pokemon.lvl)
@@ -145,8 +135,6 @@ export class PcDetailComponent implements OnInit, OnChanges, OnDestroy {
               data => lvlInfo = data[0],
               error => console.log(error),
               () => {
-                console.log(lvlInfo.next_lvl);
-                console.log(this.pokemon);
                 this.pokemon.next_lvl = lvlInfo.next_lvl[this.pokemon.dex_entry.exp_group];
                 this.pokemon.exp = lvlInfo.total[this.pokemon.dex_entry.exp_group];
                 this.saveEXP(pokemon);
@@ -159,7 +147,6 @@ export class PcDetailComponent implements OnInit, OnChanges, OnDestroy {
   evolve() {
     if (this.evolution && this.evolution.length) {
       let evo = this.evolution[0];
-      console.log(evo);
       if (this.pokemon.lvl >= evo.lvl && evo.condition === '') {
         this.pokemon.dex = evo.evolves_to;
         this.pc.evolvePokemon(this.pokemon)
@@ -183,13 +170,12 @@ export class PcDetailComponent implements OnInit, OnChanges, OnDestroy {
                             .subscribe(
                               data => {
                                 this.evolution = data;
-                                console.log(this.evolution);
                               }
                             );
                     this.pokedexService.updateDex(this.pokemon.dex)
                                         .takeWhile(() => this.alive)
                                         .subscribe(
-                                          data => console.log('saved dex:', data)
+                                          data => console.log('saved dex:', this.pokemon.dex)
                                         );
                   }
                 );
