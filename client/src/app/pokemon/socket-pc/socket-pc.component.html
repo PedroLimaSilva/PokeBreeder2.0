@@ -1,3 +1,9 @@
-<p>
-  socket-pc works!
-</p>
+<section class="container">
+  <p *ngFor="let message of messages">
+    {{message.text}}
+  </p>
+  <form>
+    <input class="form-control" autocomplete="off" type="text" name="new_message" [(ngModel)]="message" (keyup.enter)="sendMessage()">
+    <button class="btn btn-primary" type="submit" (click)="sendMessage()"><i class="mdi mdi-send"></i></button>
+  </form>
+</section>
