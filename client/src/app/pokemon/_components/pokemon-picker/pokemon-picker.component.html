@@ -1,0 +1,10 @@
+<section class="picker-container container">
+  <p class="heading">
+    Select a pokemon below:
+    <i class="mdi mdi-close" (click)="dismiss()" ></i>
+  </p>
+  <div class="list-container">
+    <p *ngIf="availablePkmn.length === 0" class="text-muted" style="text-align: center; width:100%;">No Available pokemon</p>
+    <pokemon-item *ngFor="let pokemon of availablePkmn" [pokemon]="pokemon" (click)="selectPokemon(pokemon)"></pokemon-item>
+  </div>
+</section>

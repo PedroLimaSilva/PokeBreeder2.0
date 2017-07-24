@@ -1,5 +1,6 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
@@ -23,6 +24,7 @@ import { LoginComponent } from './login/login.component';
 import { PokemonItemComponent } from './pokemon/pokemon-center/pokemon-item/pokemon-item.component';
 
 import { PokeAPIService } from './services/poke-api.service';
+import { PokemonService } from './pokemon/pokemon.service';
 import { PokedexService } from './pokemon/pokedex/pokedex.service';
 import { ClickService } from './services/click.service';
 import { PokemonCenterService} from './pokemon/pokemon-center/pokemon-center.service';
@@ -33,6 +35,7 @@ import { TypeComponent } from './pokemon/_components/type/type.component';
 import { PokedexEntryComponent } from './pokemon/pokedex/pokedex-entry/pokedex-entry.component';
 import { ExpBarComponent } from './pokemon/_components/exp-bar/exp-bar.component';
 import { SocketPcComponent } from './pokemon/socket-pc/socket-pc.component';
+import { PokemonPickerComponent } from './pokemon/_components/pokemon-picker/pokemon-picker.component';
 
 export const appRoutes: Routes = [
   {
@@ -95,10 +98,12 @@ export const appRoutes: Routes = [
     TypeComponent,
     PokedexEntryComponent,
     ExpBarComponent,
-    SocketPcComponent
+    SocketPcComponent,
+    PokemonPickerComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
     HttpModule,
     RouterModule.forRoot(appRoutes),
@@ -111,6 +116,7 @@ export const appRoutes: Routes = [
   providers: [
     AngularFireDatabase,
     PokeAPIService,
+    PokemonService,
     PokedexService,
     PokemonCenterService,
     ClickService,

@@ -5,9 +5,9 @@
       <ul *dropdownMenu class="dropdown-menu" role="menu">
         <li role="menuitem" *ngIf="pokemon.lvl > 0" (click)="editName(true)"><a class="dropdown-item">Change Name</a></li>
         <li role="menuitem" *ngIf="pokemon.lvl > 0" class="disabled"><a class="dropdown-item">Send on Adventure</a></li>
-        <li role="menuitem" *ngIf="pokemon.lvl > 0" class="disabled"><a class="dropdown-item">Battle</a></li>
+        <li role="menuitem" *ngIf="pokemon.lvl > 0" (click)="pickBattle = true"><a class="dropdown-item">Battle</a></li>
         <li role="menuitem" *ngIf="pokemon.lvl > 0" class="disabled"><a class="dropdown-item">Assign Egg</a></li>
-        <li role="menuitem" *ngIf="pokemon.lvl > 0" class="disabled"><a class="dropdown-item">Breed</a></li>
+        <li role="menuitem" *ngIf="pokemon.lvl > 0" (click)="pickMate = true"><a class="dropdown-item">Breed</a></li>
         <li role="menuitem" *ngIf="pokemon.lvl <= 0"><a class="dropdown-item">Assign Pokemon</a></li>
       </ul>
     </div>
@@ -43,4 +43,14 @@
   <p>
     {{pokemonString()}}
   </p>
+  <pokemon-picker [pokemon]="pokemon"
+                  [@visibilityChanged]="pickMate"
+                  (onSelect)="selectMate($event)"
+                  (onDismiss)="dismissPicker()">
+  </pokemon-picker>
+  <pokemon-picker [pokemon]="pokemon"
+                  [@visibilityChanged]="pickBattle"
+                  (onSelect)="selectOponent($event)"
+                  (onDismiss)="dismissPicker()">
+  </pokemon-picker>
 </aside>

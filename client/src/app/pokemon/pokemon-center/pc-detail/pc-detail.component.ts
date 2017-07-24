@@ -1,4 +1,5 @@
 import { Component, Input, Output, EventEmitter, OnInit, OnChanges, OnDestroy } from '@angular/core';
+import { trigger, state, animate, transition, style } from '@angular/animations';
 import { PokemonCenterService } from '../pokemon-center.service';
 import { PokedexService } from '../../pokedex/pokedex.service';
 import { ClickService } from '../../../services/click.service';
@@ -10,7 +11,14 @@ import 'rxjs/add/operator/takeWhile';
 @Component({
   selector: 'pc-detail',
   templateUrl: './pc-detail.component.html',
-  styleUrls: ['./pc-detail.component.scss']
+  styleUrls: ['./pc-detail.component.scss'],
+  animations: [
+    trigger('visibilityChanged', [
+      state('false', style({ opacity: 0 })),
+      state('true', style({ opacity: 1 })),
+      transition('* => *', animate('.5s'))
+    ])
+  ],
 })
 export class PcDetailComponent implements OnInit, OnChanges, OnDestroy {
 
@@ -25,6 +33,9 @@ export class PcDetailComponent implements OnInit, OnChanges, OnDestroy {
   evolution;
 
   editing_name = false;
+
+  pickBattle = false;
+  pickMate = false;
 
   constructor(
     private pc: PokemonCenterService,
@@ -195,6 +206,19 @@ export class PcDetailComponent implements OnInit, OnChanges, OnDestroy {
               data => console.log('saved', data['lvl'], data['exp'], data['next_lvl']),
               error => console.log(error)
             );
+  }
+
+  dismissPicker(){
+    this.pickMate = false;
+    this.pickBattle = false;
+  }
+  selectMate(pokemon){
+    console.log('mate', pokemon);
+    this.dismissPicker();
+  }
+  selectOponent(pokemon){
+    console.log('oponent', pokemon);
+    this.dismissPicker();
   }
 
   ngOnDestroy() {
