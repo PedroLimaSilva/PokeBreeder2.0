@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PokemonCenterService } from './pokemon-center.service';
+import { PokemonService } from '../pokemon.service';
 
 @Component({
   selector: 'pokemon-center',
@@ -12,12 +12,12 @@ export class PokemonCenterComponent implements OnInit {
   selected;
 
   constructor(
-    private _pc: PokemonCenterService
+    private _pkmn: PokemonService
   ) {
   }
 
   ngOnInit() {
-    this._pc.getPokemon()
+    this._pkmn.getPokemon()
             .subscribe(
               data => this.pokemon_list = data,
               error => console.log(error),

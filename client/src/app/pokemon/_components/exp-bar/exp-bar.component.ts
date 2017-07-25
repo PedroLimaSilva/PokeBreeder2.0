@@ -1,6 +1,6 @@
 import { Component, Input, OnInit, OnChanges, OnDestroy } from '@angular/core';
 
-import { PokemonCenterService } from '../../pokemon-center/pokemon-center.service';
+import { PokemonService } from '../../pokemon.service';
 import { PokedexService } from '../../pokedex/pokedex.service';
 import { ClickService } from '../../../services/click.service';
 
@@ -18,17 +18,17 @@ export class ExpBarComponent implements OnInit, OnChanges, OnDestroy {
   requiredExp;
 
   constructor(
-    private pc: PokemonCenterService,
+    private _pkmn: PokemonService,
     private pokedexService: PokedexService,
     private _click: ClickService
   ) { }
 
   ngOnInit() {
-    this.pc.lvlUp
+    this._pkmn.lvlUp
         .takeWhile(() => this.alive)
         .subscribe(
           pokemon => {
-            this.pc.getLvlInfo(pokemon.lvl)
+            this._pkmn.getLvlInfo(pokemon.lvl)
               .takeWhile(() => this.alive)
               .subscribe(
                 data => {
@@ -40,7 +40,7 @@ export class ExpBarComponent implements OnInit, OnChanges, OnDestroy {
           }
         );
     if (this.pokemon.lvl > 0) {
-      this.pc.getLvlInfo(this.pokemon.lvl)
+      this._pkmn.getLvlInfo(this.pokemon.lvl)
               .takeWhile(() => this.alive)
               .subscribe(
                 data => {
@@ -58,7 +58,7 @@ export class ExpBarComponent implements OnInit, OnChanges, OnDestroy {
 
   ngOnChanges() {
     if (this.pokemon.lvl > 0) {
-      this.pc.getLvlInfo(this.pokemon.lvl)
+      this._pkmn.getLvlInfo(this.pokemon.lvl)
               .takeWhile(() => this.alive)
               .subscribe(
                 data => {

@@ -1,10 +1,8 @@
 import { Component, Input, Output, EventEmitter, OnInit, OnChanges, OnDestroy } from '@angular/core';
 import { trigger, state, animate, transition, style } from '@angular/animations';
 import { PokemonService } from '../../pokemon.service';
-import { PokemonCenterService } from '../pokemon-center.service';
 import { PokedexService } from '../../pokedex/pokedex.service';
 import { ClickService } from '../../../services/click.service';
-
 
 import 'rxjs/add/operator/debounceTime';
 import 'rxjs/add/operator/takeWhile';
@@ -33,13 +31,12 @@ export class PcDetailComponent implements OnInit, OnChanges, OnDestroy {
 
   constructor(
     private _pkmn: PokemonService,
-    private pc: PokemonCenterService,
     private pokedexService: PokedexService,
     private _click: ClickService
   ) { }
 
   ngOnInit() {
-    this.pc.expChanged
+    this._pkmn.expChanged
         .debounceTime(500) // wait 500ms after the last event before emitting last event
         .takeWhile(() => this.alive)
         .subscribe(
@@ -47,14 +44,14 @@ export class PcDetailComponent implements OnInit, OnChanges, OnDestroy {
             this.saveEXP(pokemon);
           }
         );
-    this.pc.lvlUp
+    this._pkmn.lvlUp
         .takeWhile(() => this.alive)
         .subscribe(
           pokemon => {
             this.levelUp(pokemon);
           }
         );
-    this.pc.getEvolution(this.pokemon)
+    this._pkmn.getEvolution(this.pokemon)
             .takeWhile(() => this.alive)
             .subscribe(
               data => {
@@ -66,8 +63,8 @@ export class PcDetailComponent implements OnInit, OnChanges, OnDestroy {
 
   ngOnChanges(changes) {
     if (changes['pokemon'] && !changes['pokemon'].firstChange) {
-      this.pc.expChanged.next(changes['pokemon']['previousValue']);
-      this.pc.getEvolution(this.pokemon)
+      this._pkmn.expChanged.next(changes['pokemon']['previousValue']);
+      this._pkmn.getEvolution(this.pokemon)
               .takeWhile(() => this.alive)
               .subscribe(
                 data => {
@@ -81,7 +78,7 @@ export class PcDetailComponent implements OnInit, OnChanges, OnDestroy {
     if (this.pokemon.lvl > 0) {
       this.editing_name = isEditing;
       if (!isEditing) {
-        this.pc.changeNickname(this.pokemon)
+        this._pkmn.changeNickname(this.pokemon)
                 .takeWhile(() => this.alive)
                 .subscribe(
                   data => console.log('saved nickname', data.nickname),
@@ -110,10 +107,10 @@ export class PcDetailComponent implements OnInit, OnChanges, OnDestroy {
       this.pokemon.next_lvl -= exp_gain;
       if (this.pokemon.next_lvl <= 0 && !this.leveling_up) {
         this.leveling_up = true;
-        this.pc.lvlUp.next(this.pokemon);
+        this._pkmn.lvlUp.next(this.pokemon);
       }
       else {
-        this.pc.expChanged.next(this.pokemon);
+        this._pkmn.expChanged.next(this.pokemon);
       }
     }
   }
@@ -135,7 +132,7 @@ export class PcDetailComponent implements OnInit, OnChanges, OnDestroy {
                             data => console.log('saved dex:', this.pokemon.dex)
                           );
     }
-    this.pc.getLvlInfo(this.pokemon.lvl)
+    this._pkmn.getLvlInfo(this.pokemon.lvl)
             .takeWhile(() => this.alive)
             .subscribe(
               data => lvlInfo = data[0],
@@ -155,35 +152,35 @@ export class PcDetailComponent implements OnInit, OnChanges, OnDestroy {
       let evo = this.evolution[0];
       if (this.pokemon.lvl >= evo.lvl && evo.condition === '') {
         this.pokemon.dex = evo.evolves_to;
-        this.pc.evolvePokemon(this.pokemon)
-                .takeWhile(() => this.alive)
-                .subscribe(
-                  data => { },
-                  error => console.log(error),
-                  () => {
-                    this.onEvolution.emit();
-                    this.pc.getPokemonById(this.pokemon._id)
-                            .takeWhile(() => this.alive)
-                            .subscribe(
-                              data => {
-                                this.pokemon = data;
-                                this.pc.getPokemonSprite(this.pokemon);
-                              }
-                            );
-                    this.pc.getEvolution(this.pokemon)
-                            .takeWhile(() => this.alive)
-                            .subscribe(
-                              data => {
-                                this.evolution = data;
-                              }
-                            );
-                    this.pokedexService.updateDex(this.pokemon.dex)
-                                        .takeWhile(() => this.alive)
-                                        .subscribe(
-                                          data => console.log('saved dex:', this.pokemon.dex)
-                                        );
-                  }
-                );
+        this._pkmn.evolvePokemon(this.pokemon)
+                  .takeWhile(() => this.alive)
+                  .subscribe(
+                    data => { },
+                    error => console.log(error),
+                    () => {
+                      this.onEvolution.emit();
+                      this._pkmn.getPokemonById(this.pokemon._id)
+                                .takeWhile(() => this.alive)
+                                .subscribe(
+                                  data => {
+                                    this.pokemon = data;
+                                    this._pkmn.getPokemonSprite(this.pokemon);
+                                  }
+                                );
+                      this._pkmn.getEvolution(this.pokemon)
+                                .takeWhile(() => this.alive)
+                                .subscribe(
+                                  data => {
+                                    this.evolution = data;
+                                  }
+                                );
+                      this.pokedexService.updateDex(this.pokemon.dex)
+                                          .takeWhile(() => this.alive)
+                                          .subscribe(
+                                            data => console.log('saved dex:', this.pokemon.dex)
+                                          );
+                    }
+                  );
       }
     }
   }
@@ -195,12 +192,12 @@ export class PcDetailComponent implements OnInit, OnChanges, OnDestroy {
     else {
       changedPokemon = pokemon;
     }
-    this.pc.raisePokemon(changedPokemon)
-            .takeWhile(() => this.alive)
-            .subscribe(
-              data => console.log('saved', data['lvl'], data['exp'], data['next_lvl']),
-              error => console.log(error)
-            );
+    this._pkmn.raisePokemon(changedPokemon)
+              .takeWhile(() => this.alive)
+              .subscribe(
+                data => console.log('saved', data['lvl'], data['exp'], data['next_lvl']),
+                error => console.log(error)
+              );
   }
 
   showPickEgg(){

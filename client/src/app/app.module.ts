@@ -27,7 +27,6 @@ import { PokeAPIService } from './services/poke-api.service';
 import { PokemonService } from './pokemon/pokemon.service';
 import { PokedexService } from './pokemon/pokedex/pokedex.service';
 import { ClickService } from './services/click.service';
-import { PokemonCenterService} from './pokemon/pokemon-center/pokemon-center.service';
 import { ChatService } from './services/chat.service';
 
 import { PcDetailComponent } from './pokemon/pokemon-center/pc-detail/pc-detail.component';
@@ -120,7 +119,6 @@ export const appRoutes: Routes = [
     PokeAPIService,
     PokemonService,
     PokedexService,
-    PokemonCenterService,
     ClickService,
     ChatService
   ],

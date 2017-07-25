@@ -1,4 +1,4 @@
-import { Injectable, OnInit } from '@angular/core';
+import { Injectable, OnInit, OnDestroy } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import { Subject } from 'rxjs/Subject';
@@ -25,7 +25,9 @@ export class Request {
 }
 
 @Injectable()
-export class PokemonService implements OnInit {
+export class PokemonService implements OnInit, OnDestroy {
+
+  private alive = true;
 
   private pokemonUrl = POKE_REST_URL + 'pokemon/';
   private lvlInfoUrl = POKE_REST_URL + 'level/';
@@ -33,18 +35,25 @@ export class PokemonService implements OnInit {
 
   // this subject emits a change event as soon any pokemon in the inventory is changed
   public obsInventory: Subject<any> = new Subject<any>();
-
   public inventory = [];
+
+  // this subject waits for the user to stop clicking before emitting
+  public expChanged: Subject<any> = new Subject<any>();
+
+  // this subject emits a level up event as soon as the pokemon reaches another level
+  public lvlUp: Subject<any> = new Subject<any>();
+
 
   constructor(private http: Http) { }
 
   ngOnInit(){
     this.getPokemon()
-        .subscribe(
-          data => this.inventory = data,
-          error => console.log(error),
-          () => console.log(this.inventory)
-        );
+              .takeWhile(()=>this.alive)
+              .subscribe(
+                data => this.inventory = data,
+                error => console.log(error),
+                () => this.obsInventory.next(this.inventory)
+              );
   }
 
   getPokemonSprite(pokemon) {
@@ -126,6 +135,36 @@ export class PokemonService implements OnInit {
                     .catch(this.handleError);
   }
 
+  private avgIVs(pokemon){
+    let sumIVs = pokemon.IVs.SPD +
+                 pokemon.IVs.ATK +
+                 pokemon.IVs.DEF +
+                 pokemon.IVs.SDE +
+                 pokemon.IVs.SAT +
+                 pokemon.IVs.HP;
+    let res = sumIVs/6;
+    if(res === 0)
+      res = 1;
+    return res;
+  }
+  private avgEVs(pokemon){
+    let sumEVs = pokemon.EVs.SPD +
+                 pokemon.EVs.ATK +
+                 pokemon.EVs.DEF +
+                 pokemon.EVs.SDE +
+                 pokemon.EVs.SAT +
+                 pokemon.EVs.HP;
+    let res = sumEVs/6;
+    if(res === 0)
+      res = 1;
+    return res;
+  }
+
+  expGainMate(mate){
+    let res = mate.lvl * ((this.avgEVs(mate))/2) * ((this.avgIVs(mate))/2);
+    return res;
+  }
+
   private extractData(res: Response) {
     let body = res.json();
     return body || [ ] ;
@@ -144,4 +183,8 @@ export class PokemonService implements OnInit {
     return Observable.throw(errMsg);
   }
 
+
+  ngOnDestroy(){
+    this.alive = false;
+  }
 }
