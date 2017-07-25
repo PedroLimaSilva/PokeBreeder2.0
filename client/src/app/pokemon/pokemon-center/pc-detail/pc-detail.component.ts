@@ -1,5 +1,6 @@
 import { Component, Input, Output, EventEmitter, OnInit, OnChanges, OnDestroy } from '@angular/core';
 import { trigger, state, animate, transition, style } from '@angular/animations';
+import { PokemonService } from '../../pokemon.service';
 import { PokemonCenterService } from '../pokemon-center.service';
 import { PokedexService } from '../../pokedex/pokedex.service';
 import { ClickService } from '../../../services/click.service';
@@ -11,14 +12,7 @@ import 'rxjs/add/operator/takeWhile';
 @Component({
   selector: 'pc-detail',
   templateUrl: './pc-detail.component.html',
-  styleUrls: ['./pc-detail.component.scss'],
-  animations: [
-    trigger('visibilityChanged', [
-      state('false', style({ opacity: 0 })),
-      state('true', style({ opacity: 1 })),
-      transition('* => *', animate('.5s'))
-    ])
-  ],
+  styleUrls: ['./pc-detail.component.scss']
 })
 export class PcDetailComponent implements OnInit, OnChanges, OnDestroy {
 
@@ -34,10 +28,11 @@ export class PcDetailComponent implements OnInit, OnChanges, OnDestroy {
 
   editing_name = false;
 
-  pickBattle = false;
+  pickEgg = false;
   pickMate = false;
 
   constructor(
+    private _pkmn: PokemonService,
     private pc: PokemonCenterService,
     private pokedexService: PokedexService,
     private _click: ClickService
@@ -208,14 +203,86 @@ export class PcDetailComponent implements OnInit, OnChanges, OnDestroy {
             );
   }
 
+  showPickEgg(){
+    if(this.pickMate){
+      this.dismissPicker();
+      setTimeout(
+        ()=>{
+          this.pickEgg = true;
+        },
+        300
+      );
+    }
+    else
+      this.pickEgg = true;
+  }
+  showPickMate(){
+    if(this.pickEgg){
+      this.dismissPicker();
+      setTimeout(
+        ()=>{
+          this.pickMate = true;
+        },
+        300
+      );
+    }
+    else
+      this.pickMate = true;
+  }
+
   dismissPicker(){
-    this.pickMate = false;
-    this.pickBattle = false;
+    setTimeout(
+      ()=>{
+        this.pickMate = false;
+        this.pickEgg = false;
+      },
+      300
+    );
   }
   selectMate(pokemon){
-    console.log('mate', pokemon);
+    if(this.pokemon.mate){
+      this._pkmn.removeMate(this.pokemon.mate)
+              .takeWhile(() => this.alive)
+              .subscribe(
+                data => {},
+                error => console.log(error)
+              );
+    }
+    this._pkmn.assignMate(this.pokemon, pokemon)
+              .takeWhile(() => this.alive)
+              .subscribe(
+                data => this.pokemon.mate = pokemon,
+                error => console.log(error)
+              );
+    this._pkmn.assignMate(pokemon, this.pokemon)
+              .takeWhile(() => this.alive)
+              .subscribe(
+                data => {},
+                error => console.log(error)
+              );
     this.dismissPicker();
   }
+  removeMate(){
+    if(this.pokemon.mate){
+      this._pkmn.removeMate(this.pokemon.mate)
+                .takeWhile(() => this.alive)
+                .subscribe(
+                  data => {},
+                  error => console.log(error),
+                  () => {
+                    this._pkmn.removeMate(this.pokemon)
+                              .takeWhile(()=>this.alive)
+                              .subscribe(
+                                data=>{this.pokemon.mate = null},
+                                error => console.log(error),
+                                ()=>{}
+                              );
+                  }
+                );
+
+    }
+  }
+
   selectOponent(pokemon){
     console.log('oponent', pokemon);
     this.dismissPicker();

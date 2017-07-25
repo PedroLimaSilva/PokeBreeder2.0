@@ -13,6 +13,11 @@
   @media (max-width: 991px) {
     width: 100%;
   }
+  transform: translateY(100%);
+  transition: transform .3s ease;
+  &.open{
+    transform: translateY(0%);
+  }
   .heading{
     margin-top: 5px;
     display: flex;

@@ -5,9 +5,9 @@
       <ul *dropdownMenu class="dropdown-menu" role="menu">
         <li role="menuitem" *ngIf="pokemon.lvl > 0" (click)="editName(true)"><a class="dropdown-item">Change Name</a></li>
         <li role="menuitem" *ngIf="pokemon.lvl > 0" class="disabled"><a class="dropdown-item">Send on Adventure</a></li>
-        <li role="menuitem" *ngIf="pokemon.lvl > 0" (click)="pickBattle = true"><a class="dropdown-item">Battle</a></li>
         <li role="menuitem" *ngIf="pokemon.lvl > 0" class="disabled"><a class="dropdown-item">Assign Egg</a></li>
-        <li role="menuitem" *ngIf="pokemon.lvl > 0" (click)="pickMate = true"><a class="dropdown-item">Breed</a></li>
+        <li role="menuitem" *ngIf="pokemon.lvl > 0" (click)="showPickMate()"><a class="dropdown-item">Assign Playmate</a></li>
+        <li role="menuitem" *ngIf="pokemon.lvl > 0 && pokemon.mate" (click)="removeMate()"><a class="dropdown-item">Remove Playmate</a></li>
         <li role="menuitem" *ngIf="pokemon.lvl <= 0"><a class="dropdown-item">Assign Pokemon</a></li>
       </ul>
     </div>
@@ -30,6 +30,7 @@
   </section>
   <div class="sprite clickable" (click)="raisePokemon()">
     <img src="{{pokemon.exp < 0 ? pokemon.egg_sprite : pokemon.sprite}}" alt="{{pokemon.name ? pokemon.name : '????'}}">
+    <buddy-indicator *ngIf="pokemon.mate" [pokemon]="pokemon.mate"></buddy-indicator>
   </div>
   <section>
     <p class="text-center" style="margin-bottom: 0;">{{pokemon.next_lvl}}</p>
@@ -44,13 +45,8 @@
     {{pokemonString()}}
   </p>
   <pokemon-picker [pokemon]="pokemon"
-                  [@visibilityChanged]="pickMate"
+                  *ngIf="pickMate"
                   (onSelect)="selectMate($event)"
-                  (onDismiss)="dismissPicker()">
-  </pokemon-picker>
-  <pokemon-picker [pokemon]="pokemon"
-                  [@visibilityChanged]="pickBattle"
-                  (onSelect)="selectOponent($event)"
                   (onDismiss)="dismissPicker()">
   </pokemon-picker>
 </aside>

@@ -13,6 +13,8 @@ export class PokemonPickerComponent implements OnInit {
   @Output() onSelect = new EventEmitter();
   @Output() onDismiss = new EventEmitter();
 
+  private show = false;
+
   availablePkmn = [];
 
   constructor(
@@ -21,14 +23,27 @@ export class PokemonPickerComponent implements OnInit {
 
   ngOnInit() {
     this.availablePkmn = this._pkmn.getAvailablePkmn(this.pokemon);
+    setTimeout(
+      ()=>{
+        this.show = true;
+      },
+      50
+    );
   }
 
 
   selectPokemon(pokemon){
     this.onSelect.emit(pokemon);
+    this.show = false;
   }
 
   dismiss(){
-    this.onDismiss.emit();
+    this.show = false;
+    setTimeout(
+      ()=>{
+        this.onDismiss.emit();
+      },
+      300
+    );
   }
 }

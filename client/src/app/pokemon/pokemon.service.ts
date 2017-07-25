@@ -48,7 +48,7 @@ export class PokemonService implements OnInit {
   }
 
   getPokemonSprite(pokemon) {
-    pokemon['sprite'] = 'assets/img/sprites/pokemon/' + pokemon.dex_entry.dex + '/' + pokemon.dex_entry.dex + '.gif';
+    pokemon['sprite'] = 'assets/img/sprites/pokemon/' + pokemon.dex + '/' + pokemon.dex + '.gif';
     pokemon['egg_sprite'] = 'assets/img/sprites/egg.gif';
   }
 
@@ -61,7 +61,11 @@ export class PokemonService implements OnInit {
   getAvailablePkmn(pokemon: any){
     return this.inventory.filter(
       e => {
-        return e._id != pokemon._id && e.exp >= 0 && (!e.busy_until || e.busy_until < Date.now);
+        return e._id != pokemon._id &&
+               e.exp >= 0 &&
+               (!e.busy_until || e.busy_until < Date.now) &&
+               !e.mate &&
+               !e.egg;
       }
     );
   }
@@ -106,6 +110,18 @@ export class PokemonService implements OnInit {
 
   changeNickname(pokemon: any) {
     return this.http.patch(this.pokemonUrl + pokemon._id, {nickname: pokemon.nickname})
+                    .map(this.extractData)
+                    .catch(this.handleError);
+  }
+
+  assignMate(pokemon, assignee){
+    return this.http.patch(this.pokemonUrl + pokemon._id, {mate: assignee._id})
+                    .map(this.extractData)
+                    .catch(this.handleError);
+  }
+
+  removeMate(pokemon){
+    return this.http.patch(this.pokemonUrl + pokemon._id, {mate: 'remove'})
                     .map(this.extractData)
                     .catch(this.handleError);
   }

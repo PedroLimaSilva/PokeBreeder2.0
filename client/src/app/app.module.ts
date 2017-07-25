@@ -36,6 +36,7 @@ import { PokedexEntryComponent } from './pokemon/pokedex/pokedex-entry/pokedex-e
 import { ExpBarComponent } from './pokemon/_components/exp-bar/exp-bar.component';
 import { SocketPcComponent } from './pokemon/socket-pc/socket-pc.component';
 import { PokemonPickerComponent } from './pokemon/_components/pokemon-picker/pokemon-picker.component';
+import { BuddyIndicatorComponent } from './pokemon/_components/buddy-indicator/buddy-indicator.component';
 
 export const appRoutes: Routes = [
   {
@@ -99,7 +100,8 @@ export const appRoutes: Routes = [
     PokedexEntryComponent,
     ExpBarComponent,
     SocketPcComponent,
-    PokemonPickerComponent
+    PokemonPickerComponent,
+    BuddyIndicatorComponent
   ],
   imports: [
     BrowserModule,
