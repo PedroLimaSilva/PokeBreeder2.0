@@ -22,11 +22,11 @@
     <i class="mdi mdi-close clickable" (click)="hide()"></i>
   </h1>
   <section class="subtitle">
+    <span class="lvl">Lvl.{{pokemon.lvl}}</span>
+    <exp-bar [pokemon]=pokemon></exp-bar>
     <section class="types" *ngIf="pokemon.exp >= 0">
       <type *ngFor="let type of pokemon.dex_entry.types" [type]="type"></type>
     </section>
-    <exp-bar [pokemon]=pokemon></exp-bar>
-    <span class="lvl">Lvl.{{pokemon.lvl}}</span>
   </section>
   <div class="sprite clickable" (click)="raisePokemon()">
     <img src="{{pokemon.exp < 0 ? pokemon.egg_sprite : pokemon.sprite}}" alt="{{pokemon.name ? pokemon.name : '????'}}">

@@ -14,8 +14,8 @@ export class ExpBarComponent implements OnInit, OnChanges, OnDestroy {
   @Input() pokemon;
 
   private alive = true;
-  startExp;
-  requiredExp;
+  startExp = 0;
+  requiredExp = 100;
 
   constructor(
     private _pkmn: PokemonService,

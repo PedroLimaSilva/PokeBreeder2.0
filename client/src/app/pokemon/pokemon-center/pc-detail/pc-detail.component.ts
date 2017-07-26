@@ -37,26 +37,25 @@ export class PcDetailComponent implements OnInit, OnChanges, OnDestroy {
 
   ngOnInit() {
     this._pkmn.expChanged
-        .debounceTime(500) // wait 500ms after the last event before emitting last event
+        // .debounceTime(500) // wait 500ms after the last event before emitting last event
         .takeWhile(() => this.alive)
         .subscribe(
           pokemon => {
-            this.saveEXP(pokemon);
+            this.pokemon = pokemon;
           }
         );
     this._pkmn.lvlUp
         .takeWhile(() => this.alive)
         .subscribe(
           pokemon => {
-            this.levelUp(pokemon);
+            this.pokemon = pokemon;
           }
         );
     this._pkmn.getEvolution(this.pokemon)
             .takeWhile(() => this.alive)
             .subscribe(
               data => {
-                this.evolution = data;
-                console.log(this.evolution);
+                this.pokemon.evolution = data;
               }
             );
   }
@@ -68,7 +67,7 @@ export class PcDetailComponent implements OnInit, OnChanges, OnDestroy {
               .takeWhile(() => this.alive)
               .subscribe(
                 data => {
-                  this.evolution = data;
+                  this.pokemon.evolution = data;
                 }
               );
     }
@@ -101,103 +100,18 @@ export class PcDetailComponent implements OnInit, OnChanges, OnDestroy {
   }
 
   raisePokemon() {
-    if (!this.leveling_up && this.pokemon.lvl < 100) {
+    if (!this.pokemon.leveling_up && this.pokemon.lvl < 100) {
       let exp_gain = this._click.getExpPerClick(this.pokemon);
       this.pokemon.exp += exp_gain;
       this.pokemon.next_lvl -= exp_gain;
-      if (this.pokemon.next_lvl <= 0 && !this.leveling_up) {
-        this.leveling_up = true;
+      if (this.pokemon.next_lvl <= 0 && !this.pokemon.leveling_up) {
+        this.pokemon.leveling_up = true;
         this._pkmn.lvlUp.next(this.pokemon);
       }
       else {
         this._pkmn.expChanged.next(this.pokemon);
       }
     }
-  }
-
-  levelUp(pokemon?: any) {
-    let changedPokemon;
-    if (!pokemon) {
-      changedPokemon = this.pokemon;
-    }
-    else {
-      changedPokemon = pokemon;
-    }
-    this.pokemon.lvl++;
-    let lvlInfo;
-    if (this.pokemon.lvl === 1) {
-      this.pokedexService.updateDex(this.pokemon.dex)
-                          .takeWhile(() => this.alive)
-                          .subscribe(
-                            data => console.log('saved dex:', this.pokemon.dex)
-                          );
-    }
-    this._pkmn.getLvlInfo(this.pokemon.lvl)
-            .takeWhile(() => this.alive)
-            .subscribe(
-              data => lvlInfo = data[0],
-              error => console.log(error),
-              () => {
-                this.pokemon.next_lvl = lvlInfo.next_lvl[this.pokemon.dex_entry.exp_group];
-                this.pokemon.exp = lvlInfo.total[this.pokemon.dex_entry.exp_group];
-                this.saveEXP(pokemon);
-                this.leveling_up = false;
-                this.evolve();
-              }
-            );
-  }
-
-  evolve() {
-    if (this.evolution && this.evolution.length) {
-      let evo = this.evolution[0];
-      if (this.pokemon.lvl >= evo.lvl && evo.condition === '') {
-        this.pokemon.dex = evo.evolves_to;
-        this._pkmn.evolvePokemon(this.pokemon)
-                  .takeWhile(() => this.alive)
-                  .subscribe(
-                    data => { },
-                    error => console.log(error),
-                    () => {
-                      this.onEvolution.emit();
-                      this._pkmn.getPokemonById(this.pokemon._id)
-                                .takeWhile(() => this.alive)
-                                .subscribe(
-                                  data => {
-                                    this.pokemon = data;
-                                    this._pkmn.getPokemonSprite(this.pokemon);
-                                  }
-                                );
-                      this._pkmn.getEvolution(this.pokemon)
-                                .takeWhile(() => this.alive)
-                                .subscribe(
-                                  data => {
-                                    this.evolution = data;
-                                  }
-                                );
-                      this.pokedexService.updateDex(this.pokemon.dex)
-                                          .takeWhile(() => this.alive)
-                                          .subscribe(
-                                            data => console.log('saved dex:', this.pokemon.dex)
-                                          );
-                    }
-                  );
-      }
-    }
-  }
-  saveEXP(pokemon?: any) {
-    let changedPokemon;
-    if (!pokemon) {
-      changedPokemon = this.pokemon;
-    }
-    else {
-      changedPokemon = pokemon;
-    }
-    this._pkmn.raisePokemon(changedPokemon)
-              .takeWhile(() => this.alive)
-              .subscribe(
-                data => console.log('saved', data['lvl'], data['exp'], data['next_lvl']),
-                error => console.log(error)
-              );
   }
 
   showPickEgg(){

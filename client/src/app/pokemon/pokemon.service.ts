@@ -161,7 +161,7 @@ export class PokemonService implements OnInit, OnDestroy {
   }
 
   expGainMate(mate){
-    let res = mate.lvl * ((this.avgEVs(mate))/2) * ((this.avgIVs(mate))/2);
+    let res = mate.lvl * Math.ceil((this.avgEVs(mate))/2) * Math.ceil((this.avgIVs(mate))/2);
     return res;
   }
 

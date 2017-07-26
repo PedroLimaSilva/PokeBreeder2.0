@@ -17,12 +17,16 @@ export class PokemonCenterComponent implements OnInit {
   }
 
   ngOnInit() {
+    this._pkmn.obsInventory
+              .subscribe(
+                data => this.pokemon_list = data
+              );
     this._pkmn.getPokemon()
-            .subscribe(
-              data => this.pokemon_list = data,
-              error => console.log(error),
-              () => { console.log(this.pokemon_list) }
-            );
+              .subscribe(
+                data => this.pokemon_list = data,
+                error => console.log(error),
+                () => { }
+              );
   }
 
 }
