@@ -32,7 +32,7 @@
     <img src="{{pokemon.exp < 0 ? pokemon.egg_sprite : pokemon.sprite}}" alt="{{pokemon.name ? pokemon.name : '????'}}">
     <buddy-indicator *ngIf="pokemon.mate" [pokemon]="pokemon.mate"></buddy-indicator>
   </div>
-  <section>
+  <section *ngIf="pokemon.lvl < 100">
     <p class="text-center" style="margin-bottom: 0;">{{pokemon.next_lvl}}</p>
     <p class="text-center">EXP to next level</p>
   </section>

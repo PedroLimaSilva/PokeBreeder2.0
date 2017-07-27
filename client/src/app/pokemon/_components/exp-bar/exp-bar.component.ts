@@ -28,27 +28,33 @@ export class ExpBarComponent implements OnInit, OnChanges, OnDestroy {
         .takeWhile(() => this.alive)
         .subscribe(
           pokemon => {
-            this._pkmn.getLvlInfo(pokemon.lvl)
-              .takeWhile(() => this.alive)
-              .subscribe(
-                data => {
-                  let lvlInfo = data[0];
-                  this.startExp = lvlInfo.total[this.pokemon.dex_entry.exp_group];
-                  this.requiredExp = lvlInfo.next_lvl[this.pokemon.dex_entry.exp_group];
-                }
-              );
+            if(pokemon.lvl < 100){
+              this._pkmn.getLvlInfo(pokemon.lvl)
+                .takeWhile(() => this.alive)
+                .subscribe(
+                  data => {
+                    let lvlInfo = data;
+                    this.startExp = lvlInfo.total[this.pokemon.dex_entry.exp_group];
+                    this.requiredExp = lvlInfo.next_lvl[this.pokemon.dex_entry.exp_group];
+                  }
+                );
+            }
           }
         );
     if (this.pokemon.lvl > 0) {
       this._pkmn.getLvlInfo(this.pokemon.lvl)
-              .takeWhile(() => this.alive)
-              .subscribe(
-                data => {
-                  let lvlInfo = data[0];
-                  this.startExp = lvlInfo.total[this.pokemon.dex_entry.exp_group];
-                  this.requiredExp = lvlInfo.next_lvl[this.pokemon.dex_entry.exp_group];
-                }
-              );
+                .takeWhile(() => this.alive)
+                .subscribe(
+                  data => {
+                    let lvlInfo = data;
+                    this.startExp = lvlInfo.total[this.pokemon.dex_entry.exp_group];
+                    if(this.pokemon.lvl < 100)
+                      this.requiredExp = lvlInfo.next_lvl[this.pokemon.dex_entry.exp_group];
+                    else{
+                      this.requiredExp = 0;
+                    }
+                  }
+                );
     }
     else {
       this.startExp = 0;
@@ -62,9 +68,13 @@ export class ExpBarComponent implements OnInit, OnChanges, OnDestroy {
               .takeWhile(() => this.alive)
               .subscribe(
                 data => {
-                  let lvlInfo = data[0];
+                  let lvlInfo = data;
                   this.startExp = lvlInfo.total[this.pokemon.dex_entry.exp_group];
-                  this.requiredExp = lvlInfo.next_lvl[this.pokemon.dex_entry.exp_group];
+                  if(this.pokemon.lvl < 100)
+                    this.requiredExp = lvlInfo.next_lvl[this.pokemon.dex_entry.exp_group];
+                  else{
+                    this.requiredExp = 0;
+                  }
                 }
               );
     }

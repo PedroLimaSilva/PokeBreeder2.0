@@ -41,7 +41,7 @@ export class AppComponent implements OnInit, OnDestroy {
           pokemon => {
             let inventoryClone = JSON.parse(JSON.stringify(this.inventory));
             let index = inventoryClone.map( (element) => { return element._id; }).indexOf(pokemon._id);
-            if(index >= 0)
+            if(index >= 0 && pokemon.lvl < 100)
               this.levelUp(index);
           }
         );
@@ -85,36 +85,43 @@ export class AppComponent implements OnInit, OnDestroy {
                             data => console.log('saved dex:', this.inventory[pkmnIndex].dex)
                           );
     }
-    this._pkmn.getLvlInfo(this.inventory[pkmnIndex].lvl)
-            .takeWhile(() => this.alive)
-            .subscribe(
-              data => lvlInfo = data[0],
-              error => console.log(error),
-              () => {
-                this.inventory[pkmnIndex].next_lvl = lvlInfo.next_lvl[this.inventory[pkmnIndex].dex_entry.exp_group];
-                this.inventory[pkmnIndex].exp = lvlInfo.total[this.inventory[pkmnIndex].dex_entry.exp_group];
-                this._pkmn.expChanged.next(this.inventory[pkmnIndex]);
-                this.inventory[pkmnIndex].leveling_up = false;
-                this._pkmn.obsInventory.next(this.inventory);
-                if(!this.inventory[pkmnIndex].evolution){
-                  this._pkmn.getEvolution(this.inventory[pkmnIndex])
-                            .takeWhile(() => this.alive)
-                            .subscribe(
-                              data => {
-                                this.inventory[pkmnIndex].evolution = data;
-                              },
-                              error => console.log(error),
-                              () => {
-                                if(this.inventory[pkmnIndex].evolution.length)
-                                  this.evolve(this.inventory[pkmnIndex]);
-                              }
-                            );
+    if(this.inventory[pkmnIndex].lvl <= 100){
+      this._pkmn.getLvlInfo(this.inventory[pkmnIndex].lvl)
+              .takeWhile(() => this.alive)
+              .subscribe(
+                data => lvlInfo = data,
+                error => console.log(error),
+                () => {
+                  if(this.inventory[pkmnIndex].lvl < 100){
+                    this.inventory[pkmnIndex].next_lvl = lvlInfo.next_lvl[this.inventory[pkmnIndex].dex_entry.exp_group];
+                  }
+                  else{
+                    this.inventory[pkmnIndex].next_lvl = 0;
+                  }
+                  this.inventory[pkmnIndex].exp = lvlInfo.total[this.inventory[pkmnIndex].dex_entry.exp_group];
+                  this._pkmn.expChanged.next(this.inventory[pkmnIndex]);
+                  this.inventory[pkmnIndex].leveling_up = false;
+                  this._pkmn.obsInventory.next(this.inventory);
+                  if(!this.inventory[pkmnIndex].evolution){
+                    this._pkmn.getEvolution(this.inventory[pkmnIndex])
+                              .takeWhile(() => this.alive)
+                              .subscribe(
+                                data => {
+                                  this.inventory[pkmnIndex].evolution = data;
+                                },
+                                error => console.log(error),
+                                () => {
+                                  if(this.inventory[pkmnIndex].evolution.length)
+                                    this.evolve(this.inventory[pkmnIndex]);
+                                }
+                              );
+                  }
+                  else if(this.inventory[pkmnIndex].evolution.length){
+                    this.evolve(pkmnIndex);
+                  }
                 }
-                else if(this.inventory[pkmnIndex].evolution.length){
-                  this.evolve(pkmnIndex);
-                }
-              }
-            );
+              );
+    }
   }
 
   evolve(pkmnIndex: any){

@@ -1,0 +1,1902 @@
+[
+    {
+        "total": {
+            "erratic": 0,
+            "fast": 0,
+            "medium_fast": 0,
+            "medium_slow": 0,
+            "slow": 0,
+            "fluctuating": 0
+        },
+        "level": 1,
+        "next_lvl": {
+            "erratic": 15,
+            "fast": 6,
+            "medium_fast": 8,
+            "medium_slow": 9,
+            "slow": 10,
+            "fluctuating": 4
+        }
+    },
+    {
+        "total": {
+            "erratic": 15,
+            "fast": 6,
+            "medium_fast": 8,
+            "medium_slow": 9,
+            "slow": 10,
+            "fluctuating": 4
+        },
+        "level": 2,
+        "next_lvl": {
+            "erratic": 37,
+            "fast": 15,
+            "medium_fast": 19,
+            "medium_slow": 48,
+            "slow": 23,
+            "fluctuating": 9
+        }
+    },
+    {
+        "total": {
+            "erratic": 52,
+            "fast": 21,
+            "medium_fast": 27,
+            "medium_slow": 57,
+            "slow": 33,
+            "fluctuating": 13
+        },
+        "level": 3,
+        "next_lvl": {
+            "erratic": 70,
+            "fast": 30,
+            "medium_fast": 37,
+            "medium_slow": 39,
+            "slow": 47,
+            "fluctuating": 19
+        }
+    },
+    {
+        "total": {
+            "erratic": 122,
+            "fast": 51,
+            "medium_fast": 64,
+            "medium_slow": 96,
+            "slow": 80,
+            "fluctuating": 32
+        },
+        "level": 4,
+        "next_lvl": {
+            "erratic": 115,
+            "fast": 49,
+            "medium_fast": 61,
+            "medium_slow": 39,
+            "slow": 76,
+            "fluctuating": 33
+        }
+    },
+    {
+        "total": {
+            "erratic": 237,
+            "fast": 100,
+            "medium_fast": 125,
+            "medium_slow": 135,
+            "slow": 156,
+            "fluctuating": 65
+        },
+        "level": 5,
+        "next_lvl": {
+            "erratic": 169,
+            "fast": 72,
+            "medium_fast": 91,
+            "medium_slow": 44,
+            "slow": 114,
+            "fluctuating": 47
+        }
+    },
+    {
+        "total": {
+            "erratic": 406,
+            "fast": 172,
+            "medium_fast": 216,
+            "medium_slow": 179,
+            "slow": 270,
+            "fluctuating": 112
+        },
+        "level": 6,
+        "next_lvl": {
+            "erratic": 231,
+            "fast": 102,
+            "medium_fast": 127,
+            "medium_slow": 57,
+            "slow": 158,
+            "fluctuating": 66
+        }
+    },
+    {
+        "total": {
+            "erratic": 637,
+            "fast": 274,
+            "medium_fast": 343,
+            "medium_slow": 236,
+            "slow": 428,
+            "fluctuating": 178
+        },
+        "level": 7,
+        "next_lvl": {
+            "erratic": 305,
+            "fast": 135,
+            "medium_fast": 169,
+            "medium_slow": 78,
+            "slow": 212,
+            "fluctuating": 98
+        }
+    },
+    {
+        "total": {
+            "erratic": 942,
+            "fast": 409,
+            "medium_fast": 512,
+            "medium_slow": 314,
+            "slow": 640,
+            "fluctuating": 276
+        },
+        "level": 8,
+        "next_lvl": {
+            "erratic": 384,
+            "fast": 174,
+            "medium_fast": 217,
+            "medium_slow": 105,
+            "slow": 271,
+            "fluctuating": 117
+        }
+    },
+    {
+        "total": {
+            "erratic": 1326,
+            "fast": 583,
+            "medium_fast": 729,
+            "medium_slow": 419,
+            "slow": 911,
+            "fluctuating": 393
+        },
+        "level": 9,
+        "next_lvl": {
+            "erratic": 474,
+            "fast": 217,
+            "medium_fast": 271,
+            "medium_slow": 141,
+            "slow": 339,
+            "fluctuating": 147
+        }
+    },
+    {
+        "total": {
+            "erratic": 1800,
+            "fast": 800,
+            "medium_fast": 1000,
+            "medium_slow": 560,
+            "slow": 1250,
+            "fluctuating": 540
+        },
+        "level": 10,
+        "next_lvl": {
+            "erratic": 569,
+            "fast": 264,
+            "medium_fast": 331,
+            "medium_slow": 182,
+            "slow": 413,
+            "fluctuating": 205
+        }
+    },
+    {
+        "total": {
+            "erratic": 2369,
+            "fast": 1064,
+            "medium_fast": 1331,
+            "medium_slow": 742,
+            "slow": 1663,
+            "fluctuating": 745
+        },
+        "level": 11,
+        "next_lvl": {
+            "erratic": 672,
+            "fast": 318,
+            "medium_fast": 397,
+            "medium_slow": 231,
+            "slow": 497,
+            "fluctuating": 222
+        }
+    },
+    {
+        "total": {
+            "erratic": 3041,
+            "fast": 1382,
+            "medium_fast": 1728,
+            "medium_slow": 973,
+            "slow": 2160,
+            "fluctuating": 967
+        },
+        "level": 12,
+        "next_lvl": {
+            "erratic": 781,
+            "fast": 375,
+            "medium_fast": 469,
+            "medium_slow": 288,
+            "slow": 586,
+            "fluctuating": 263
+        }
+    },
+    {
+        "total": {
+            "erratic": 3822,
+            "fast": 1757,
+            "medium_fast": 2197,
+            "medium_slow": 1261,
+            "slow": 2746,
+            "fluctuating": 1230
+        },
+        "level": 13,
+        "next_lvl": {
+            "erratic": 897,
+            "fast": 438,
+            "medium_fast": 547,
+            "medium_slow": 351,
+            "slow": 684,
+            "fluctuating": 361
+        }
+    },
+    {
+        "total": {
+            "erratic": 4719,
+            "fast": 2195,
+            "medium_fast": 2744,
+            "medium_slow": 1612,
+            "slow": 3430,
+            "fluctuating": 1591
+        },
+        "level": 14,
+        "next_lvl": {
+            "erratic": 1018,
+            "fast": 505,
+            "medium_fast": 631,
+            "medium_slow": 423,
+            "slow": 788,
+            "fluctuating": 366
+        }
+    },
+    {
+        "total": {
+            "erratic": 5737,
+            "fast": 2700,
+            "medium_fast": 3375,
+            "medium_slow": 2035,
+            "slow": 4218,
+            "fluctuating": 1957
+        },
+        "level": 15,
+        "next_lvl": {
+            "erratic": 1144,
+            "fast": 576,
+            "medium_fast": 721,
+            "medium_slow": 500,
+            "slow": 902,
+            "fluctuating": 500
+        }
+    },
+    {
+        "total": {
+            "erratic": 6881,
+            "fast": 3276,
+            "medium_fast": 4096,
+            "medium_slow": 2535,
+            "slow": 5120,
+            "fluctuating": 2457
+        },
+        "level": 16,
+        "next_lvl": {
+            "erratic": 1274,
+            "fast": 654,
+            "medium_fast": 817,
+            "medium_slow": 585,
+            "slow": 1021,
+            "fluctuating": 589
+        }
+    },
+    {
+        "total": {
+            "erratic": 8155,
+            "fast": 3930,
+            "medium_fast": 4913,
+            "medium_slow": 3120,
+            "slow": 6141,
+            "fluctuating": 3046
+        },
+        "level": 17,
+        "next_lvl": {
+            "erratic": 1409,
+            "fast": 735,
+            "medium_fast": 919,
+            "medium_slow": 678,
+            "slow": 1149,
+            "fluctuating": 686
+        }
+    },
+    {
+        "total": {
+            "erratic": 9564,
+            "fast": 4665,
+            "medium_fast": 5832,
+            "medium_slow": 3798,
+            "slow": 7290,
+            "fluctuating": 3732
+        },
+        "level": 18,
+        "next_lvl": {
+            "erratic": 1547,
+            "fast": 822,
+            "medium_fast": 1027,
+            "medium_slow": 777,
+            "slow": 1283,
+            "fluctuating": 794
+        }
+    },
+    {
+        "total": {
+            "erratic": 11111,
+            "fast": 5487,
+            "medium_fast": 6859,
+            "medium_slow": 4575,
+            "slow": 8573,
+            "fluctuating": 4526
+        },
+        "level": 19,
+        "next_lvl": {
+            "erratic": 1689,
+            "fast": 913,
+            "medium_fast": 1141,
+            "medium_slow": 885,
+            "slow": 1427,
+            "fluctuating": 914
+        }
+    },
+    {
+        "total": {
+            "erratic": 12800,
+            "fast": 6400,
+            "medium_fast": 8000,
+            "medium_slow": 5460,
+            "slow": 10000,
+            "fluctuating": 5440
+        },
+        "level": 20,
+        "next_lvl": {
+            "erratic": 1832,
+            "fast": 1008,
+            "medium_fast": 1261,
+            "medium_slow": 998,
+            "slow": 1576,
+            "fluctuating": 1042
+        }
+    },
+    {
+        "total": {
+            "erratic": 14632,
+            "fast": 7408,
+            "medium_fast": 9261,
+            "medium_slow": 6458,
+            "slow": 11576,
+            "fluctuating": 6482
+        },
+        "level": 21,
+        "next_lvl": {
+            "erratic": 1978,
+            "fast": 1110,
+            "medium_fast": 1387,
+            "medium_slow": 1119,
+            "slow": 1734,
+            "fluctuating": 1184
+        }
+    },
+    {
+        "total": {
+            "erratic": 16610,
+            "fast": 8518,
+            "medium_fast": 10648,
+            "medium_slow": 7577,
+            "slow": 13310,
+            "fluctuating": 7666
+        },
+        "level": 22,
+        "next_lvl": {
+            "erratic": 2127,
+            "fast": 1215,
+            "medium_fast": 1519,
+            "medium_slow": 1248,
+            "slow": 1898,
+            "fluctuating": 1337
+        }
+    },
+    {
+        "total": {
+            "erratic": 18737,
+            "fast": 9733,
+            "medium_fast": 12167,
+            "medium_slow": 8825,
+            "slow": 15208,
+            "fluctuating": 9003
+        },
+        "level": 23,
+        "next_lvl": {
+            "erratic": 2275,
+            "fast": 1326,
+            "medium_fast": 1657,
+            "medium_slow": 1383,
+            "slow": 2072,
+            "fluctuating": 1503
+        }
+    },
+    {
+        "total": {
+            "erratic": 21012,
+            "fast": 11059,
+            "medium_fast": 13824,
+            "medium_slow": 10208,
+            "slow": 17280,
+            "fluctuating": 10506
+        },
+        "level": 24,
+        "next_lvl": {
+            "erratic": 2425,
+            "fast": 1441,
+            "medium_fast": 1801,
+            "medium_slow": 1527,
+            "slow": 2251,
+            "fluctuating": 1681
+        }
+    },
+    {
+        "total": {
+            "erratic": 23437,
+            "fast": 12500,
+            "medium_fast": 15625,
+            "medium_slow": 11735,
+            "slow": 19531,
+            "fluctuating": 12187
+        },
+        "level": 25,
+        "next_lvl": {
+            "erratic": 2575,
+            "fast": 1560,
+            "medium_fast": 1951,
+            "medium_slow": 1676,
+            "slow": 2439,
+            "fluctuating": 1873
+        }
+    },
+    {
+        "total": {
+            "erratic": 26012,
+            "fast": 14060,
+            "medium_fast": 17576,
+            "medium_slow": 13411,
+            "slow": 21970,
+            "fluctuating": 14060
+        },
+        "level": 26,
+        "next_lvl": {
+            "erratic": 2725,
+            "fast": 1686,
+            "medium_fast": 2107,
+            "medium_slow": 1833,
+            "slow": 2633,
+            "fluctuating": 2080
+        }
+    },
+    {
+        "total": {
+            "erratic": 28737,
+            "fast": 15746,
+            "medium_fast": 19683,
+            "medium_slow": 15244,
+            "slow": 24603,
+            "fluctuating": 16140
+        },
+        "level": 27,
+        "next_lvl": {
+            "erratic": 2873,
+            "fast": 1815,
+            "medium_fast": 2269,
+            "medium_slow": 1998,
+            "slow": 2837,
+            "fluctuating": 2299
+        }
+    },
+    {
+        "total": {
+            "erratic": 31610,
+            "fast": 17561,
+            "medium_fast": 21952,
+            "medium_slow": 17242,
+            "slow": 27440,
+            "fluctuating": 18439
+        },
+        "level": 28,
+        "next_lvl": {
+            "erratic": 3022,
+            "fast": 1950,
+            "medium_fast": 2437,
+            "medium_slow": 2169,
+            "slow": 3046,
+            "fluctuating": 2535
+        }
+    },
+    {
+        "total": {
+            "erratic": 34632,
+            "fast": 19511,
+            "medium_fast": 24389,
+            "medium_slow": 19411,
+            "slow": 30486,
+            "fluctuating": 20974
+        },
+        "level": 29,
+        "next_lvl": {
+            "erratic": 3168,
+            "fast": 2089,
+            "medium_fast": 2611,
+            "medium_slow": 2349,
+            "slow": 3264,
+            "fluctuating": 2786
+        }
+    },
+    {
+        "total": {
+            "erratic": 37800,
+            "fast": 21600,
+            "medium_fast": 27000,
+            "medium_slow": 21760,
+            "slow": 33750,
+            "fluctuating": 23760
+        },
+        "level": 30,
+        "next_lvl": {
+            "erratic": 3311,
+            "fast": 2232,
+            "medium_fast": 2791,
+            "medium_slow": 2534,
+            "slow": 3488,
+            "fluctuating": 3051
+        }
+    },
+    {
+        "total": {
+            "erratic": 41111,
+            "fast": 23832,
+            "medium_fast": 29791,
+            "medium_slow": 24294,
+            "slow": 37238,
+            "fluctuating": 26811
+        },
+        "level": 31,
+        "next_lvl": {
+            "erratic": 3453,
+            "fast": 2382,
+            "medium_fast": 2977,
+            "medium_slow": 2727,
+            "slow": 3722,
+            "fluctuating": 3335
+        }
+    },
+    {
+        "total": {
+            "erratic": 44564,
+            "fast": 26214,
+            "medium_fast": 32768,
+            "medium_slow": 27021,
+            "slow": 40960,
+            "fluctuating": 30146
+        },
+        "level": 32,
+        "next_lvl": {
+            "erratic": 3591,
+            "fast": 2535,
+            "medium_fast": 3169,
+            "medium_slow": 2928,
+            "slow": 3961,
+            "fluctuating": 3634
+        }
+    },
+    {
+        "total": {
+            "erratic": 48155,
+            "fast": 28749,
+            "medium_fast": 35937,
+            "medium_slow": 29949,
+            "slow": 44921,
+            "fluctuating": 33780
+        },
+        "level": 33,
+        "next_lvl": {
+            "erratic": 3726,
+            "fast": 2694,
+            "medium_fast": 3367,
+            "medium_slow": 3135,
+            "slow": 4209,
+            "fluctuating": 3951
+        }
+    },
+    {
+        "total": {
+            "erratic": 51881,
+            "fast": 31443,
+            "medium_fast": 39304,
+            "medium_slow": 33084,
+            "slow": 49130,
+            "fluctuating": 37731
+        },
+        "level": 34,
+        "next_lvl": {
+            "erratic": 3856,
+            "fast": 2857,
+            "medium_fast": 3571,
+            "medium_slow": 3351,
+            "slow": 4463,
+            "fluctuating": 4286
+        }
+    },
+    {
+        "total": {
+            "erratic": 55737,
+            "fast": 34300,
+            "medium_fast": 42875,
+            "medium_slow": 36435,
+            "slow": 53593,
+            "fluctuating": 42017
+        },
+        "level": 35,
+        "next_lvl": {
+            "erratic": 3982,
+            "fast": 3024,
+            "medium_fast": 3781,
+            "medium_slow": 3572,
+            "slow": 4727,
+            "fluctuating": 4639
+        }
+    },
+    {
+        "total": {
+            "erratic": 59719,
+            "fast": 37324,
+            "medium_fast": 46656,
+            "medium_slow": 40007,
+            "slow": 58320,
+            "fluctuating": 46656
+        },
+        "level": 36,
+        "next_lvl": {
+            "erratic": 4103,
+            "fast": 3198,
+            "medium_fast": 3997,
+            "medium_slow": 3801,
+            "slow": 4996,
+            "fluctuating": 3997
+        }
+    },
+    {
+        "total": {
+            "erratic": 63822,
+            "fast": 40522,
+            "medium_fast": 50653,
+            "medium_slow": 43808,
+            "slow": 63316,
+            "fluctuating": 50653
+        },
+        "level": 37,
+        "next_lvl": {
+            "erratic": 4219,
+            "fast": 3375,
+            "medium_fast": 4219,
+            "medium_slow": 4038,
+            "slow": 5274,
+            "fluctuating": 5316
+        }
+    },
+    {
+        "total": {
+            "erratic": 68041,
+            "fast": 43897,
+            "medium_fast": 54872,
+            "medium_slow": 47846,
+            "slow": 68590,
+            "fluctuating": 55969
+        },
+        "level": 38,
+        "next_lvl": {
+            "erratic": 4328,
+            "fast": 3558,
+            "medium_fast": 4447,
+            "medium_slow": 4281,
+            "slow": 5558,
+            "fluctuating": 4536
+        }
+    },
+    {
+        "total": {
+            "erratic": 72369,
+            "fast": 47455,
+            "medium_fast": 59319,
+            "medium_slow": 52127,
+            "slow": 74148,
+            "fluctuating": 60505
+        },
+        "level": 39,
+        "next_lvl": {
+            "erratic": 4431,
+            "fast": 3745,
+            "medium_fast": 4681,
+            "medium_slow": 4533,
+            "slow": 5852,
+            "fluctuating": 6055
+        }
+    },
+    {
+        "total": {
+            "erratic": 76800,
+            "fast": 51200,
+            "medium_fast": 64000,
+            "medium_slow": 56660,
+            "slow": 80000,
+            "fluctuating": 66560
+        },
+        "level": 40,
+        "next_lvl": {
+            "erratic": 4526,
+            "fast": 3936,
+            "medium_fast": 4921,
+            "medium_slow": 4790,
+            "slow": 6151,
+            "fluctuating": 5117
+        }
+    },
+    {
+        "total": {
+            "erratic": 81326,
+            "fast": 55136,
+            "medium_fast": 68921,
+            "medium_slow": 61450,
+            "slow": 86151,
+            "fluctuating": 71677
+        },
+        "level": 41,
+        "next_lvl": {
+            "erratic": 4616,
+            "fast": 4134,
+            "medium_fast": 5167,
+            "medium_slow": 5055,
+            "slow": 6459,
+            "fluctuating": 6856
+        }
+    },
+    {
+        "total": {
+            "erratic": 85942,
+            "fast": 59270,
+            "medium_fast": 74088,
+            "medium_slow": 66505,
+            "slow": 92610,
+            "fluctuating": 78533
+        },
+        "level": 42,
+        "next_lvl": {
+            "erratic": 4695,
+            "fast": 4335,
+            "medium_fast": 5419,
+            "medium_slow": 5328,
+            "slow": 6773,
+            "fluctuating": 5744
+        }
+    },
+    {
+        "total": {
+            "erratic": 90637,
+            "fast": 63605,
+            "medium_fast": 79507,
+            "medium_slow": 71833,
+            "slow": 99383,
+            "fluctuating": 84277
+        },
+        "level": 43,
+        "next_lvl": {
+            "erratic": 4769,
+            "fast": 4542,
+            "medium_fast": 5677,
+            "medium_slow": 5607,
+            "slow": 7097,
+            "fluctuating": 7721
+        }
+    },
+    {
+        "total": {
+            "erratic": 95406,
+            "fast": 68147,
+            "medium_fast": 85184,
+            "medium_slow": 77440,
+            "slow": 106480,
+            "fluctuating": 91998
+        },
+        "level": 44,
+        "next_lvl": {
+            "erratic": 4831,
+            "fast": 4753,
+            "medium_fast": 5941,
+            "medium_slow": 5895,
+            "slow": 7426,
+            "fluctuating": 6417
+        }
+    },
+    {
+        "total": {
+            "erratic": 100237,
+            "fast": 72900,
+            "medium_fast": 91125,
+            "medium_slow": 83335,
+            "slow": 113906,
+            "fluctuating": 98415
+        },
+        "level": 45,
+        "next_lvl": {
+            "erratic": 4885,
+            "fast": 4968,
+            "medium_fast": 6211,
+            "medium_slow": 6188,
+            "slow": 7764,
+            "fluctuating": 8654
+        }
+    },
+    {
+        "total": {
+            "erratic": 105122,
+            "fast": 77868,
+            "medium_fast": 97336,
+            "medium_slow": 89523,
+            "slow": 121670,
+            "fluctuating": 107069
+        },
+        "level": 46,
+        "next_lvl": {
+            "erratic": 4930,
+            "fast": 5190,
+            "medium_fast": 6487,
+            "medium_slow": 6489,
+            "slow": 8108,
+            "fluctuating": 7136
+        }
+    },
+    {
+        "total": {
+            "erratic": 110052,
+            "fast": 83058,
+            "medium_fast": 103823,
+            "medium_slow": 96012,
+            "slow": 129778,
+            "fluctuating": 114205
+        },
+        "level": 47,
+        "next_lvl": {
+            "erratic": 4963,
+            "fast": 5415,
+            "medium_fast": 6769,
+            "medium_slow": 6798,
+            "slow": 8462,
+            "fluctuating": 9658
+        }
+    },
+    {
+        "total": {
+            "erratic": 115015,
+            "fast": 88473,
+            "medium_fast": 110592,
+            "medium_slow": 102810,
+            "slow": 138240,
+            "fluctuating": 123863
+        },
+        "level": 48,
+        "next_lvl": {
+            "erratic": 4986,
+            "fast": 5646,
+            "medium_fast": 7057,
+            "medium_slow": 7113,
+            "slow": 8821,
+            "fluctuating": 7903
+        }
+    },
+    {
+        "total": {
+            "erratic": 120001,
+            "fast": 94119,
+            "medium_fast": 117649,
+            "medium_slow": 109923,
+            "slow": 147061,
+            "fluctuating": 131766
+        },
+        "level": 49,
+        "next_lvl": {
+            "erratic": 4999,
+            "fast": 5881,
+            "medium_fast": 7351,
+            "medium_slow": 7437,
+            "slow": 9189,
+            "fluctuating": 10734
+        }
+    },
+    {
+        "total": {
+            "erratic": 125000,
+            "fast": 100000,
+            "medium_fast": 125000,
+            "medium_slow": 117360,
+            "slow": 156250,
+            "fluctuating": 142500
+        },
+        "level": 50,
+        "next_lvl": {
+            "erratic": 6324,
+            "fast": 6120,
+            "medium_fast": 7651,
+            "medium_slow": 7766,
+            "slow": 9563,
+            "fluctuating": 8722
+        }
+    },
+    {
+        "total": {
+            "erratic": 131324,
+            "fast": 106120,
+            "medium_fast": 132651,
+            "medium_slow": 125126,
+            "slow": 165813,
+            "fluctuating": 151222
+        },
+        "level": 51,
+        "next_lvl": {
+            "erratic": 6471,
+            "fast": 6366,
+            "medium_fast": 7957,
+            "medium_slow": 8103,
+            "slow": 9947,
+            "fluctuating": 11883
+        }
+    },
+    {
+        "total": {
+            "erratic": 137795,
+            "fast": 112486,
+            "medium_fast": 140608,
+            "medium_slow": 133229,
+            "slow": 175760,
+            "fluctuating": 163105
+        },
+        "level": 52,
+        "next_lvl": {
+            "erratic": 6615,
+            "fast": 6615,
+            "medium_fast": 8269,
+            "medium_slow": 8448,
+            "slow": 10336,
+            "fluctuating": 9592
+        }
+    },
+    {
+        "total": {
+            "erratic": 144410,
+            "fast": 119101,
+            "medium_fast": 148877,
+            "medium_slow": 141677,
+            "slow": 186096,
+            "fluctuating": 172697
+        },
+        "level": 53,
+        "next_lvl": {
+            "erratic": 6755,
+            "fast": 6870,
+            "medium_fast": 8587,
+            "medium_slow": 8799,
+            "slow": 10734,
+            "fluctuating": 13110
+        }
+    },
+    {
+        "total": {
+            "erratic": 151165,
+            "fast": 125971,
+            "medium_fast": 157464,
+            "medium_slow": 150476,
+            "slow": 196830,
+            "fluctuating": 185807
+        },
+        "level": 54,
+        "next_lvl": {
+            "erratic": 6891,
+            "fast": 7129,
+            "medium_fast": 8911,
+            "medium_slow": 9159,
+            "slow": 11138,
+            "fluctuating": 10515
+        }
+    },
+    {
+        "total": {
+            "erratic": 158056,
+            "fast": 133100,
+            "medium_fast": 166375,
+            "medium_slow": 159635,
+            "slow": 207968,
+            "fluctuating": 196322
+        },
+        "level": 55,
+        "next_lvl": {
+            "erratic": 7023,
+            "fast": 7392,
+            "medium_fast": 9241,
+            "medium_slow": 9524,
+            "slow": 11552,
+            "fluctuating": 14417
+        }
+    },
+    {
+        "total": {
+            "erratic": 165079,
+            "fast": 140492,
+            "medium_fast": 175616,
+            "medium_slow": 169159,
+            "slow": 219520,
+            "fluctuating": 210739
+        },
+        "level": 56,
+        "next_lvl": {
+            "erratic": 7150,
+            "fast": 7662,
+            "medium_fast": 9577,
+            "medium_slow": 9897,
+            "slow": 11971,
+            "fluctuating": 11492
+        }
+    },
+    {
+        "total": {
+            "erratic": 172229,
+            "fast": 148154,
+            "medium_fast": 185193,
+            "medium_slow": 179056,
+            "slow": 231491,
+            "fluctuating": 222231
+        },
+        "level": 57,
+        "next_lvl": {
+            "erratic": 7274,
+            "fast": 7935,
+            "medium_fast": 9919,
+            "medium_slow": 10278,
+            "slow": 12399,
+            "fluctuating": 15805
+        }
+    },
+    {
+        "total": {
+            "erratic": 179503,
+            "fast": 156089,
+            "medium_fast": 195112,
+            "medium_slow": 189334,
+            "slow": 243890,
+            "fluctuating": 238036
+        },
+        "level": 58,
+        "next_lvl": {
+            "erratic": 7391,
+            "fast": 8214,
+            "medium_fast": 10267,
+            "medium_slow": 10665,
+            "slow": 12833,
+            "fluctuating": 12526
+        }
+    },
+    {
+        "total": {
+            "erratic": 186894,
+            "fast": 164303,
+            "medium_fast": 205379,
+            "medium_slow": 199999,
+            "slow": 256723,
+            "fluctuating": 250562
+        },
+        "level": 59,
+        "next_lvl": {
+            "erratic": 7506,
+            "fast": 8497,
+            "medium_fast": 10621,
+            "medium_slow": 11061,
+            "slow": 13277,
+            "fluctuating": 17278
+        }
+    },
+    {
+        "total": {
+            "erratic": 194400,
+            "fast": 172800,
+            "medium_fast": 216000,
+            "medium_slow": 211060,
+            "slow": 270000,
+            "fluctuating": 267840
+        },
+        "level": 60,
+        "next_lvl": {
+            "erratic": 7613,
+            "fast": 8784,
+            "medium_fast": 10981,
+            "medium_slow": 11462,
+            "slow": 13726,
+            "fluctuating": 13616
+        }
+    },
+    {
+        "total": {
+            "erratic": 202013,
+            "fast": 181584,
+            "medium_fast": 226981,
+            "medium_slow": 222522,
+            "slow": 283726,
+            "fluctuating": 281456
+        },
+        "level": 61,
+        "next_lvl": {
+            "erratic": 7715,
+            "fast": 9078,
+            "medium_fast": 11347,
+            "medium_slow": 11871,
+            "slow": 14184,
+            "fluctuating": 18837
+        }
+    },
+    {
+        "total": {
+            "erratic": 209728,
+            "fast": 190662,
+            "medium_fast": 238328,
+            "medium_slow": 234393,
+            "slow": 297910,
+            "fluctuating": 300293
+        },
+        "level": 62,
+        "next_lvl": {
+            "erratic": 7812,
+            "fast": 9375,
+            "medium_fast": 11719,
+            "medium_slow": 12288,
+            "slow": 14648,
+            "fluctuating": 14766
+        }
+    },
+    {
+        "total": {
+            "erratic": 217540,
+            "fast": 200037,
+            "medium_fast": 250047,
+            "medium_slow": 246681,
+            "slow": 312558,
+            "fluctuating": 315059
+        },
+        "level": 63,
+        "next_lvl": {
+            "erratic": 7903,
+            "fast": 9678,
+            "medium_fast": 12097,
+            "medium_slow": 12711,
+            "slow": 15122,
+            "fluctuating": 20485
+        }
+    },
+    {
+        "total": {
+            "erratic": 225443,
+            "fast": 209715,
+            "medium_fast": 262144,
+            "medium_slow": 259392,
+            "slow": 327680,
+            "fluctuating": 335544
+        },
+        "level": 64,
+        "next_lvl": {
+            "erratic": 7988,
+            "fast": 9985,
+            "medium_fast": 12481,
+            "medium_slow": 13143,
+            "slow": 15601,
+            "fluctuating": 15976
+        }
+    },
+    {
+        "total": {
+            "erratic": 233431,
+            "fast": 219700,
+            "medium_fast": 274625,
+            "medium_slow": 272535,
+            "slow": 343281,
+            "fluctuating": 351520
+        },
+        "level": 65,
+        "next_lvl": {
+            "erratic": 8065,
+            "fast": 10296,
+            "medium_fast": 12871,
+            "medium_slow": 13580,
+            "slow": 16089,
+            "fluctuating": 22224
+        }
+    },
+    {
+        "total": {
+            "erratic": 241496,
+            "fast": 229996,
+            "medium_fast": 287496,
+            "medium_slow": 286115,
+            "slow": 359370,
+            "fluctuating": 373744
+        },
+        "level": 66,
+        "next_lvl": {
+            "erratic": 8137,
+            "fast": 10614,
+            "medium_fast": 13267,
+            "medium_slow": 14025,
+            "slow": 16583,
+            "fluctuating": 17247
+        }
+    },
+    {
+        "total": {
+            "erratic": 249633,
+            "fast": 240610,
+            "medium_fast": 300763,
+            "medium_slow": 300140,
+            "slow": 375953,
+            "fluctuating": 390991
+        },
+        "level": 67,
+        "next_lvl": {
+            "erratic": 8201,
+            "fast": 10935,
+            "medium_fast": 13669,
+            "medium_slow": 14478,
+            "slow": 17087,
+            "fluctuating": 24059
+        }
+    },
+    {
+        "total": {
+            "erratic": 257834,
+            "fast": 251545,
+            "medium_fast": 314432,
+            "medium_slow": 314618,
+            "slow": 393040,
+            "fluctuating": 415050
+        },
+        "level": 68,
+        "next_lvl": {
+            "erratic": 9572,
+            "fast": 11262,
+            "medium_fast": 14077,
+            "medium_slow": 14937,
+            "slow": 17596,
+            "fluctuating": 18581
+        }
+    },
+    {
+        "total": {
+            "erratic": 267406,
+            "fast": 262807,
+            "medium_fast": 328509,
+            "medium_slow": 329555,
+            "slow": 410636,
+            "fluctuating": 433631
+        },
+        "level": 69,
+        "next_lvl": {
+            "erratic": 9052,
+            "fast": 11593,
+            "medium_fast": 14491,
+            "medium_slow": 15405,
+            "slow": 18114,
+            "fluctuating": 25989
+        }
+    },
+    {
+        "total": {
+            "erratic": 276458,
+            "fast": 274400,
+            "medium_fast": 343000,
+            "medium_slow": 344960,
+            "slow": 428750,
+            "fluctuating": 459620
+        },
+        "level": 70,
+        "next_lvl": {
+            "erratic": 9870,
+            "fast": 11928,
+            "medium_fast": 14911,
+            "medium_slow": 15878,
+            "slow": 18638,
+            "fluctuating": 19980
+        }
+    },
+    {
+        "total": {
+            "erratic": 286328,
+            "fast": 286328,
+            "medium_fast": 357911,
+            "medium_slow": 360838,
+            "slow": 447388,
+            "fluctuating": 479600
+        },
+        "level": 71,
+        "next_lvl": {
+            "erratic": 10030,
+            "fast": 12270,
+            "medium_fast": 15337,
+            "medium_slow": 16359,
+            "slow": 19172,
+            "fluctuating": 28017
+        }
+    },
+    {
+        "total": {
+            "erratic": 296358,
+            "fast": 298598,
+            "medium_fast": 373248,
+            "medium_slow": 377197,
+            "slow": 466560,
+            "fluctuating": 507617
+        },
+        "level": 72,
+        "next_lvl": {
+            "erratic": 9409,
+            "fast": 12615,
+            "medium_fast": 15769,
+            "medium_slow": 16848,
+            "slow": 19711,
+            "fluctuating": 21446
+        }
+    },
+    {
+        "total": {
+            "erratic": 305767,
+            "fast": 311213,
+            "medium_fast": 389017,
+            "medium_slow": 394045,
+            "slow": 486271,
+            "fluctuating": 529063
+        },
+        "level": 73,
+        "next_lvl": {
+            "erratic": 10307,
+            "fast": 12966,
+            "medium_fast": 16207,
+            "medium_slow": 17343,
+            "slow": 20259,
+            "fluctuating": 30146
+        }
+    },
+    {
+        "total": {
+            "erratic": 316074,
+            "fast": 324179,
+            "medium_fast": 405224,
+            "medium_slow": 411388,
+            "slow": 506530,
+            "fluctuating": 559209
+        },
+        "level": 74,
+        "next_lvl": {
+            "erratic": 10457,
+            "fast": 13321,
+            "medium_fast": 16651,
+            "medium_slow": 17847,
+            "slow": 20813,
+            "fluctuating": 22978
+        }
+    },
+    {
+        "total": {
+            "erratic": 326531,
+            "fast": 337500,
+            "medium_fast": 421875,
+            "medium_slow": 429235,
+            "slow": 527343,
+            "fluctuating": 582187
+        },
+        "level": 75,
+        "next_lvl": {
+            "erratic": 9724,
+            "fast": 13680,
+            "medium_fast": 17101,
+            "medium_slow": 18356,
+            "slow": 21377,
+            "fluctuating": 32379
+        }
+    },
+    {
+        "total": {
+            "erratic": 336255,
+            "fast": 351180,
+            "medium_fast": 438976,
+            "medium_slow": 447591,
+            "slow": 548720,
+            "fluctuating": 614566
+        },
+        "level": 76,
+        "next_lvl": {
+            "erratic": 10710,
+            "fast": 14046,
+            "medium_fast": 17557,
+            "medium_slow": 18873,
+            "slow": 21946,
+            "fluctuating": 24580
+        }
+    },
+    {
+        "total": {
+            "erratic": 346965,
+            "fast": 365226,
+            "medium_fast": 456533,
+            "medium_slow": 466464,
+            "slow": 570666,
+            "fluctuating": 639146
+        },
+        "level": 77,
+        "next_lvl": {
+            "erratic": 10847,
+            "fast": 14415,
+            "medium_fast": 18019,
+            "medium_slow": 19398,
+            "slow": 22524,
+            "fluctuating": 34717
+        }
+    },
+    {
+        "total": {
+            "erratic": 357812,
+            "fast": 379641,
+            "medium_fast": 474552,
+            "medium_slow": 485862,
+            "slow": 593190,
+            "fluctuating": 673863
+        },
+        "level": 78,
+        "next_lvl": {
+            "erratic": 9995,
+            "fast": 14790,
+            "medium_fast": 18487,
+            "medium_slow": 19929,
+            "slow": 23108,
+            "fluctuating": 26252
+        }
+    },
+    {
+        "total": {
+            "erratic": 367807,
+            "fast": 394431,
+            "medium_fast": 493039,
+            "medium_slow": 505791,
+            "slow": 616298,
+            "fluctuating": 700115
+        },
+        "level": 79,
+        "next_lvl": {
+            "erratic": 11073,
+            "fast": 15169,
+            "medium_fast": 18961,
+            "medium_slow": 20469,
+            "slow": 23702,
+            "fluctuating": 37165
+        }
+    },
+    {
+        "total": {
+            "erratic": 378880,
+            "fast": 409600,
+            "medium_fast": 512000,
+            "medium_slow": 526260,
+            "slow": 640000,
+            "fluctuating": 737280
+        },
+        "level": 80,
+        "next_lvl": {
+            "erratic": 11197,
+            "fast": 15552,
+            "medium_fast": 19441,
+            "medium_slow": 21014,
+            "slow": 24301,
+            "fluctuating": 27995
+        }
+    },
+    {
+        "total": {
+            "erratic": 390077,
+            "fast": 425152,
+            "medium_fast": 531441,
+            "medium_slow": 547274,
+            "slow": 664301,
+            "fluctuating": 765275
+        },
+        "level": 81,
+        "next_lvl": {
+            "erratic": 10216,
+            "fast": 15942,
+            "medium_fast": 19927,
+            "medium_slow": 21567,
+            "slow": 24909,
+            "fluctuating": 39722
+        }
+    },
+    {
+        "total": {
+            "erratic": 400293,
+            "fast": 441094,
+            "medium_fast": 551368,
+            "medium_slow": 568841,
+            "slow": 689210,
+            "fluctuating": 804997
+        },
+        "level": 82,
+        "next_lvl": {
+            "erratic": 11393,
+            "fast": 16335,
+            "medium_fast": 20419,
+            "medium_slow": 22128,
+            "slow": 25523,
+            "fluctuating": 29812
+        }
+    },
+    {
+        "total": {
+            "erratic": 411686,
+            "fast": 457429,
+            "medium_fast": 571787,
+            "medium_slow": 590969,
+            "slow": 714733,
+            "fluctuating": 834809
+        },
+        "level": 83,
+        "next_lvl": {
+            "erratic": 11504,
+            "fast": 16734,
+            "medium_fast": 20917,
+            "medium_slow": 22695,
+            "slow": 26147,
+            "fluctuating": 42392
+        }
+    },
+    {
+        "total": {
+            "erratic": 423190,
+            "fast": 474163,
+            "medium_fast": 592704,
+            "medium_slow": 613664,
+            "slow": 740880,
+            "fluctuating": 877201
+        },
+        "level": 84,
+        "next_lvl": {
+            "erratic": 10382,
+            "fast": 17137,
+            "medium_fast": 21421,
+            "medium_slow": 23271,
+            "slow": 26776,
+            "fluctuating": 31704
+        }
+    },
+    {
+        "total": {
+            "erratic": 433572,
+            "fast": 491300,
+            "medium_fast": 614125,
+            "medium_slow": 636935,
+            "slow": 767656,
+            "fluctuating": 908905
+        },
+        "level": 85,
+        "next_lvl": {
+            "erratic": 11667,
+            "fast": 17544,
+            "medium_fast": 21931,
+            "medium_slow": 23852,
+            "slow": 27414,
+            "fluctuating": 45179
+        }
+    },
+    {
+        "total": {
+            "erratic": 445239,
+            "fast": 508844,
+            "medium_fast": 636056,
+            "medium_slow": 660787,
+            "slow": 795070,
+            "fluctuating": 954084
+        },
+        "level": 86,
+        "next_lvl": {
+            "erratic": 11762,
+            "fast": 17958,
+            "medium_fast": 22447,
+            "medium_slow": 24441,
+            "slow": 28058,
+            "fluctuating": 33670
+        }
+    },
+    {
+        "total": {
+            "erratic": 457001,
+            "fast": 526802,
+            "medium_fast": 658503,
+            "medium_slow": 685228,
+            "slow": 823128,
+            "fluctuating": 987754
+        },
+        "level": 87,
+        "next_lvl": {
+            "erratic": 10488,
+            "fast": 18375,
+            "medium_fast": 22969,
+            "medium_slow": 25038,
+            "slow": 28712,
+            "fluctuating": 48083
+        }
+    },
+    {
+        "total": {
+            "erratic": 467489,
+            "fast": 545177,
+            "medium_fast": 681472,
+            "medium_slow": 710266,
+            "slow": 851840,
+            "fluctuating": 1035837
+        },
+        "level": 88,
+        "next_lvl": {
+            "erratic": 11889,
+            "fast": 18798,
+            "medium_fast": 23497,
+            "medium_slow": 25641,
+            "slow": 29371,
+            "fluctuating": 35715
+        }
+    },
+    {
+        "total": {
+            "erratic": 479378,
+            "fast": 563975,
+            "medium_fast": 704969,
+            "medium_slow": 735907,
+            "slow": 881211,
+            "fluctuating": 1071552
+        },
+        "level": 89,
+        "next_lvl": {
+            "erratic": 11968,
+            "fast": 19225,
+            "medium_fast": 24031,
+            "medium_slow": 26253,
+            "slow": 30039,
+            "fluctuating": 51108
+        }
+    },
+    {
+        "total": {
+            "erratic": 491346,
+            "fast": 583200,
+            "medium_fast": 729000,
+            "medium_slow": 762160,
+            "slow": 911250,
+            "fluctuating": 1122660
+        },
+        "level": 90,
+        "next_lvl": {
+            "erratic": 10532,
+            "fast": 19656,
+            "medium_fast": 24571,
+            "medium_slow": 26870,
+            "slow": 30713,
+            "fluctuating": 37839
+        }
+    },
+    {
+        "total": {
+            "erratic": 501878,
+            "fast": 602856,
+            "medium_fast": 753571,
+            "medium_slow": 789030,
+            "slow": 941963,
+            "fluctuating": 1160499
+        },
+        "level": 91,
+        "next_lvl": {
+            "erratic": 12056,
+            "fast": 20094,
+            "medium_fast": 25117,
+            "medium_slow": 27495,
+            "slow": 31397,
+            "fluctuating": 54254
+        }
+    },
+    {
+        "total": {
+            "erratic": 513934,
+            "fast": 622950,
+            "medium_fast": 778688,
+            "medium_slow": 816525,
+            "slow": 973360,
+            "fluctuating": 1214753
+        },
+        "level": 92,
+        "next_lvl": {
+            "erratic": 12115,
+            "fast": 20535,
+            "medium_fast": 25669,
+            "medium_slow": 28128,
+            "slow": 32086,
+            "fluctuating": 40043
+        }
+    },
+    {
+        "total": {
+            "erratic": 526049,
+            "fast": 643485,
+            "medium_fast": 804357,
+            "medium_slow": 844653,
+            "slow": 1005446,
+            "fluctuating": 1254796
+        },
+        "level": 93,
+        "next_lvl": {
+            "erratic": 10508,
+            "fast": 20982,
+            "medium_fast": 26227,
+            "medium_slow": 28767,
+            "slow": 32784,
+            "fluctuating": 57526
+        }
+    },
+    {
+        "total": {
+            "erratic": 536557,
+            "fast": 664467,
+            "medium_fast": 830584,
+            "medium_slow": 873420,
+            "slow": 1038230,
+            "fluctuating": 1312322
+        },
+        "level": 94,
+        "next_lvl": {
+            "erratic": 12163,
+            "fast": 21433,
+            "medium_fast": 26791,
+            "medium_slow": 29415,
+            "slow": 33488,
+            "fluctuating": 42330
+        }
+    },
+    {
+        "total": {
+            "erratic": 548720,
+            "fast": 685900,
+            "medium_fast": 857375,
+            "medium_slow": 902835,
+            "slow": 1071718,
+            "fluctuating": 1354652
+        },
+        "level": 95,
+        "next_lvl": {
+            "erratic": 12202,
+            "fast": 21888,
+            "medium_fast": 27361,
+            "medium_slow": 30068,
+            "slow": 34202,
+            "fluctuating": 60925
+        }
+    },
+    {
+        "total": {
+            "erratic": 560922,
+            "fast": 707788,
+            "medium_fast": 884736,
+            "medium_slow": 932903,
+            "slow": 1105920,
+            "fluctuating": 1415577
+        },
+        "level": 96,
+        "next_lvl": {
+            "erratic": 10411,
+            "fast": 22350,
+            "medium_fast": 27937,
+            "medium_slow": 30729,
+            "slow": 34921,
+            "fluctuating": 44699
+        }
+    },
+    {
+        "total": {
+            "erratic": 571333,
+            "fast": 730138,
+            "medium_fast": 912673,
+            "medium_slow": 963632,
+            "slow": 1140841,
+            "fluctuating": 1460276
+        },
+        "level": 97,
+        "next_lvl": {
+            "erratic": 12206,
+            "fast": 22815,
+            "medium_fast": 28519,
+            "medium_slow": 31398,
+            "slow": 35649,
+            "fluctuating": 64455
+        }
+    },
+    {
+        "total": {
+            "erratic": 583539,
+            "fast": 752953,
+            "medium_fast": 941192,
+            "medium_slow": 995030,
+            "slow": 1176490,
+            "fluctuating": 1524731
+        },
+        "level": 98,
+        "next_lvl": {
+            "erratic": 8343,
+            "fast": 23286,
+            "medium_fast": 29107,
+            "medium_slow": 32073,
+            "slow": 36383,
+            "fluctuating": 47153
+        }
+    },
+    {
+        "total": {
+            "erratic": 591882,
+            "fast": 776239,
+            "medium_fast": 970299,
+            "medium_slow": 1027103,
+            "slow": 1212873,
+            "fluctuating": 1571884
+        },
+        "level": 99,
+        "next_lvl": {
+            "erratic": 8118,
+            "fast": 23761,
+            "medium_fast": 29701,
+            "medium_slow": 32757,
+            "slow": 37127,
+            "fluctuating": 68116
+        }
+    },
+    {
+        "total": {
+            "erratic": 600000,
+            "fast": 800000,
+            "medium_fast": 1000000,
+            "medium_slow": 1059860,
+            "slow": 1250000,
+            "fluctuating": 1640000
+        },
+        "level": 100,
+        "next_lvl": {
+            "erratic": "-",
+            "fast": "-",
+            "medium_fast": "-",
+            "medium_slow": "-",
+            "slow": "-",
+            "fluctuating": "-"
+        }
+    }
+]

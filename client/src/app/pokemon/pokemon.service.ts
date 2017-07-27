@@ -93,10 +93,20 @@ export class PokemonService implements OnInit, OnDestroy {
                     .catch(this.handleError);
   }
 
-  getLvlInfo(lvl: Number) {
-    return this.http.get(this.lvlInfoUrl + lvl)
-                    .map(this.extractData)
-                    .catch(this.handleError);
+  getLvlInfo(lvl: number, local=true) {
+    if(local){
+      return this.http.get('assets/shared/level-table.json')
+                      .map( res => {
+                        let body = res.json();
+                        return body[lvl-1] || {} ;
+                      })
+                      .catch(this.handleError);
+    }
+    else {
+      return this.http.get(this.lvlInfoUrl + lvl)
+                      .map(this.extractData)
+                      .catch(this.handleError);
+    }
   }
 
   getEvolution(pokemon: any) {
@@ -169,6 +179,7 @@ export class PokemonService implements OnInit, OnDestroy {
     let body = res.json();
     return body || [ ] ;
   }
+
   private handleError (error: Response | any) {
     // In a real world app, we might use a remote logging infrastructure
     let errMsg: string;
