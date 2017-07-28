@@ -27,13 +27,13 @@ import { PokeAPIService } from './services/poke-api.service';
 import { PokemonService } from './pokemon/pokemon.service';
 import { PokedexService } from './pokemon/pokedex/pokedex.service';
 import { ClickService } from './services/click.service';
-import { ChatService } from './services/chat.service';
+// import { ChatService } from './services/chat.service';
 
 import { PcDetailComponent } from './pokemon/pokemon-center/pc-detail/pc-detail.component';
 import { TypeComponent } from './pokemon/_components/type/type.component';
 import { PokedexEntryComponent } from './pokemon/pokedex/pokedex-entry/pokedex-entry.component';
 import { ExpBarComponent } from './pokemon/_components/exp-bar/exp-bar.component';
-import { SocketPcComponent } from './pokemon/socket-pc/socket-pc.component';
+// import { SocketPcComponent } from './pokemon/socket-pc/socket-pc.component';
 import { PokemonPickerComponent } from './pokemon/_components/pokemon-picker/pokemon-picker.component';
 import { BuddyIndicatorComponent } from './pokemon/_components/buddy-indicator/buddy-indicator.component';
 
@@ -66,15 +66,6 @@ export const appRoutes: Routes = [
     }
   },
   {
-    path: 'socket-pc',
-    pathMatch: 'full',
-    component: SocketPcComponent,
-    data: {
-      title: 'Experimental PC',
-      display: 'left'
-    }
-  },
-  {
     path: 'log-in',
     pathMatch: 'full',
     component: LoginComponent,
@@ -98,7 +89,7 @@ export const appRoutes: Routes = [
     TypeComponent,
     PokedexEntryComponent,
     ExpBarComponent,
-    SocketPcComponent,
+    // SocketPcComponent,
     PokemonPickerComponent,
     BuddyIndicatorComponent
   ],
@@ -119,8 +110,7 @@ export const appRoutes: Routes = [
     PokeAPIService,
     PokemonService,
     PokedexService,
-    ClickService,
-    ChatService
+    ClickService
   ],
   bootstrap: [AppComponent]
 })

@@ -19,7 +19,10 @@ export class PokemonCenterComponent implements OnInit {
   ngOnInit() {
     this._pkmn.obsInventory
               .subscribe(
-                data => this.pokemon_list = data
+                data => {
+                  this.pokemon_list = data
+                  console.log('pc got updated with', this.pokemon_list);
+                }
               );
     this._pkmn.getPokemon()
               .subscribe(

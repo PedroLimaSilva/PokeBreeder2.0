@@ -48,12 +48,12 @@ export class PokemonService implements OnInit, OnDestroy {
 
   ngOnInit(){
     this.getPokemon()
-              .takeWhile(()=>this.alive)
-              .subscribe(
-                data => this.inventory = data,
-                error => console.log(error),
-                () => this.obsInventory.next(this.inventory)
-              );
+        .takeWhile(()=>this.alive)
+        .subscribe(
+          data => this.inventory = data,
+          error => console.log(error),
+          () => this.obsInventory.next(this.inventory)
+        );
   }
 
   getPokemonSprite(pokemon) {
@@ -65,6 +65,27 @@ export class PokemonService implements OnInit, OnDestroy {
     return this.http.get(this.pokemonUrl)
                     .map(this.extractData)
                     .catch(this.handleError);
+  }
+
+  findPkmnIndex(pokemon){
+    let inventoryClone = JSON.parse(JSON.stringify(this.inventory));
+    let index = inventoryClone.map( (element) => { return element._id; }).indexOf(pokemon._id);
+    return index;
+  }
+
+  updatePkmn(pokemon){
+    let index = this.findPkmnIndex(pokemon);
+    this.getPokemonById(pokemon._id)
+        .subscribe(
+          data => {
+            console.log(data);
+            this.inventory[index] = data;
+          },
+          error => console.log(error),
+          () => {
+            this.obsInventory.next(this.inventory);
+          }
+        );
   }
 
   getAvailablePkmn(pokemon: any){

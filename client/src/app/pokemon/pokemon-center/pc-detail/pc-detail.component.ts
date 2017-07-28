@@ -178,7 +178,9 @@ export class PcDetailComponent implements OnInit, OnChanges, OnDestroy {
       this._pkmn.removeMate(this.pokemon.mate)
                 .takeWhile(() => this.alive)
                 .subscribe(
-                  data => {},
+                  pokemon => {
+                    this._pkmn.updatePkmn(pokemon);
+                  },
                   error => console.log(error),
                   () => {
                     this._pkmn.removeMate(this.pokemon)
