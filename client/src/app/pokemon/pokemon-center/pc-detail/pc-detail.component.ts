@@ -15,6 +15,7 @@ import 'rxjs/add/operator/takeWhile';
 export class PcDetailComponent implements OnInit, OnChanges, OnDestroy {
 
   private alive = true;
+  private show = false;
 
   @Input() pokemon;
   @Output() onHide = new EventEmitter();
@@ -36,6 +37,10 @@ export class PcDetailComponent implements OnInit, OnChanges, OnDestroy {
   ) { }
 
   ngOnInit() {
+    setTimeout(
+      () => this.show = true,
+      50
+    );
     this._pkmn.expChanged
         // .debounceTime(500) // wait 500ms after the last event before emitting last event
         .takeWhile(() => this.alive)
@@ -58,11 +63,22 @@ export class PcDetailComponent implements OnInit, OnChanges, OnDestroy {
                 this.pokemon.evolution = data;
               }
             );
+    this._pkmn.evolution
+              .takeWhile(() => this.alive)
+              .subscribe(
+                data => this.pokemon = data
+              );
   }
 
   ngOnChanges(changes) {
     if (changes['pokemon'] && !changes['pokemon'].firstChange) {
       this._pkmn.expChanged.next(changes['pokemon']['previousValue']);
+      this._pkmn.getPokemonById(changes['pokemon']['currentValue']['_id'])
+                .takeWhile(() => this.alive)
+                .subscribe(
+                  data => this.pokemon = data,
+                  error => console.log(error)
+                );
       this._pkmn.getEvolution(this.pokemon)
               .takeWhile(() => this.alive)
               .subscribe(
@@ -92,7 +108,11 @@ export class PcDetailComponent implements OnInit, OnChanges, OnDestroy {
   }
 
   hide() {
-    this.onHide.emit();
+    this.show = false;
+    setTimeout(
+      () => this.onHide.emit(),
+      300
+    );
   }
 
   pokemonString() {

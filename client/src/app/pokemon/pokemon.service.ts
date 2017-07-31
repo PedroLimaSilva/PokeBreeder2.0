@@ -43,6 +43,8 @@ export class PokemonService implements OnInit, OnDestroy {
   // this subject emits a level up event as soon as the pokemon reaches another level
   public lvlUp: Subject<any> = new Subject<any>();
 
+  // this subject emits an evolution event as soon as the pokemon reaches another stage
+  public evolution: Subject<any> = new Subject<any>();
 
   constructor(private http: Http) { }
 

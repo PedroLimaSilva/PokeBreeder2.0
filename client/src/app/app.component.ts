@@ -140,7 +140,7 @@ export class AppComponent implements OnInit, OnDestroy {
                                 data => {
                                   this.inventory[pkmnIndex] = data;
                                   this._pkmn.getPokemonSprite(this.inventory[pkmnIndex]);
-                                  console.log(this.inventory[pkmnIndex].sprite);
+                                  this._pkmn.evolution.next(this.inventory[pkmnIndex]);
                                   this._pkmn.obsInventory.next(this.inventory);
                                 }
                               );
