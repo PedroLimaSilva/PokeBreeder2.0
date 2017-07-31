@@ -5,10 +5,10 @@
       <ul *dropdownMenu class="dropdown-menu" role="menu">
         <li role="menuitem" *ngIf="pokemon.lvl > 0" (click)="editName(true)"><a class="dropdown-item">Change Name</a></li>
         <li role="menuitem" *ngIf="pokemon.lvl > 0" class="disabled"><a class="dropdown-item">Send on Adventure</a></li>
-        <li role="menuitem" *ngIf="pokemon.lvl > 0" class="disabled"><a class="dropdown-item">Assign Egg</a></li>
+        <li role="menuitem" *ngIf="pokemon.lvl > 0" (click)="showPickEgg()"><a class="dropdown-item">Assign Egg</a></li>
         <li role="menuitem" *ngIf="pokemon.lvl > 0" (click)="showPickMate()"><a class="dropdown-item">Assign Playmate</a></li>
         <li role="menuitem" *ngIf="pokemon.lvl > 0 && pokemon.mate" (click)="removeMate()"><a class="dropdown-item">Remove Playmate</a></li>
-        <li role="menuitem" *ngIf="pokemon.lvl <= 0"><a class="dropdown-item">Assign Pokemon</a></li>
+        <li role="menuitem" *ngIf="pokemon.lvl <= 0" (click)="showPickMate()"><a class="dropdown-item">Assign Pokemon</a></li>
       </ul>
     </div>
     <span>
@@ -41,11 +41,14 @@
     <p>Original Trainer: {{pokemon.trainerID}}</p>
     <p>Found on: {{pokemon.created_at | date:'dd/MM/yyyy'}}</p>
   </section>
+  <!--
   <p>
     {{pokemonString()}}
   </p>
+  -->
   <pokemon-picker [pokemon]="pokemon"
-                  *ngIf="pickMate"
+                  *ngIf="pickMate || pickEgg"
+                  [eggs]="pickEgg"
                   (onSelect)="selectMate($event)"
                   (onDismiss)="dismissPicker()">
   </pokemon-picker>

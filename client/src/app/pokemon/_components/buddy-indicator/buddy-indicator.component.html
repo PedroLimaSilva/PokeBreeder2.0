@@ -1,3 +1,4 @@
 <div class="buddy-container">
-  <img [src]="pokemon.sprite" alt="">
+  <img *ngIf="pokemon.lvl>0" [src]="pokemon.sprite" alt="">
+  <img *ngIf="pokemon.lvl === 0" [src]="pokemon.egg_sprite" alt="">
 </div>

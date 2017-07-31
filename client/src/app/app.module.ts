@@ -27,6 +27,7 @@ import { PokeAPIService } from './services/poke-api.service';
 import { PokemonService } from './pokemon/pokemon.service';
 import { PokedexService } from './pokemon/pokedex/pokedex.service';
 import { ClickService } from './services/click.service';
+import { AdventureService } from './pokemon/adventure-list/adventure.service';
 // import { ChatService } from './services/chat.service';
 
 import { PcDetailComponent } from './pokemon/pokemon-center/pc-detail/pc-detail.component';
@@ -36,6 +37,8 @@ import { ExpBarComponent } from './pokemon/_components/exp-bar/exp-bar.component
 // import { SocketPcComponent } from './pokemon/socket-pc/socket-pc.component';
 import { PokemonPickerComponent } from './pokemon/_components/pokemon-picker/pokemon-picker.component';
 import { BuddyIndicatorComponent } from './pokemon/_components/buddy-indicator/buddy-indicator.component';
+import { AdventureListComponent } from './pokemon/adventure-list/adventure-list.component';
+import { TimePipe } from './pipes/time.pipe';
 
 export const appRoutes: Routes = [
   {
@@ -91,7 +94,9 @@ export const appRoutes: Routes = [
     ExpBarComponent,
     // SocketPcComponent,
     PokemonPickerComponent,
-    BuddyIndicatorComponent
+    BuddyIndicatorComponent,
+    AdventureListComponent,
+    TimePipe
   ],
   imports: [
     BrowserModule,
@@ -110,6 +115,7 @@ export const appRoutes: Routes = [
     PokeAPIService,
     PokemonService,
     PokedexService,
+    AdventureService,
     ClickService
   ],
   bootstrap: [AppComponent]

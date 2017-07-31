@@ -10,6 +10,7 @@ import { PokemonService } from '../../pokemon.service';
 export class PokemonPickerComponent implements OnInit {
 
   @Input() pokemon:any;
+  @Input() eggs = false;
   @Output() onSelect = new EventEmitter();
   @Output() onDismiss = new EventEmitter();
 
@@ -22,7 +23,11 @@ export class PokemonPickerComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.availablePkmn = this._pkmn.getAvailablePkmn(this.pokemon);
+    if(this.eggs)
+      this.availablePkmn = this._pkmn.getAvailableEggs(this.pokemon);
+    else
+      this.availablePkmn = this._pkmn.getAvailablePkmn(this.pokemon);
+
     setTimeout(
       ()=>{
         this.show = true;

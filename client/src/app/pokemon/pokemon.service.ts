@@ -102,10 +102,10 @@ export class PokemonService implements OnInit, OnDestroy {
     );
   }
 
-  getEggs(pokemon: any){
+  getAvailableEggs(pokemon: any){
     return this.inventory.filter(
       e => {
-        return e._id != pokemon._id && e.exp < 0;
+        return e._id != pokemon._id && !e.mate && e.exp < 0;
       }
     );
   }
