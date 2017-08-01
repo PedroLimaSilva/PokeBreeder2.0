@@ -1,0 +1,16 @@
+.list-group-item {
+  display: grid;
+  grid-template-columns: 1fr 5em;
+  padding: 0;
+  .adventure-content{
+    padding: 15px;
+  }
+  .to-detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    border-left: 1px solid #ddd;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,58 @@
+section.detail-container{
+  display: grid;
+  grid-template-columns: auto 1fr 1fr auto;
+  grid-template-rows: auto auto auto;
+  grid-gap: 15px;
+  grid-template-areas: "back title title duration"
+                       "gap rewards rewards assign"
+                       "gap recomended avoid assign";
+  @media (max-width: 991px){
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "back sec-title sec-title sec-title"
+                         "title title title duration"
+                         "rewards rewards rewards rewards"
+                         "recomended recomended avoid avoid"
+                         "assign assign assign assign";
+  }
+  .back-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: back
+  }
+  .sec-title{
+    margin-bottom: 20px;
+    grid-area: sec-title;
+  }
+  .title{
+    margin-bottom: 20px;
+    grid-area: title;
+    @media (max-width: 991px){
+      margin: 0;
+    }
+  }
+  .duration{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 0;
+    grid-area: duration
+  }
+  .rewards{
+    grid-area: rewards;
+  }
+  .recomended{
+    grid-area: recomended;
+  }
+  .avoid{
+    grid-area: avoid;
+  }
+  .assign{
+    grid-area: assign;
+  }
+}
+
+.panel{
+  margin: 0;
+  padding: 15px;
+}

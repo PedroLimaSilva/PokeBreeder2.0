@@ -27,8 +27,10 @@ import { PokeAPIService } from './services/poke-api.service';
 import { PokemonService } from './pokemon/pokemon.service';
 import { PokedexService } from './pokemon/pokedex/pokedex.service';
 import { ClickService } from './services/click.service';
-import { AdventureService } from './pokemon/adventure-list/adventure.service';
+import { AdventureService } from './pokemon/adventures/adventure.service';
 // import { ChatService } from './services/chat.service';
+
+import { TimePipe } from './pipes/time.pipe';
 
 import { PcDetailComponent } from './pokemon/pokemon-center/pc-detail/pc-detail.component';
 import { TypeComponent } from './pokemon/_components/type/type.component';
@@ -37,8 +39,9 @@ import { ExpBarComponent } from './pokemon/_components/exp-bar/exp-bar.component
 // import { SocketPcComponent } from './pokemon/socket-pc/socket-pc.component';
 import { PokemonPickerComponent } from './pokemon/_components/pokemon-picker/pokemon-picker.component';
 import { BuddyIndicatorComponent } from './pokemon/_components/buddy-indicator/buddy-indicator.component';
-import { AdventureListComponent } from './pokemon/adventure-list/adventure-list.component';
-import { TimePipe } from './pipes/time.pipe';
+import { AdventureListComponent } from './pokemon/adventures/adventure-list/adventure-list.component';
+import { AdventureDetailComponent } from './pokemon/adventures/adventure-detail/adventure-detail.component';
+import { RewardItemComponent } from './pokemon/adventures/reward-item/reward-item.component';
 
 export const appRoutes: Routes = [
   {
@@ -69,6 +72,14 @@ export const appRoutes: Routes = [
     }
   },
   {
+    path: 'adventures/:id',
+    pathMatch: 'full',
+    component: AdventureDetailComponent,
+    data:{
+      display: 'hide'
+    }
+  },
+  {
     path: 'log-in',
     pathMatch: 'full',
     component: LoginComponent,
@@ -96,7 +107,9 @@ export const appRoutes: Routes = [
     PokemonPickerComponent,
     BuddyIndicatorComponent,
     AdventureListComponent,
-    TimePipe
+    AdventureDetailComponent,
+    TimePipe,
+    RewardItemComponent
   ],
   imports: [
     BrowserModule,

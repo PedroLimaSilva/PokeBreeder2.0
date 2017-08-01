@@ -11,11 +11,41 @@ export class TimePipe implements PipeTransform {
     let hours = 0;
     let minutes = 0;
     let seconds = 0;
-    if(unit === "d"){
-      let days = value;
+    switch (unit) {
+      case "d":
+      case "day":
+      case "days":
+        days = value;
+        break;
+      case "h":
+      case "hours":
+        hours = value;
+        break;
+      case "m":
+      case "min":
+      case "minutes":
+        minutes = value;
+        break;
+      case "s":
+      case "sec":
+      case "seconds":
+        seconds = value;
+        break;
+      default:
+        console.log("invalid time unit", unit);
+        return value;
     }
-    if(unit === "h"){
-      let hours = value;
+    if (seconds > 60) {
+      minutes = Math.floor(seconds / 60);
+      seconds = seconds % 60;
+    }
+    if (minutes > 60) {
+      hours = Math.floor(minutes / 60);
+      minutes = minutes % 60;
+    }
+    if(hours > 24){
+      days = Math.floor(hours / 24);
+      hours = hours % 24;
     }
     if(days != 0){
       res += days + "d ";

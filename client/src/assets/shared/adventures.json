@@ -1,10 +1,10 @@
 [
   {
+    "_id": "1",
     "name": "Explore Ruins",
-    "duration": 10,
+    "duration": 14,
     "recTypes": [
-      "Water",
-      "Grass"
+      "Water"
     ],
     "rewards": {
       "exp": 1000,
@@ -45,6 +45,7 @@
     }
   },
   {
+    "_id": "2",
     "name": "Explore Beach",
     "duration": 10,
     "recTypes": [
@@ -94,6 +95,7 @@
     }
   },
   {
+    "_id": "3",
     "name": "Explore Forest",
     "duration": 10,
     "recTypes": [

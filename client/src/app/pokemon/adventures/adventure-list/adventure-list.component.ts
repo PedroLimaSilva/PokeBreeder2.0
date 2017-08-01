@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { AdventureService } from './adventure.service';
+import { AdventureService } from '../adventure.service';
 
 @Component({
   selector: 'adventure-list',

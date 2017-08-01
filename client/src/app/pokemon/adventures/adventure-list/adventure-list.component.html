@@ -1,0 +1,19 @@
+<h1>Adventures</h1>
+<p class="text-muted">Showing {{adventure_list.length}} of {{adventure_list.length}}</p>
+<div class="list-group">
+  <a class="list-group-item" *ngFor="let adventure of adventure_list">
+    <section class="adventure-content">
+      <p class="float-right">{{adventure.duration | time: "min"}}</p>
+      <h4 class="list-group-item-heading">{{adventure.name}}</h4>
+      <p class="list-group-item-text">
+        Recommended:
+      </p>
+      <p class="list-group-item-text types">
+        <type *ngFor="let type of adventure.recTypes" [type]="type"></type>
+      </p>
+    </section>
+    <section class="to-detail" [routerLink]="['/adventures', adventure._id]">
+      <i class="mdi mdi-chevron-right"></i>
+    </section>
+  </a>
+</div>

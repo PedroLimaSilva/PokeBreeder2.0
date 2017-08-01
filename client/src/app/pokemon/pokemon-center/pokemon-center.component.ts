@@ -8,7 +8,7 @@ import { PokemonService } from '../pokemon.service';
 })
 export class PokemonCenterComponent implements OnInit {
 
-  pokemon_list: Array<any>;
+  pokemon_list: Array<any> = [];
   selected;
 
   constructor(
