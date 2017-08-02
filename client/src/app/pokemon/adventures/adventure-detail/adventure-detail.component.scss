@@ -1,4 +1,6 @@
 section.detail-container{
+  margin-top: 15px;
+  padding-bottom: 15px;
   display: grid;
   grid-template-columns: auto 1fr 1fr auto;
   grid-template-rows: auto auto auto;
@@ -7,12 +9,12 @@ section.detail-container{
                        "gap rewards rewards assign"
                        "gap recomended avoid assign";
   @media (max-width: 991px){
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto auto auto auto;
-    grid-template-areas: "back sec-title sec-title sec-title"
+    grid-template-areas: "back assign assign assign"
                          "title title title duration"
                          "rewards rewards rewards rewards"
-                         "recomended recomended avoid avoid"
-                         "assign assign assign assign";
+                         "recomended recomended avoid avoid";
   }
   .back-btn{
     display: flex;
@@ -20,12 +22,8 @@ section.detail-container{
     align-items: center;
     grid-area: back
   }
-  .sec-title{
-    margin-bottom: 20px;
-    grid-area: sec-title;
-  }
   .title{
-    margin-bottom: 20px;
+    margin: 0px;
     grid-area: title;
     @media (max-width: 991px){
       margin: 0;
@@ -40,12 +38,27 @@ section.detail-container{
   }
   .rewards{
     grid-area: rewards;
+    p,h3{
+      margin: 0;
+    }
+    .rewards-list{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      align-items: center;
+    }
   }
   .recomended{
     grid-area: recomended;
+    p,h4{
+      margin-top: 0;
+    }
   }
   .avoid{
     grid-area: avoid;
+    p,h4{
+      margin-top: 0;
+    }
   }
   .assign{
     grid-area: assign;

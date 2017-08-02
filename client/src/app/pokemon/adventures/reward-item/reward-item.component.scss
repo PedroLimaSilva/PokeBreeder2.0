@@ -1,0 +1,17 @@
+.reward{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .value{
+    font-size: 2em;
+  }
+  .probability{
+    margin-top: -20px;
+  }
+}
+
+img{
+  height: 96px;
+  width: 96px;
+}

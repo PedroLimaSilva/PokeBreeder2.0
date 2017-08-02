@@ -6,6 +6,10 @@
     "recTypes": [
       "Water"
     ],
+    "avoidTypes": [
+      "Grass",
+      "Bug"
+    ],
     "rewards": {
       "exp": 1000,
       "eggs": [

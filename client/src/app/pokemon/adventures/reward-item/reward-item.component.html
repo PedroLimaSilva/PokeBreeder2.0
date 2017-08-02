@@ -1,3 +1,11 @@
-<p>
-  reward-item works!
-</p>
+<div class="reward" *ngIf="type === 'exp'">
+  <span class="value">{{reward}}</span>
+  <span>EXP</span>
+</div>
+<div class="reward" *ngIf="type === 'egg'">
+  <img [src]="reward.dex.sprites ?
+              reward.dex.sprites.front_default :
+              '/assets/img/sprites/egg.gif'"
+       alt="">
+  <span class="probability">{{reward.probability}}%</span>
+</div>

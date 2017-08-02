@@ -2,29 +2,28 @@
   <div class="back-btn">
     <button class="btn btn-default" [routerLink]="['../../']"><i class="mdi mdi-chevron-left"></i> Back</button>
   </div>
-  <h2 class="sec-title">
-    Adventure
-  </h2>
   <h2 class="title">
-    Adventure Name
+    {{adventure.name}}
   </h2>
   <p class="duration">
-    10 minutes
+    {{adventure.duration | time: 'min'}}
   </p>
   <section class="panel rewards">
-    <p>Rewards:</p>
-    <ul>
-      <li>100 EXP</li>
-    </ul>
+    <h3>Rewards</h3>
+    <reward-item *ngIf="adventure.rewards.exp" [reward]="adventure.rewards.exp" type="exp"></reward-item>
+    <h4>Eggs</h4>
+    <div class="rewards-list">
+      <reward-item *ngFor="let egg of adventure.rewards.eggs" [reward]="egg" type="egg"></reward-item>
+    </div>
   </section>
   <section class="panel recomended">
-    recomended types
+    <h4>Recommended</h4>
+    <type *ngFor="let type of adventure.recTypes" [type]="type"></type>
   </section>
   <section class="panel avoid">
-    avoid types
+    <h4>Avoid</h4>
+    <type *ngFor="let type of adventure.avoidTypes" [type]="type"></type>
   </section>
-  <section class="panel assign">
-    assign goes here
-  </section>
+  <button class="assign btn btn-primary">Assign Pokémon</button>
 </section>
 

@@ -21,6 +21,11 @@ export class AdventureService {
                     .catch(this.handleError);
   }
 
+  getAdventureById(id: string) {
+    return this.http.get(localAdventures_url)
+      .map(this.extractData)
+      .catch(this.handleError);
+  }
 
   private extractData(res: Response) {
     let body = res.json();

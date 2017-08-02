@@ -30,6 +30,12 @@ export class PokedexService {
                     .catch(this.handleError);
   }
 
+  getByDex(dex: string){
+    return this.http.get(this.pokedexUrl+dex)
+                    .map(this.extractData)
+                    .catch(this.handleError);
+  }
+
   getTrainerDex() {
     let url = this.trainerUrl + this.trainerID + '/dex';
     return this.http.get(url)

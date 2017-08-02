@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 
 import { AdventureService } from '../adventure.service';
 
@@ -7,7 +7,9 @@ import { AdventureService } from '../adventure.service';
   templateUrl: './adventure-list.component.html',
   styleUrls: ['./adventure-list.component.scss']
 })
-export class AdventureListComponent implements OnInit {
+export class AdventureListComponent implements OnInit, OnDestroy {
+
+  private alive = true;
 
   adventure_list = [];
 
@@ -17,6 +19,7 @@ export class AdventureListComponent implements OnInit {
 
   ngOnInit() {
     this._adv.getAdventures()
+              .takeWhile(() => this.alive)
               .subscribe(
                 data => this.adventure_list = data,
                 error => console.log(error),
@@ -24,4 +27,7 @@ export class AdventureListComponent implements OnInit {
               );
   }
 
+  ngOnDestroy() {
+    this.alive = false;
+  }
 }
