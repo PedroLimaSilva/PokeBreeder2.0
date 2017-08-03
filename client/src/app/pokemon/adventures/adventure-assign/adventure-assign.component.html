@@ -1,0 +1,28 @@
+<button class="btn"
+        [ngClass]="{
+          'btn-primary': !showAvailable,
+          'btn-default': showAvailable}"
+        (click)="showAvailable = !showAvailable">
+  <ng-container *ngIf="!showAvailable">Assign Pokémon</ng-container>
+  <ng-container *ngIf="showAvailable">Dismiss</ng-container>
+</button>
+<div style="position: relative">
+  <section class="pokemon panel" [ngClass]="{'collapse': !showAvailable}">
+    <article class="pokemon-list">
+      <span *ngIf="!availablePokemon.length">No available pokemon</span>
+      <pokemon-item *ngFor="let pokemon of availablePokemon; let i = index"
+                    [selectable]="true"
+                    [selected]="selectedPokemon[i]"
+                    (onSelect)="selectPokemon(pokemon)"
+                    [pokemon]="pokemon">
+      </pokemon-item>
+    </article>
+    <article class="confirmation" *ngIf="selected">
+      <p>
+        <span style="text-transform: capitalize">
+          {{selected.nickname ? selected.nickname : selected.dex_entry.name ? selected.dex_entry.name : '????'}}
+        </span> has a {{successRate}}% success rate!</p>
+      <button class="btn btn-primary" (click)="confirm()">Send Pokemon</button>
+    </article>
+  </section>
+</div>

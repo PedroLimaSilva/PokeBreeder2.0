@@ -42,6 +42,7 @@ import { BuddyIndicatorComponent } from './pokemon/_components/buddy-indicator/b
 import { AdventureListComponent } from './pokemon/adventures/adventure-list/adventure-list.component';
 import { AdventureDetailComponent } from './pokemon/adventures/adventure-detail/adventure-detail.component';
 import { RewardItemComponent } from './pokemon/adventures/reward-item/reward-item.component';
+import { AdventureAssignComponent } from './pokemon/adventures/adventure-assign/adventure-assign.component';
 
 export const appRoutes: Routes = [
   {
@@ -109,7 +110,8 @@ export const appRoutes: Routes = [
     AdventureListComponent,
     AdventureDetailComponent,
     TimePipe,
-    RewardItemComponent
+    RewardItemComponent,
+    AdventureAssignComponent
   ],
   imports: [
     BrowserModule,

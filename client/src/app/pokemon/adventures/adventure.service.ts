@@ -11,20 +11,24 @@ const localAdventures_url = '/assets/shared/adventures.json';
 @Injectable()
 export class AdventureService {
 
+  adventuresUrl = POKE_REST_URL + 'adventures/';
+
   constructor(
     private http: Http
-  ) { }
+  ) {
+
+  }
 
   getAdventures(){
-    return this.http.get(localAdventures_url)
+    return this.http.get(this.adventuresUrl)
                     .map(this.extractData)
                     .catch(this.handleError);
   }
 
   getAdventureById(id: string) {
-    return this.http.get(localAdventures_url)
-      .map(this.extractData)
-      .catch(this.handleError);
+    return this.http.get(this.adventuresUrl + id)
+                    .map(this.extractData)
+                    .catch(this.handleError);
   }
 
   private extractData(res: Response) {

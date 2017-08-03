@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 import {PokemonService} from '../../pokemon.service';
 
@@ -10,6 +10,9 @@ import {PokemonService} from '../../pokemon.service';
 export class PokemonItemComponent implements OnInit {
 
   @Input() pokemon;
+  @Input() selectable = false;
+  @Input() selected = false;
+  @Output() onSelect = new EventEmitter();
 
   constructor(private _pkmn: PokemonService) { }
 
@@ -22,6 +25,13 @@ export class PokemonItemComponent implements OnInit {
     let cachedMon = cachedDex[Number(this.pokemon.dex_entry.dex) - 1];
     if (this.pokemon.exp >= 0){
       this.pokemon.name = cachedMon.name;
+    }
+  }
+
+  cliked(){
+    this.selected = !this.selected;
+    if (this.selected) {
+      this.onSelect.emit(this.selected);
     }
   }
 

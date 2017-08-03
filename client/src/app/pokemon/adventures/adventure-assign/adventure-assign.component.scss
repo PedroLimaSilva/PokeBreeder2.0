@@ -1,0 +1,31 @@
+:host{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.pokemon{
+  transform: scaleY(1) translateY(10px);
+  transform-origin: top;
+  transition: transform .1s ease;
+  position: absolute;
+  width: 100%;
+  &.collapse{
+    display: inherit;
+    transform: scaleY(0) translateY(0px);
+  }
+  .pokemon-list{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: 10px;
+    overflow-x: auto;
+  }
+  .confirmation{
+    padding: 10px;
+    .btn{
+      width: 100%;
+    }
+  }
+}

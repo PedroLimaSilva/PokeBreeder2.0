@@ -1,9 +1,17 @@
-<div class="pokemon-container">
+<div class="pokemon-container" (click)="cliked()" [ngClass]="{'selected': selectable && selected}">
   <div class="image-container">
     <img src="{{pokemon.exp < 0 ? pokemon.egg_sprite : pokemon.sprite}}"
          alt="{{pokemon.exp < 0 ? '????' : pokemon.nickname? pokemon.nickname : pokemon.dex_entry.name ? pokemon.dex_entry.name : '????'}}"
          title="{{pokemon.exp < 0 ? '????' : pokemon.nickname? pokemon.nickname : pokemon.dex_entry.name ? pokemon.dex_entry.name : '????'}}"
          [ngClass]="{'egg':pokemon.exp<0}">
   </div>
-  <div>{{pokemon.exp < 0 ? '????' : pokemon.nickname? pokemon.nickname : pokemon.dex_entry.name ? pokemon.dex_entry.name : '????'}}</div>
+  <section class="pokemon-label">
+    <article class="pokemon-lvl">
+      <ng-container *ngIf="pokemon.lvl">lvl.{{pokemon.lvl}}</ng-container>
+    </article>
+    <article>
+      {{pokemon.exp < 0 ? '????' : pokemon.nickname? pokemon.nickname : pokemon.dex_entry.name ? pokemon.dex_entry.name : '????'}}
+    </article>
+    <br *ngIf="pokemon.lvl === 0">
+  </section>
 </div>

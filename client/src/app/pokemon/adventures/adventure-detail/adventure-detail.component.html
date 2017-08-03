@@ -24,6 +24,8 @@
     <h4>Avoid</h4>
     <type *ngFor="let type of adventure.avoidTypes" [type]="type"></type>
   </section>
-  <button class="assign btn btn-primary">Assign Pokémon</button>
+  <div class="assign">
+    <adventure-assign [adventure]="adventure"></adventure-assign>
+  </div>
 </section>
 

@@ -1,13 +1,18 @@
+@import "../../../../styles/variables";
+
 .pokemon-container{
     box-sizing: border-box;
-    width: 150px;
+    width: 100px;
     text-align: center;
     background-color: rgba(255,255,255,0.5);
-    padding: 20px;
-    padding-bottom: 5px;
+    padding: 5px;
+    padding-top: 20px;
     text-transform: capitalize;
     position: relative;
     z-index: 550;
+    &.selected{
+      background-color: transparentize($brand-primary,0.5);
+    }
 }
 
 .image-container{
@@ -22,4 +27,15 @@
     height: 100px;
     width: 100px;
     margin-top: -30px;
+}
+
+.pokemon-label{
+  color: #555;
+  font-size: 1em;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  .pokemon-lvl{
+    font-weight: 700;
+  }
 }

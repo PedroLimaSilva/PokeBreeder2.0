@@ -30,8 +30,7 @@ export class AdventureDetailComponent implements OnInit, OnDestroy {
               .takeWhile(() => this.alive)
               .subscribe(
                 data => {
-                  this.adventure = data[0];
-                  console.log(this.adventure);
+                  this.adventure = data;
                 },
                 error => console.log(error)
               );
