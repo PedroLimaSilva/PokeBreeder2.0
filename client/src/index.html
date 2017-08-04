@@ -18,7 +18,7 @@
 <body>
   <app-root>Loading...</app-root>
   <script defer>
-    const sw_enabled = false;
+    const sw_enabled = true;
     if (sw_enabled && navigator.serviceWorker) {
       navigator.serviceWorker.register('sw.js').then(() => {
         console.log('Service worker installed')

@@ -10,6 +10,7 @@ export class RewardItemComponent implements OnInit {
 
   @Input() reward;
   @Input() type: string;
+  @Input() caught = false;
 
   constructor(
     private _pokedex: PokedexService

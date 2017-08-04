@@ -1,5 +1,6 @@
-import { Component, Input, OnInit, OnDestroy } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit, OnDestroy } from '@angular/core';
 import { PokemonService } from '../../pokemon.service';
+import { AdventureService } from '../../adventures/adventure.service';
 
 @Component({
   selector: 'adventure-assign',
@@ -11,6 +12,7 @@ export class AdventureAssignComponent implements OnInit, OnDestroy {
   private alive = true;
 
   @Input() adventure;
+  @Output() onConfirm = new EventEmitter();
 
   showAvailable = false;
 
@@ -22,7 +24,8 @@ export class AdventureAssignComponent implements OnInit, OnDestroy {
   public successRate: Number = 0;
 
   constructor(
-    private _pkmn: PokemonService
+    private _pkmn: PokemonService,
+    private _adv: AdventureService
   ) { }
 
   ngOnInit() {
@@ -31,7 +34,6 @@ export class AdventureAssignComponent implements OnInit, OnDestroy {
               .takeWhile(() => this.alive)
               .subscribe(
                 inventory => {
-                  console.log('available pokemon heard ')
                   this.availablePokemon = this._pkmn.getAvailablePkmn({_id:""});
                   this.availablePokemon.forEach(element => {
                     this.selectedPokemon.push(false);
@@ -106,7 +108,15 @@ export class AdventureAssignComponent implements OnInit, OnDestroy {
     return res;
   }
 
-  confirm() {}
+  confirm() {
+    this._adv.assign(this.adventure, this.selected, this.successRate)
+              .subscribe(
+                data => this.adventure = data,
+                error => console.log(error),
+                () => { this.onConfirm.emit(); }
+              );
+    this.showAvailable = false;
+  }
 
   ngOnDestroy() {
     this.alive = false;

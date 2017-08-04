@@ -6,6 +6,7 @@
   <img [src]="reward.dex.sprites ?
               reward.dex.sprites.front_default :
               '/assets/img/sprites/egg.gif'"
+       [ngClass]="{'caught': caught}"
        alt="">
   <span class="probability">{{reward.probability}}%</span>
 </div>

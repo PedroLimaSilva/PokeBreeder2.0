@@ -2,17 +2,18 @@ section.detail-container{
   margin-top: 15px;
   padding-bottom: 15px;
   display: grid;
-  grid-template-columns: auto 1fr 1fr auto;
+  grid-template-columns: auto 1fr 1fr 20%;
   grid-template-rows: auto auto auto;
   grid-gap: 15px;
-  grid-template-areas: "gap1 title duration gap3"
-                       "back rewards rewards assign"
-                       "gap2 recomended avoid assign";
+  grid-template-areas: "back title duration assign"
+                       "gap rewards rewards ongoing"
+                       "gap recomended avoid gap2";
   @media (max-width: 991px){
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
     grid-template-areas: "back assign assign assign"
                          "title title title duration"
+                         "ongoing ongoing ongoing ongoing"
                          "rewards rewards rewards rewards"
                          "recomended recomended avoid avoid";
   }
@@ -68,6 +69,34 @@ section.detail-container{
   }
   .assign{
     grid-area: assign;
+    > button{
+      width: 100%;
+    }
+
+  }
+  .ongoing{
+    grid-area: ongoing;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "assignee description"
+                         "claim claim";
+    p,h3{
+      margin: 0;
+    }
+    .assignee{
+      grid-area: assignee;
+    }
+    article{
+      grid-area: description;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .claim{
+      grid-area: claim;
+    }
   }
 }
 

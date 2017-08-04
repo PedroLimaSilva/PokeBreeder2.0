@@ -15,3 +15,8 @@ img{
   height: 96px;
   width: 96px;
 }
+
+img:not(.caught){
+  filter: brightness(0%);
+  opacity: 0.5;
+}

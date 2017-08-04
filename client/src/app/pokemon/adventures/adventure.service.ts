@@ -31,6 +31,12 @@ export class AdventureService {
                     .catch(this.handleError);
   }
 
+  assign(adventure, pokemon, successRate){
+    return this.http.patch(this.adventuresUrl + adventure._id, { assignedTo: pokemon._id, successRate })
+                    .map(this.extractData)
+                    .catch(this.handleError);
+  }
+
   private extractData(res: Response) {
     let body = res.json();
     return body || [];

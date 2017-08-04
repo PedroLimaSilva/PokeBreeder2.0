@@ -95,7 +95,7 @@ export class PokemonService implements OnInit, OnDestroy {
       e => {
         return e._id != pokemon._id &&
                e.exp >= 0 &&
-               (!e.busy_until || e.busy_until < Date.now) &&
+          (!e.busyUntil || new Date(e.busyUntil).getTime() < new Date(Date.now()).getTime()) &&
                !e.mate &&
                !e.egg;
       }
