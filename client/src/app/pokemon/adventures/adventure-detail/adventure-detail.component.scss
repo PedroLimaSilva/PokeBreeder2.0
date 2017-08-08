@@ -78,14 +78,22 @@ section.detail-container{
     grid-area: ongoing;
     display: grid;
     grid-template-columns: auto 1fr;
-    grid-template-rows: auto auto;
-    grid-template-areas: "assignee description"
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "assignee assignee"
+                         "description description"
                          "claim claim";
+    @media (max-width: 991px){
+      grid-template-rows: auto auto;
+      grid-template-areas: "assignee description"
+                          "claim claim";
+    }
     p,h3{
       margin: 0;
     }
     .assignee{
       grid-area: assignee;
+      display: flex;
+      justify-content: center;
     }
     article{
       grid-area: description;
@@ -96,6 +104,13 @@ section.detail-container{
     }
     .claim{
       grid-area: claim;
+      button{
+        width: 100%;
+      }
+      .claimed-rewards{
+        display: flex;
+        flex-flow: row wrap;
+      }
     }
   }
 }

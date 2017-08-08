@@ -17,7 +17,7 @@ export class RewardItemComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    if(this.type === 'egg'){
+    if(this.type === 'pokemon'){
       this._pokedex.getByDex(this.reward.dex)
                    .subscribe(
                      data => this.reward.dex = data,

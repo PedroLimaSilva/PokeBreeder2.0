@@ -2,11 +2,15 @@
   <span class="value">{{reward}}</span>
   <span>EXP</span>
 </div>
-<div class="reward" *ngIf="type === 'egg'">
+<div class="reward" *ngIf="type === 'pokemon'">
   <img [src]="reward.dex.sprites ?
               reward.dex.sprites.front_default :
               '/assets/img/sprites/egg.gif'"
        [ngClass]="{'caught': caught}"
        alt="">
   <span class="probability">{{reward.probability}}%</span>
+</div>
+<div class="reward claimed" *ngIf="type === 'egg'">
+  <img class="caught" src="/assets/img/sprites/egg.gif"
+              alt="">
 </div>

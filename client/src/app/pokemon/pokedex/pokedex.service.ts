@@ -7,6 +7,7 @@ import 'rxjs/add/operator/map';
 const POKE_REST_URL = 'http://localhost:3000/';
 export const LOCAL_DEX = '/assets/shared/pokedex.json';
 export const LOCAL_TRAINER = '/assets/shared/trainer.json';
+export const TRAINER_ID = "596f701e59531dc86e4ae1e2";
 
 @Injectable()
 export class PokedexService {

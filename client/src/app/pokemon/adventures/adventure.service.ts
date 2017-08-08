@@ -5,7 +5,10 @@ import { Subject } from 'rxjs/Subject';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/map';
 
+import { TRAINER_ID } from '../pokedex/pokedex.service';
+
 const POKE_REST_URL = 'http://localhost:3000/';
+
 const localAdventures_url = '/assets/shared/adventures.json';
 
 @Injectable()
@@ -33,6 +36,12 @@ export class AdventureService {
 
   assign(adventure, pokemon, successRate){
     return this.http.patch(this.adventuresUrl + adventure._id, { assignedTo: pokemon._id, successRate })
+                    .map(this.extractData)
+                    .catch(this.handleError);
+  }
+
+  claimRewards(adventure){
+    return this.http.patch(this.adventuresUrl + adventure._id, {claimed: true, trainerId: TRAINER_ID})
                     .map(this.extractData)
                     .catch(this.handleError);
   }

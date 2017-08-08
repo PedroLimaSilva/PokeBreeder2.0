@@ -13,7 +13,7 @@
     <reward-item *ngIf="adventure.rewards.exp" [reward]="adventure.rewards.exp" type="exp"></reward-item>
     <h4>Eggs</h4>
     <div class="rewards-list">
-      <reward-item *ngFor="let egg of adventure.rewards.eggs; let i = index" [reward]="egg" type="egg" [caught]="caught_map[i]"></reward-item>
+      <reward-item *ngFor="let egg of adventure.rewards.eggs; let i = index" [reward]="egg" type="pokemon" [caught]="caught_map[egg.dex.dex]"></reward-item>
     </div>
   </section>
   <section class="panel recomended">
@@ -39,7 +39,12 @@
       <h3>Completed</h3>
       <span>Ended on: {{adventure.completedOn | date:'short' }}</span>
     </article>
-    <button class="btn btn-success claim" *ngIf="isComplete() && !adventure.claimed" >Claim Rewards</button>
+    <article class="claim">
+      <button class="btn btn-success" *ngIf="isComplete() && !adventure.claimed" (click)="claimRewards()">Claim Rewards</button>
+      <section class="claimed-rewards" *ngIf="isComplete() && adventure.claimed">
+        <reward-item *ngFor="let reward of adventure.claimedRewards" [reward]="reward" type="egg" [caught]="true" ></reward-item>
+      </section>
+    </article>
   </section>
 </section>
 

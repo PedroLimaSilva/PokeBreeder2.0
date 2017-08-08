@@ -16,16 +16,14 @@ export class AdventureDetailComponent implements OnInit, OnDestroy {
 
   adventure: any = {};
   caught: Array<String> = [];
-  caught_map: Array<boolean> = [];
-
-  complete = false;
+  caught_map: {};
 
   constructor(
     private route: ActivatedRoute,
     private _adv: AdventureService,
     private _pkdx: PokedexService
   ) {
-    this.adventure.rewards = {}
+    this.adventure.rewards = {};
   }
 
   ngOnInit() {
@@ -51,24 +49,41 @@ export class AdventureDetailComponent implements OnInit, OnDestroy {
       .subscribe(
         data => {
           this.adventure = data;
-          this.complete = this.isComplete();
-          this.caught_map = [];
+          if (this.adventure.assignedTo) {
+            this._pkdx.getByDex(this.adventure.assignedTo.dex)
+                      .subscribe(
+                        entry => this.adventure.assignedTo.dex_entry = entry,
+                        error => console.log(error)
+                      );
+          }
+          this.caught_map = {};
           this.adventure.rewards.eggs.forEach(element => {
-            this.caught_map.push(this.isCaught(element))
+            this.caught_map[element.dex] = this.isCaught(element.dex);
           });
         },
         error => console.log(error)
       );
   }
 
-  isCaught(pokemon): boolean {
-    if(this.caught.includes(pokemon.dex))
+  isCaught(dex): boolean {
+    if (this.caught_map[dex] || this.caught.includes(dex))
       return true;
     return false;
   }
 
   isComplete(){
     return ((new Date(Date.now()).getTime()) > (new Date(this.adventure.completedOn).getTime()));
+  }
+
+  claimRewards(){
+    this._adv.claimRewards(this.adventure)
+             .subscribe(
+               data => {},
+               error => console.log(error),
+               () => {
+                 this.getAdventure();
+               }
+             );
   }
 
   ngOnDestroy() {
