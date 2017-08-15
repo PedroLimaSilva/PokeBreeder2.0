@@ -7,7 +7,7 @@ import 'rxjs/add/operator/map';
 
 import { TRAINER_ID } from '../pokedex/pokedex.service';
 
-const POKE_REST_URL = 'http://localhost:3000/';
+const POKE_REST_URL = 'https://pokebreeder-rest.herokuapp.com/';
 
 const localAdventures_url = '/assets/shared/adventures.json';
 

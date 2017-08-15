@@ -5,7 +5,7 @@ import { Subject } from 'rxjs/Subject';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/map';
 
-const POKE_REST_URL = 'http://localhost:3000/';
+const POKE_REST_URL = 'https://pokebreeder-rest.herokuapp.com/';
 
 export class Request {
   // GET, PATCH, POST, PUT

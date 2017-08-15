@@ -4,17 +4,17 @@ import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/map';
 
-const POKE_REST_URL = 'http://localhost:3000/';
+const POKE_REST_URL = 'https://pokebreeder-rest.herokuapp.com/';
 export const LOCAL_DEX = '/assets/shared/pokedex.json';
 export const LOCAL_TRAINER = '/assets/shared/trainer.json';
-export const TRAINER_ID = "596f701e59531dc86e4ae1e2";
+export const TRAINER_ID = "5993710bc8c70bea45100347";
 
 @Injectable()
 export class PokedexService {
 
   private pokedexUrl = POKE_REST_URL + 'pokedex/';
   private trainerUrl = POKE_REST_URL + 'trainers/';
-  private trainerID = '596f701e59531dc86e4ae1e2';
+  private trainerID = '5993710bc8c70bea45100347';
 
   constructor(private http: Http) { }
 
