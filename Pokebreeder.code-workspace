@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "/Users/pedrolimaesilva/Programação/PokeBreeder2.0"
+		}
+	],
+    "settings": {
+        "prettier.singleQuote": true
+    }
+}
