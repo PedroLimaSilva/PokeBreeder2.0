@@ -1,0 +1,58 @@
+@import '../../../styles/reboot/bootstrap-reboot.scss';
+
+.menu-button{
+  display: grid;
+  grid-template: 100% / 100%;
+  grid-template-areas: "main";
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  background: $primary;
+  color: white;
+  border: 2px solid white;;
+  font-size: 4rem;
+  padding: 0;
+  line-height: 1.18em;
+  position: relative;
+  z-index: 1;
+  &:focus, &:active{
+    outline: none;
+    box-shadow: 0 0 3pt 2pt $primary;
+  }
+  i{
+    margin-top: 0.1rem;
+    grid-area: main;
+    align-self: center;
+    justify-self: center;
+  }
+  .pulse{
+    display: block;
+    height: 30px;
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 100%;
+    grid-area: main;
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+.overlay{
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  //opacity: 0;
+  background-image: linear-gradient(-180deg, rgba(119,200,79,0.00) 1%, $primary 100%);
+  /*
+  &.open{
+    //opacity: 1;
+    display: block;
+  }
+  */
+}
+
+
+/* Rectangle 5: */
