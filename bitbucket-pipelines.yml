@@ -11,6 +11,6 @@ pipelines:
         caches:
           - node
         script: # Modify the commands below to build your repository.
-          - cd newClient
-          - npm install
-          - npm run build -prod
+          # - cd newClient
+          # - npm install
+          # - npm run build -prod
