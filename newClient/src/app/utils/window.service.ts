@@ -1,6 +1,6 @@
 import { ClassProvider, FactoryProvider, InjectionToken } from '@angular/core';
 
-function _window(): any {
+export function _window(): any {
   return window;
 }
 
@@ -26,7 +26,8 @@ const browserWindowProvider: ClassProvider = {
   provide: WindowRef,
   useClass: BrowserWindowRef
 };
-const windowProvider: FactoryProvider = {
+
+export const windowProvider: FactoryProvider = {
   provide: WINDOW,
   useFactory: _window,
   deps: []

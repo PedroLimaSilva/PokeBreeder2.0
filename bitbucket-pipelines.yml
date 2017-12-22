@@ -13,4 +13,4 @@ pipelines:
         script: # Modify the commands below to build your repository.
           - cd newClient
           - npm install
-          - npm run build
+          - npm run build -prod

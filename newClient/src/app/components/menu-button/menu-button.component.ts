@@ -51,27 +51,27 @@ import {
     ]),
     trigger('twist', [
       state(
-        'start',
+        'closed',
         style({
           opacity: '1',
           transform: 'rotate(0deg)'
         })
       ),
       state(
-        'finish',
+        'open',
         style({
           opacity: '0',
           transform: 'rotate(180deg)'
         })
       ),
-      transition('start => finish', animate('300ms ease-in-out'))
+      transition('start <=> finish', animate('300ms ease-in-out'))
     ])
   ]
 })
 export class MenuButtonComponent implements OnInit {
-  private open = 'closed';
-  private pulse = 'start';
-  private twist = 'start';
+  open = 'closed';
+  pulse = 'start';
+  twist = 'start';
 
   constructor() {}
 
