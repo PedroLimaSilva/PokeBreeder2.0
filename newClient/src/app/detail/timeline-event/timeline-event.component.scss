@@ -23,6 +23,13 @@ poke-timeline-event {
       display: none;
     }
   }
+  &:last-child {
+    &::after {
+      height: 100%;
+      bottom: unset;
+      top: 50%;
+    }
+  }
 }
 
 .event-node{

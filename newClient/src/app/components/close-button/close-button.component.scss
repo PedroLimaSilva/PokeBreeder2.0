@@ -1,0 +1,33 @@
+@import '../../../styles/reboot/bootstrap-reboot.scss';
+.close-button {
+    position: fixed;
+    left: 50%;
+    bottom: 3rem;
+    transform: translateX(-50%);
+    height: 26px;
+    width: 26px;
+    background: $primary;
+    border-radius: 26px;
+    display: grid;
+    grid-template: 100% / 100%;
+    grid-template-areas: "main";
+    font-size: 15px;
+    line-height: 1em;
+    .mdi {
+        color: white;
+        grid-area: main;
+        align-self: center;
+        justify-self: center;
+    }
+    .pulse {
+        display: block;
+        height: 30px;
+        width: 30px;
+        border: 1px solid white;
+        border-radius: 100%;
+        box-shadow: 0 0 3px rgba($black, .75);
+        grid-area: main;
+        align-self: center;
+        justify-self: center;
+    }
+}

@@ -17,14 +17,16 @@ import {
         'closed',
         style({
           opacity: '0',
-          display: 'none'
+          display: 'flex',
+          transform: 'translateY(100%)'
         })
       ),
       state(
         'open',
         style({
           opacity: '1',
-          display: 'block'
+          display: 'flex',
+          transform: 'translateY(0)'
         })
       ),
       transition('closed => open', animate('300ms ease-out')),
@@ -64,14 +66,29 @@ import {
           transform: 'rotate(180deg)'
         })
       ),
-      transition('start <=> finish', animate('300ms ease-in-out'))
+      transition('open <=> closed', animate('300ms ease-in-out'))
     ])
   ]
 })
 export class MenuButtonComponent implements OnInit {
   open = 'closed';
+  closed = 'open';
   pulse = 'start';
-  twist = 'start';
+
+  public options = [
+    {
+      title: 'Assign playmate',
+      icon: 'battle'
+    },
+    {
+      title: 'Assign egg',
+      icon: 'egg'
+    },
+    {
+      title: 'Send on Adventure',
+      icon: 'footsteps'
+    }
+  ];
 
   constructor() {}
 
@@ -80,8 +97,10 @@ export class MenuButtonComponent implements OnInit {
   toggleOpen() {
     if (this.open === 'closed') {
       this.open = 'open';
+      this.closed = 'closed';
     } else {
       this.open = 'closed';
+      this.closed = 'open';
     }
   }
 
@@ -92,9 +111,8 @@ export class MenuButtonComponent implements OnInit {
 
   animatePulse() {
     this.pulse = 'finish';
-    this.twist = 'finish';
     setTimeout(() => {
       this.pulse = 'start';
-    } , 500);
+    }, 500);
   }
 }

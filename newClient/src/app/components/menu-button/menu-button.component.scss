@@ -38,20 +38,24 @@
 }
 
 .overlay{
-  display: block;
+  display: flex;
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  //opacity: 0;
   background-image: linear-gradient(-180deg, rgba(119,200,79,0.00) 1%, $primary 100%);
-  /*
-  &.open{
-    //opacity: 1;
-    display: block;
+
+  align-items: flex-end;
+  flex-flow: column-reverse;
+  padding-bottom: 90px;
+  padding-right: 3rem;
+  .option{
+    font-size: 1.8rem;
+    color: white;
+    margin-top: 1em;
   }
-  */
+
 }
 
 

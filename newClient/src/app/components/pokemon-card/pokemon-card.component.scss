@@ -1,0 +1,31 @@
+.pokemon-card {
+  display: grid;
+  grid-template: calc(100vw - 6rem) / calc(100vw - 6rem);
+  grid-template-areas: "card";
+}
+
+.pokemon-name,
+.pokemon-sprite,
+.background {
+  grid-area: card;
+}
+
+.background{
+  background-image: linear-gradient(to bottom, #77c84f, #5ba935);
+  box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.23);
+  display: flex;
+  justify-content: center;
+}
+.pokemon-sprite{
+  height: 100%;
+  width: 100%;
+  align-self: center;
+  justify-self: center;
+  filter: drop-shadow(0 -2px 10px #333);
+}
+.pokemon-name{
+  margin: 0;
+  align-self: flex-end;
+  text-align: center;
+  color: white;
+}

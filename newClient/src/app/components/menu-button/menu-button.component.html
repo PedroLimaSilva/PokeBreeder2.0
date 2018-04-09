@@ -1,6 +1,9 @@
 <div class="menu-button" (click)="onMenuClick()">
   <i tabindex="-1" [@twist]="open" class="mdi mdi-pokeball"></i>
+  <i tabindex="-1" [@twist]="closed" class="mdi mdi-close"></i>
   <div class="pulse" [@pulse]="pulse"></div>
 </div>
 
-<div class="overlay" [@menu]="open"></div>
+<div class="overlay" [@menu]="open">
+  <div class="option" *ngFor="let option of options">{{option.title}}<i class="mdi mdi-{{option.icon}}"> . </i></div>
+</div>
